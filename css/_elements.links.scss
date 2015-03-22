@@ -1,0 +1,11 @@
+a {
+    color: $color-links;
+    @include font-weight(bold);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+
+}

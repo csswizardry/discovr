@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5, h6 {
+    @include font-weight(bold);
+}
+
+h1 {
+    @include font-size(36px);
+}
+
+h2 {
+    @include font-size(28px);
+}
+
+h3 {
+    @include font-size(24px);
+}
+
+h4 {
+    @include font-size(20px);
+}
+
+h5 {
+    @include font-size(18px);
+}
+
+h6 {
+    @include font-size(16px);
+}

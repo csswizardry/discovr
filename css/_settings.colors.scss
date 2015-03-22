@@ -1,0 +1,21 @@
+$color-brand-primary:               #378bb5;
+$color-brand-primary-highlight:     lighten($color-brand-primary, 10%);
+$color-brand-primary-shadow:        darken($color-brand-primary, 10%);
+
+$color-brand-secondary:             #abc123;
+$color-brand-secondary-highlight:   lighten($color-brand-secondary, 10%);
+$color-brand-secondary-shadow:      darken($color-brand-secondary, 10%);
+
+$color-ui:                          #e4e4e4;
+
+
+
+
+
+// Reassign literal variables to meaningful ones.
+$color-logo:    $color-brand-primary;
+
+$color-links:   inherit;
+
+$color-page-head:               #fff;
+$color-page-head-background:    $color-brand-primary;
