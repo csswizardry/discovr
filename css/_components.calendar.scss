@@ -1,0 +1,49 @@
+.c-calendar {
+    width: 100%;
+    table-layout: fixed;
+    @include font-size(12px);
+    text-align: center;
+
+    th,
+    td {
+        padding: $spacing-unit / 4;
+        border: 1px solid $color-ui;
+        background-color: #fff;
+    }
+
+    th {
+        @include font-weight(bold);
+        border-bottom-width: 2px;
+    }
+
+}
+
+    .c-calendar__title {
+        color: #fff;
+
+        &#{&} {
+            background-color: $color-primary;
+            border-color:     $color-primary;
+            border-bottom-width: 1px;
+        }
+
+    }
+
+    .c-calendar__outside {
+        color: #ccc;
+
+        &#{&} {
+            background-color: transparent;
+        }
+
+    }
+
+    .c-calendar__busy {
+        color: #fff;
+
+        &#{&} {
+            background-color: $color-secondary;
+            border-color: currentColor;
+        }
+
+    }

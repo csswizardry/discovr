@@ -1,10 +1,10 @@
 $color-brand-primary:               #378bb5;
-$color-brand-primary-highlight:     lighten($color-brand-primary, 10%);
-$color-brand-primary-shadow:        darken($color-brand-primary, 10%);
+$color-brand-primary-highlight:     lighten($color-brand-primary, 5%);
+$color-brand-primary-shadow:        darken($color-brand-primary,  5%);
 
 $color-brand-secondary:             #abc123;
-$color-brand-secondary-highlight:   lighten($color-brand-secondary, 10%);
-$color-brand-secondary-shadow:      darken($color-brand-secondary, 10%);
+$color-brand-secondary-highlight:   lighten($color-brand-secondary, 5%);
+$color-brand-secondary-shadow:      darken($color-brand-secondary,  5%);
 
 $color-ui:                          #e4e4e4;
 
@@ -19,3 +19,10 @@ $color-links:   inherit;
 
 $color-page-head:               #fff;
 $color-page-head-background:    $color-brand-primary;
+
+$color-btn:                             #fff;
+$color-btn-background:                  $color-brand-primary;
+$color-btn-background-hover:            $color-brand-primary-shadow;
+$color-btn-secondary:                   #fff;
+$color-btn-secondary-background:        $color-brand-secondary;
+$color-btn-secondary-background-hover:  $color-brand-secondary-shadow;

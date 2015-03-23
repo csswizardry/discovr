@@ -1,0 +1,94 @@
+/*------------------------------------*\
+    #SCORE
+\*------------------------------------*/
+
+/**
+ * Each Discovry has an associated score (e.g. 7.2 out of a possible 10). The
+ * Score component simply displays that score colored appropriately.
+ *
+ * We blend between three main brackets of score (Poor, Average, and Good) by
+ * creating an array of scores and their colors, and then looping through that
+ * array in order to output selectors that bind onto a data attribute, for
+ * example:
+ *
+ * .c-score[data-score^="7."] {}
+ *
+ * This selector looks for a DOM node with a class of `.c-score`, and then
+ * sees what the first characters of its `data-score` attribute are (`^=`). If
+ * the first characters are, for example, 7., then the DOM node gets styled in
+ * the color of the 7.x rating.
+ */
+
+.c-score {
+    display: inline-block;
+
+    // Pick colors for our Poor, Average, and Good ratings...
+    $color-poor:    red;
+    $color-average: orange;
+    $color-good:    green;
+
+    // ...and populate the list of scores (e.g. 7.2) with their associated
+    // color by mixing between them.
+    $scores: (
+        0:  $color-poor,
+        1:  mix($color-poor, $color-average, 80%),
+        2:  mix($color-poor, $color-average, 60%),
+        3:  mix($color-poor, $color-average, 40%),
+        4:  mix($color-poor, $color-average, 20%),
+        5:  $color-average,
+        6:  mix($color-average, $color-good, 80%),
+        7:  mix($color-average, $color-good, 60%),
+        8:  mix($color-average, $color-good, 40%),
+        9:  mix($color-average, $color-good, 20%),
+        10: $color-good,
+    );
+
+    // Loop through the scores list and output a data attribute substring
+    // selector for each, e.g.:
+    //
+    // .c-score[data-score^="7."] {}
+    //
+    // This will style any score in the 7.x category accordingly.
+    @each $score, $color in $scores {
+
+        &[data-score^="#{$score}."] {
+            color: $color;
+        }
+
+    }
+
+    /**
+     * Apply the score’s color as a background by augmenting with a class of
+     * `.c-score--inverse`.
+     *
+     * 1. This magic number applies the right amount of padding to spoof a space
+     *    character either side of the text.
+     */
+    &--inverse {
+        vertical-align: middle;
+        padding-right: 0.28em; /* [1] */
+        padding-left:  0.28em; /* [1] */
+        @include font-weight(normal);
+        border-radius: $base-radius;
+
+        // Loop through our array again, only this time applying colours as
+        // backgrounds.
+        //
+        // 1. The fact that `#fff` works here is, unfortunately, entirely
+        //    circumstantial. We will need to rethink this if we have a
+        //    background whose foreground cannot be white.
+        @each $score, $color in $scores {
+
+            &[data-score^="#{$score}."] {
+                background-color: $color;
+                color: #fff;
+            }
+
+        }
+    }
+
+}
+
+.c-score--small {
+    @include font-size($base-font-size);
+}

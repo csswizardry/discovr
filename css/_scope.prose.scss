@@ -1,0 +1,42 @@
+.s-prose {
+
+    /**
+     * Set continuous prose in a nice, large serif.
+     */
+    @include font-family(serif);
+    @include font-size(18px);
+
+    /**
+     * Make all headings in CMS-powered content the same size in order to
+     * prevent the user abusing visual vs. semantic hierarchy.
+     */
+    h1, h2, h3, h4, h5, h6 {
+        @include font-family(sans-serif);
+        @include font-size(18px);
+    }
+
+    /**
+     * Make links a lot more obvious in continuous text by having them
+     * underlined and colored in their default state.
+     */
+    a {
+        color: $color-primary;
+        text-decoration: underline;
+        @include font-weight(normal);
+
+        @include hocus() {
+            color: $color-primary-highlight;
+        }
+
+    }
+
+    /**
+     * Indent list elements enough that their bullets are not leaking out of
+     * their container.
+     */
+    ul,
+    ol {
+        margin-left: $spacing-unit * 2;
+    }
+
+}

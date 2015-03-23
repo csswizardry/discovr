@@ -1,0 +1,27 @@
+.c-testimonial {
+    @include font-size(18px);
+    padding: $base-spacing-unit;
+    border-left: 8px solid $color-brand-primary;
+    background-color: #fff;
+}
+
+    .c-testimonial__photo {
+        width:  128px;
+        height: 128px;
+        border-radius: 100%;
+    }
+
+    .c-testimonial__title {
+        @include font-size(12px);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 0;
+    }
+
+    .c-testimonial__text {
+    }
+
+    .c-testimonial__source {
+        display: block;
+        color: #666;
+    }

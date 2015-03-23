@@ -440,7 +440,7 @@ html {
   font-size: 0.875em;
   line-height: 1.428571429;
   font-family: Lato, sans-serif;
-  background-color: #fff;
+  background-color: #f3f3f3;
   color: #333;
 }
 
@@ -493,6 +493,21 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+/**
+ * Remove trailing margins from nested lists.
+ */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
+/**
+ * Visually offset definition titles from their definitions.
+ */
+dt {
+  font-weight: 700;
+}
+
 /*------------------------------------*\
     #IMAGES
 \*------------------------------------*/
@@ -522,6 +537,57 @@ img[height] {
   max-width: none;
 }
 
+blockquote {
+  quotes: "“" "”";
+}
+blockquote p {
+  text-indent: -0.42em;
+}
+blockquote p:before {
+  content: open-quote;
+}
+blockquote p:after {
+  content: no-close-quote;
+}
+blockquote p:last-of-type {
+  margin-bottom: 0;
+}
+blockquote p:last-of-type:after {
+  content: close-quote;
+}
+
+.o-wrapper {
+  max-width: 1280px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.o-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.o-layout {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: -20px;
+}
+.o-layout:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.o-layout__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding-left: 20px;
+}
+
 .o-headline {
   margin-bottom: 1.428571429rem;
 }
@@ -529,6 +595,33 @@ img[height] {
 .o-headline__main,
 .o-headline__sub {
   margin-bottom: 0;
+  line-height: 1;
+}
+
+.o-media {
+  display: table;
+  width: 100%;
+}
+
+.o-media__img,
+.o-media__body {
+  display: table-cell;
+  vertical-align: top;
+}
+.o-media--middle > .o-media__img, .o-media--middle >
+.o-media__body {
+  vertical-align: middle;
+}
+
+.o-media__img {
+  padding-right: 20px;
+}
+.o-media__img img {
+  max-width: none;
+}
+
+.o-media__body {
+  width: 100%;
 }
 
 .o-list-inline {
@@ -557,6 +650,15 @@ img[height] {
   float: left;
 }
 
+.c-page-foot {
+  padding: 20px;
+  font-size: 12px;
+  font-size: 0.857142857rem;
+  line-height: 1.666666667;
+  background-color: #333;
+  color: #fff;
+}
+
 .c-logo__fill {
   fill: #378bb5;
 }
@@ -573,40 +675,54 @@ img[height] {
   /* [1] */
 }
 
-.c-nav-primary__item + .c-nav-primary__item > .c-nav-primary__link {
-  border-left: 1px solid;
-}
-
 .c-nav-primary__link {
   display: inline-block;
   padding-right: 20px;
   padding-left: 20px;
   font-weight: 400;
 }
+.c-nav-primary__link.is-active {
+  text-decoration: underline;
+  cursor: default;
+}
 
-.c-card {
+.c-nav-secondary {
+  text-align: center;
+}
+
+.c-nav-secondary__item {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.c-nav-secondary__link {
+  font-weight: 400;
+}
+
+.c-masthead {
   position: relative;
   background-color: #378bb5;
   color: white;
+  overflow: hidden;
   height: 0;
   padding-top: 56.25%;
-  overflow: hidden;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1280px) {
-  .c-card {
+  .c-masthead {
     padding-top: 0;
     height: 720px;
   }
 }
 
-.c-card__media {
+.c-masthead__media {
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
 }
 
-.c-card__text {
+.c-masthead__text {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -617,19 +733,20 @@ img[height] {
   text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
 }
 
-.c-card__title {
+.c-masthead__title {
+  font-weight: 900;
   font-size: 60px;
   font-size: 4.285714286rem;
   line-height: 1;
-  font-weight: 900;
 }
 
 .c-panel {
   background-color: #fff;
   border-radius: 3px;
   overflow: hidden;
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.025);
+  margin-bottom: 20px;
   border: 1px solid #e4e4e4;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.025);
 }
 
 .c-panel__masthead {
@@ -654,7 +771,7 @@ img[height] {
 }
 .c-panel__masthead--fluid .c-panel__masthead-media {
   position: absolute;
-  top: 0;
+  top: -25%;
   left: 0;
 }
 
@@ -668,24 +785,540 @@ img[height] {
 .c-panel__link {
   display: block;
   text-align: center;
+  text-decoration: none;
   padding: 20px;
   border-top: 1px solid #e4e4e4;
   color: #333;
 }
-.c-panel__link, .c-panel__link:hover, .c-panel__link:focus {
-  text-decoration: none;
-}
 .c-panel__link:hover, .c-panel__link:focus {
+  text-decoration: none;
   background-color: rgba(0, 0, 0, 0.01);
   color: #378bb5;
-}
-.c-panel__link:after {
-  content: "»";
 }
 
 .c-panel--inverse {
   background-color: #378bb5;
   color: #fff;
+}
+
+/*------------------------------------*\
+    #SCORE
+\*------------------------------------*/
+/**
+ * Each Discovry has an associated score (e.g. 7.2 out of a possible 10). The
+ * Score component simply displays that score colored appropriately.
+ *
+ * We blend between three main brackets of score (Poor, Average, and Good) by
+ * creating an array of scores and their colors, and then looping through that
+ * array in order to output selectors that bind onto a data attribute, for
+ * example:
+ *
+ * .c-score[data-score^="7."] {}
+ *
+ * This selector looks for a DOM node with a class of `.c-score`, and then
+ * sees what the first characters of its `data-score` attribute are (`^=`). If
+ * the first characters are, for example, 7., then the DOM node gets styled in
+ * the color of the 7.x rating.
+ */
+.c-score {
+  display: inline-block;
+  /**
+   * Apply the score’s color as a background by augmenting with a class of
+   * `.c-score--inverse`.
+   *
+   * 1. This magic number applies the right amount of padding to spoof a space
+   *    character either side of the text.
+   */
+}
+.c-score[data-score^="0."] {
+  color: red;
+}
+.c-score[data-score^="1."] {
+  color: #ff2000;
+}
+.c-score[data-score^="2."] {
+  color: #ff4200;
+}
+.c-score[data-score^="3."] {
+  color: #ff6300;
+}
+.c-score[data-score^="4."] {
+  color: #ff8400;
+}
+.c-score[data-score^="5."] {
+  color: orange;
+}
+.c-score[data-score^="6."] {
+  color: #cc9d00;
+}
+.c-score[data-score^="7."] {
+  color: #999600;
+}
+.c-score[data-score^="8."] {
+  color: #668e00;
+}
+.c-score[data-score^="9."] {
+  color: #338700;
+}
+.c-score[data-score^="10."] {
+  color: green;
+}
+.c-score--inverse {
+  vertical-align: middle;
+  padding-right: 0.28em;
+  /* [1] */
+  padding-left: 0.28em;
+  /* [1] */
+  font-weight: 400;
+  border-radius: 3px;
+}
+.c-score--inverse[data-score^="0."] {
+  background-color: red;
+  color: #fff;
+}
+.c-score--inverse[data-score^="1."] {
+  background-color: #ff2000;
+  color: #fff;
+}
+.c-score--inverse[data-score^="2."] {
+  background-color: #ff4200;
+  color: #fff;
+}
+.c-score--inverse[data-score^="3."] {
+  background-color: #ff6300;
+  color: #fff;
+}
+.c-score--inverse[data-score^="4."] {
+  background-color: #ff8400;
+  color: #fff;
+}
+.c-score--inverse[data-score^="5."] {
+  background-color: orange;
+  color: #fff;
+}
+.c-score--inverse[data-score^="6."] {
+  background-color: #cc9d00;
+  color: #fff;
+}
+.c-score--inverse[data-score^="7."] {
+  background-color: #999600;
+  color: #fff;
+}
+.c-score--inverse[data-score^="8."] {
+  background-color: #668e00;
+  color: #fff;
+}
+.c-score--inverse[data-score^="9."] {
+  background-color: #338700;
+  color: #fff;
+}
+.c-score--inverse[data-score^="10."] {
+  background-color: green;
+  color: #fff;
+}
+
+.c-score--small {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 1.428571429;
+}
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ * 6. Subtract the border size from the padding value so that buttons do not
+ *    grow larger as we add borders.
+ */
+.c-btn {
+  display: inline-block;
+  /* [1] */
+  vertical-align: middle;
+  /* [2] */
+  font: inherit;
+  /* [3] */
+  text-align: center;
+  /* [4] */
+  margin: 0;
+  /* [4] */
+  cursor: pointer;
+  /* [5] */
+  padding: 10px 20px;
+}
+.c-btn:hover, .c-btn:focus {
+  text-decoration: none;
+}
+
+.c-btn--primary {
+  background-color: #378bb5;
+  color: #fff;
+  border-radius: 3px;
+  transition: 0.333333333s;
+}
+.c-btn--primary:hover, .c-btn--primary:focus {
+  background-color: #317ca1;
+}
+
+.c-btn--secondary {
+  background-color: #abc123;
+  color: #fff;
+  border-radius: 3px;
+  transition: 0.333333333s;
+}
+.c-btn--secondary:hover, .c-btn--secondary:focus {
+  background-color: #98ab1f;
+}
+
+.c-btn--small {
+  padding: 5px 10px;
+}
+
+.c-btn--large {
+  padding: 20px 40px;
+}
+
+.c-testimonial {
+  font-size: 18px;
+  font-size: 1.285714286rem;
+  line-height: 1.111111111;
+  padding: 20px;
+  border-left: 8px solid #378bb5;
+  background-color: #fff;
+}
+
+.c-testimonial__photo {
+  width: 128px;
+  height: 128px;
+  border-radius: 100%;
+}
+
+.c-testimonial__title {
+  font-size: 12px;
+  font-size: 0.857142857rem;
+  line-height: 1.666666667;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+}
+
+.c-testimonial__source {
+  display: block;
+  color: #666;
+}
+
+.c-calendar {
+  width: 100%;
+  table-layout: fixed;
+  font-size: 12px;
+  font-size: 0.857142857rem;
+  line-height: 1.666666667;
+  text-align: center;
+}
+.c-calendar th,
+.c-calendar td {
+  padding: 5px;
+  border: 1px solid #e4e4e4;
+  background-color: #fff;
+}
+.c-calendar th {
+  font-weight: 700;
+  border-bottom-width: 2px;
+}
+
+.c-calendar__title {
+  color: #fff;
+}
+.c-calendar__title.c-calendar__title {
+  background-color: #378bb5;
+  border-color: #378bb5;
+  border-bottom-width: 1px;
+}
+
+.c-calendar__outside {
+  color: #ccc;
+}
+.c-calendar__outside.c-calendar__outside {
+  background-color: transparent;
+}
+
+.c-calendar__busy {
+  color: #fff;
+}
+.c-calendar__busy.c-calendar__busy {
+  background-color: #abc123;
+  border-color: currentColor;
+}
+
+.s-prose {
+  /**
+   * Set continuous prose in a nice, large serif.
+   */
+  font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+  font-size: 18px;
+  font-size: 1.285714286rem;
+  line-height: 1.111111111;
+  /**
+   * Make all headings in CMS-powered content the same size in order to
+   * prevent the user abusing visual vs. semantic hierarchy.
+   */
+  /**
+   * Make links a lot more obvious in continuous text by having them
+   * underlined and colored in their default state.
+   */
+  /**
+   * Indent list elements enough that their bullets are not leaking out of
+   * their container.
+   */
+}
+.s-prose h1, .s-prose h2, .s-prose h3, .s-prose h4, .s-prose h5, .s-prose h6 {
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  font-size: 1.285714286rem;
+  line-height: 1.111111111;
+}
+.s-prose a {
+  color: #378bb5;
+  text-decoration: underline;
+  font-weight: 400;
+}
+.s-prose a:hover, .s-prose a:focus {
+  color: #4099c5;
+}
+.s-prose ul,
+.s-prose ol {
+  margin-left: 40px;
+}
+
+.u-h1 {
+  font-size: 36px;
+  font-size: 2.571428571rem;
+  line-height: 1.111111111;
+}
+
+.u-h2 {
+  font-size: 28px;
+  font-size: 2rem;
+  line-height: 1.428571429;
+}
+
+.u-h3 {
+  font-size: 24px;
+  font-size: 1.714285714rem;
+  line-height: 1.666666667;
+}
+
+.u-h4 {
+  font-size: 20px;
+  font-size: 1.428571429rem;
+  line-height: 1;
+}
+
+.u-h5 {
+  font-size: 18px;
+  font-size: 1.285714286rem;
+  line-height: 1.111111111;
+}
+
+.u-h6 {
+  font-size: 16px;
+  font-size: 1.142857143rem;
+  line-height: 1.25;
+}
+
+/*------------------------------------*\
+    #WIDTHS
+\*------------------------------------*/
+/**
+ * A series of width helper classes that you can use to size things like grid
+ * systems. Classes can take a fraction-like format (e.g. `.u-2/3`) or a spoken-
+ * word format (e.g. `.u-2-of-3`). Use these in your markup:
+ *
+ * <div class="u-7/12">
+ */
+.u-1\/1 {
+  width: 100% !important;
+}
+
+.u-1\/2 {
+  width: 50% !important;
+}
+
+.u-2\/2 {
+  width: 100% !important;
+}
+
+.u-1\/3 {
+  width: 33.333333333% !important;
+}
+
+.u-2\/3 {
+  width: 66.666666667% !important;
+}
+
+.u-3\/3 {
+  width: 100% !important;
+}
+
+.u-1\/4 {
+  width: 25% !important;
+}
+
+.u-2\/4 {
+  width: 50% !important;
+}
+
+.u-3\/4 {
+  width: 75% !important;
+}
+
+.u-4\/4 {
+  width: 100% !important;
+}
+
+.u-1\/5 {
+  width: 20% !important;
+}
+
+.u-2\/5 {
+  width: 40% !important;
+}
+
+.u-3\/5 {
+  width: 60% !important;
+}
+
+.u-4\/5 {
+  width: 80% !important;
+}
+
+.u-5\/5 {
+  width: 100% !important;
+}
+
+@media screen and (min-width: 720px) {
+  .u-1\/1\@sm {
+    width: 100% !important;
+  }
+
+  .u-1\/2\@sm {
+    width: 50% !important;
+  }
+
+  .u-2\/2\@sm {
+    width: 100% !important;
+  }
+
+  .u-1\/3\@sm {
+    width: 33.333333333% !important;
+  }
+
+  .u-2\/3\@sm {
+    width: 66.666666667% !important;
+  }
+
+  .u-3\/3\@sm {
+    width: 100% !important;
+  }
+
+  .u-1\/4\@sm {
+    width: 25% !important;
+  }
+
+  .u-2\/4\@sm {
+    width: 50% !important;
+  }
+
+  .u-3\/4\@sm {
+    width: 75% !important;
+  }
+
+  .u-4\/4\@sm {
+    width: 100% !important;
+  }
+
+  .u-1\/5\@sm {
+    width: 20% !important;
+  }
+
+  .u-2\/5\@sm {
+    width: 40% !important;
+  }
+
+  .u-3\/5\@sm {
+    width: 60% !important;
+  }
+
+  .u-4\/5\@sm {
+    width: 80% !important;
+  }
+
+  .u-5\/5\@sm {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .u-1\/1\@md {
+    width: 100% !important;
+  }
+
+  .u-1\/2\@md {
+    width: 50% !important;
+  }
+
+  .u-2\/2\@md {
+    width: 100% !important;
+  }
+
+  .u-1\/3\@md {
+    width: 33.333333333% !important;
+  }
+
+  .u-2\/3\@md {
+    width: 66.666666667% !important;
+  }
+
+  .u-3\/3\@md {
+    width: 100% !important;
+  }
+
+  .u-1\/4\@md {
+    width: 25% !important;
+  }
+
+  .u-2\/4\@md {
+    width: 50% !important;
+  }
+
+  .u-3\/4\@md {
+    width: 75% !important;
+  }
+
+  .u-4\/4\@md {
+    width: 100% !important;
+  }
+
+  .u-1\/5\@md {
+    width: 20% !important;
+  }
+
+  .u-2\/5\@md {
+    width: 40% !important;
+  }
+
+  .u-3\/5\@md {
+    width: 60% !important;
+  }
+
+  .u-4\/5\@md {
+    width: 80% !important;
+  }
+
+  .u-5\/5\@md {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

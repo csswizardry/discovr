@@ -1,9 +1,10 @@
 .c-panel {
     background-color: #fff;
-    border-radius: 3px;
+    border-radius: $base-radius;
     overflow: hidden;
-    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.025);
+    margin-bottom: $spacing-unit;
     border: 1px solid $color-ui;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.025);
 }
 
     .c-panel__masthead {
@@ -28,7 +29,7 @@
 
         .c-panel__masthead--fluid & {
             position: absolute;
-            top:    0;
+            top: -25%;
             left: 0;
         }
 
@@ -46,24 +47,15 @@
     .c-panel__link {
         display: block;
         text-align: center;
+        text-decoration: none;
         padding: $spacing-unit;
         border-top: 1px solid $color-ui;
         color: #333;
 
-        &,
-        &:hover,
-        &:focus {
+        @include hocus() {
             text-decoration: none;
-        }
-
-        &:hover,
-        &:focus {
             background-color: rgba(0, 0, 0, 0.01);
             color: $color-brand-primary;
-        }
-
-        &:after {
-            content: "»";
         }
 
     }

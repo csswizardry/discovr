@@ -50,3 +50,15 @@
     }
 
 }
+
+
+
+
+
+// Generate `:hover` and `:focus` styles in one go.
+@mixin hocus() {
+    &:hover,
+    &:focus {
+        @content;
+    }
+}

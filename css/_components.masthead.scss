@@ -1,10 +1,11 @@
-.c-card {
+.c-masthead {
     position: relative;
     background-color: $color-primary;
     color: white;
+    overflow: hidden;
     height: 0;
     padding-top: percentage(9/16);
-    overflow: hidden;
+    margin-bottom: $spacing-unit;
 
     @media screen and (min-width: 1280px) {
         padding-top: 0;
@@ -13,14 +14,14 @@
 
 }
 
-    .c-card__media {
+    .c-masthead__media {
+        width: 100%;
         position: absolute;
         top:  0;
         left: 0;
-        width: 100%;
     }
 
-    .c-card__text {
+    .c-masthead__text {
         position: absolute;
         right:  0;
         bottom: 0;
@@ -31,7 +32,7 @@
         text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
     }
 
-        .c-card__title {
-            @include font-size(60px);
+        .c-masthead__title {
             @include font-weight(black);
+            @include font-size(60px);
         }

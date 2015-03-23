@@ -14,49 +14,390 @@
 
     <header class="c-page-head">
 
-    <a href="#" class="c-page-head__link-home">
-        <svg class="c-logo" width="119" height="30" xmlns="http://www.w3.org/2000/svg"><path class="c-logo__fill" d="M18.183 29.751v-29.584h-5.409v9.848c-1.415-1.579-3.079-2.161-5.284-2.161-2.122 0-4.078.748-5.284 1.953-2.164 2.161-2.205 5.859-2.205 9.1 0 3.241.042 6.981 2.205 9.141 1.207 1.205 3.204 1.953 5.326 1.953 2.289 0 3.87-.623 5.368-2.285v2.036h5.284zm-5.12-10.845c0 3.532-.458 6.233-3.703 6.233-3.246 0-3.662-2.701-3.662-6.233 0-3.532.416-6.191 3.662-6.191s3.703 2.659 3.703 6.191zm12.559 10.845v-21.648h-5.409v21.648h5.409zm.042-25.346v-4.404h-5.534v4.404h5.534zm19.702 18.532c0-3.657-2.164-5.942-6.449-6.357l-3.412-.332c-1.914-.166-2.247-1.08-2.247-1.87 0-1.08.915-2.078 3.079-2.078 1.872 0 3.786.332 5.035 1.454l3.329-3.366c-2.08-1.953-4.91-2.535-8.28-2.535-4.411 0-8.363 2.41-8.363 6.898 0 3.989 2.413 5.693 6.325 6.066l3.412.332c1.706.166 2.289.914 2.289 1.994 0 1.62-1.956 2.244-3.828 2.244-1.664 0-3.994-.249-5.784-2.036l-3.537 3.532c2.746 2.742 5.825 3.116 9.237 3.116 5.118 0 9.196-2.285 9.196-7.064zm17.705 4.114l-3.662-3.615c-1.123 1.205-2.08 1.704-3.495 1.704-1.29 0-2.289-.457-3.079-1.413-.832-1.039-1.207-2.535-1.207-4.82s.374-3.74 1.207-4.778c.791-.956 1.789-1.413 3.079-1.413 1.415 0 2.372.499 3.495 1.704l3.662-3.657c-1.914-1.994-4.161-2.909-7.157-2.909-4.327 0-9.695 2.285-9.695 11.053 0 8.767 5.368 11.094 9.695 11.094 2.996 0 5.243-.956 7.157-2.95zm18.576-8.144c0-3.906-.499-6.357-2.455-8.393-1.331-1.413-3.537-2.659-6.741-2.659-3.204 0-5.368 1.247-6.699 2.659-1.956 2.036-2.455 4.488-2.455 8.393 0 3.947.499 6.399 2.455 8.435 1.331 1.413 3.495 2.659 6.699 2.659 3.204 0 5.409-1.247 6.741-2.659 1.956-2.036 2.455-4.488 2.455-8.435zm-5.409 0c0 2.244-.125 4.155-1.248 5.277-.624.623-1.456.956-2.538.956-1.082 0-1.872-.332-2.497-.956-1.123-1.122-1.248-3.033-1.248-5.277s.125-4.114 1.248-5.235c.624-.623 1.415-.956 2.497-.956 1.082 0 1.914.332 2.538.956 1.123 1.122 1.248 2.992 1.248 5.235zm25.15-10.803h-5.7l-4.369 13.38-4.411-13.38h-5.7l7.989 21.648h4.244l7.947-21.648zm17.612 1.787c-1.498-1.496-2.996-2.036-5.118-2.036-2.33 0-4.411 1.08-5.451 2.327v-2.078h-5.284v21.648h5.409v-13.047c0-2.742 1.831-3.989 3.495-3.989 1.331 0 2.039.457 2.871 1.288l4.078-4.114z" /></svg>
-    </a>
+        <a href="#" class="c-page-head__link-home">
+            <svg class="c-logo" width="119" height="30" xmlns="http://www.w3.org/2000/svg"><path class="c-logo__fill" d="M18.183 29.751v-29.584h-5.409v9.848c-1.415-1.579-3.079-2.161-5.284-2.161-2.122 0-4.078.748-5.284 1.953-2.164 2.161-2.205 5.859-2.205 9.1 0 3.241.042 6.981 2.205 9.141 1.207 1.205 3.204 1.953 5.326 1.953 2.289 0 3.87-.623 5.368-2.285v2.036h5.284zm-5.12-10.845c0 3.532-.458 6.233-3.703 6.233-3.246 0-3.662-2.701-3.662-6.233 0-3.532.416-6.191 3.662-6.191s3.703 2.659 3.703 6.191zm12.559 10.845v-21.648h-5.409v21.648h5.409zm.042-25.346v-4.404h-5.534v4.404h5.534zm19.702 18.532c0-3.657-2.164-5.942-6.449-6.357l-3.412-.332c-1.914-.166-2.247-1.08-2.247-1.87 0-1.08.915-2.078 3.079-2.078 1.872 0 3.786.332 5.035 1.454l3.329-3.366c-2.08-1.953-4.91-2.535-8.28-2.535-4.411 0-8.363 2.41-8.363 6.898 0 3.989 2.413 5.693 6.325 6.066l3.412.332c1.706.166 2.289.914 2.289 1.994 0 1.62-1.956 2.244-3.828 2.244-1.664 0-3.994-.249-5.784-2.036l-3.537 3.532c2.746 2.742 5.825 3.116 9.237 3.116 5.118 0 9.196-2.285 9.196-7.064zm17.705 4.114l-3.662-3.615c-1.123 1.205-2.08 1.704-3.495 1.704-1.29 0-2.289-.457-3.079-1.413-.832-1.039-1.207-2.535-1.207-4.82s.374-3.74 1.207-4.778c.791-.956 1.789-1.413 3.079-1.413 1.415 0 2.372.499 3.495 1.704l3.662-3.657c-1.914-1.994-4.161-2.909-7.157-2.909-4.327 0-9.695 2.285-9.695 11.053 0 8.767 5.368 11.094 9.695 11.094 2.996 0 5.243-.956 7.157-2.95zm18.576-8.144c0-3.906-.499-6.357-2.455-8.393-1.331-1.413-3.537-2.659-6.741-2.659-3.204 0-5.368 1.247-6.699 2.659-1.956 2.036-2.455 4.488-2.455 8.393 0 3.947.499 6.399 2.455 8.435 1.331 1.413 3.495 2.659 6.699 2.659 3.204 0 5.409-1.247 6.741-2.659 1.956-2.036 2.455-4.488 2.455-8.435zm-5.409 0c0 2.244-.125 4.155-1.248 5.277-.624.623-1.456.956-2.538.956-1.082 0-1.872-.332-2.497-.956-1.123-1.122-1.248-3.033-1.248-5.277s.125-4.114 1.248-5.235c.624-.623 1.415-.956 2.497-.956 1.082 0 1.914.332 2.538.956 1.123 1.122 1.248 2.992 1.248 5.235zm25.15-10.803h-5.7l-4.369 13.38-4.411-13.38h-5.7l7.989 21.648h4.244l7.947-21.648zm17.612 1.787c-1.498-1.496-2.996-2.036-5.118-2.036-2.33 0-4.411 1.08-5.451 2.327v-2.078h-5.284v21.648h5.409v-13.047c0-2.742 1.831-3.989 3.495-3.989 1.331 0 2.039.457 2.871 1.288l4.078-4.114z" /></svg>
+        </a>
 
         <nav class="c-nav-primary">
             <ul class="o-list-inline">
-                <li class="o-list-inline__item  c-nav-primary__item">
+                <li class="o-list-inline__item">
                     <a href="#0" class="c-nav-primary__link">Home</a>
-                <li class="o-list-inline__item  c-nav-primary__item">
+                <li class="o-list-inline__item">
                     <a href="#0" class="c-nav-primary__link">Feed</a>
-                <li class="o-list-inline__item  c-nav-primary__item">
+                <li class="o-list-inline__item">
                     <a href="#0" class="c-nav-primary__link">My Discovries</a>
-                <li class="o-list-inline__item  c-nav-primary__item">
-                    <a href="#0" class="c-nav-primary__link">Top Discovries</a>
-                <li class="o-list-inline__item  c-nav-primary__item">
+                <li class="o-list-inline__item">
+                    <a href="#0" class="c-nav-primary__link  is-active">Top Discovries</a>
+                <li class="o-list-inline__item">
                     <a href="#0" class="c-nav-primary__link">Sign Out</a>
             </ul>
         </nav>
 
     </header>
 
-    <div class="c-card">
-        <img src="https://igcdn-photos-b-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/10995138_751496438304649_1803329880_n.jpg" alt="" class="c-card__media"  />
-        <div class="o-headline  c-card__text">
-            <h1 class="o-headline__main  c-card__title">Scafell Pike</h1>
-            <h2 class="o-headline__sub  c-card__sub">Lake District, UK</h2>
+
+
+
+
+    <div class="c-masthead">
+        <img src="img/content/masthead/melbourne.jpg" alt="" class="c-masthead__media"  />
+        <div class="o-headline  c-masthead__text">
+            <h1 class="o-headline__main  c-masthead__title">Melbourne</h1>
+            <h2 class="o-headline__sub  c-masthead__sub">Australia</h2>
         </div>
     </div>
 
-    <div class="c-panel">
-        <div class="c-panel__masthead  c-panel__masthead--fluid">
-            <img src="https://igcdn-photos-d-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/11007825_842108959183635_1939473256_n.jpg" alt="" class="c-panel__masthead-media" />
-        </div>
-        <div class="c-panel__content">
-            <div class="o-headline">
-                <h1 class="o-headline__main">Lorem Ipsum Dolor</h1>
-                <h2 class="o-headline__sub">Sit amet</h2>
+
+
+
+
+    <div class="o-wrapper">
+
+
+
+
+
+        <div class="o-layout">
+
+            <div class="o-layout__item  u-1/4@md">
+
+
+                <table class="c-calendar">
+                    <thead>
+                        <tr>
+                            <th colspan="7" class="c-calendar__title">March 2015</th>
+                        </tr>
+                        <tr>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>T</th>
+                            <th>F</th>
+                            <th>S</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="c-calendar__outside">23</td>
+                            <td class="c-calendar__outside">24</td>
+                            <td class="c-calendar__outside">25</td>
+                            <td class="c-calendar__outside">26</td>
+                            <td class="c-calendar__outside">27</td>
+                            <td class="c-calendar__outside">28</td>
+                            <td> 1</td>
+                        </tr>
+
+                        <tr>
+                            <td> 2</td>
+                            <td> 3</td>
+                            <td> 4</td>
+                            <td> 5</td>
+                            <td> 6</td>
+                            <td> 7</td>
+                            <td> 8</td>
+                        </tr>
+
+                        <tr>
+                            <td> 9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                        </tr>
+
+                        <tr>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                        </tr>
+
+                        <tr>
+                            <td class="c-calendar__busy">23</td>
+                            <td class="c-calendar__busy">24</td>
+                            <td class="c-calendar__busy">25</td>
+                            <td class="c-calendar__busy">26</td>
+                            <td class="c-calendar__busy">27</td>
+                            <td class="c-calendar__busy">28</td>
+                            <td class="c-calendar__busy">29</td>
+                        </tr>
+
+                        <tr>
+                            <td class="c-calendar__busy">30</td>
+                            <td>31</td>
+                            <td class="c-calendar__outside"> 1</td>
+                            <td class="c-calendar__outside"> 2</td>
+                            <td class="c-calendar__outside"> 3</td>
+                            <td class="c-calendar__outside"> 4</td>
+                            <td class="c-calendar__outside"> 5</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+
+
+                <div class="c-panel">
+
+                    <div class="c-panel__content">
+
+                        <h4 class="u-h6">Vital Statistics</h4>
+
+                        <dl>
+                            <dt>Country</dt>
+                            <dd>Australia</dd>
+                            <dt>Currency</dt>
+                            <dd>Australian Dollar (AUD)</dd>
+                            <dt>Population</dt>
+                            <dd>4.4m</dd>
+                            <dt>Established</dt>
+                            <dd>30 August, 1835</dd>
+                        </dl>
+
+                    </div>
+
+                </div>
+
+            </div><!-- /.o-layout__item
+
+         --><div class="o-layout__item  u-1/2@md">
+
+
+                <section class="s-prose">
+
+                    <h1>Melbourne – The World’s Most Livable City <span class="c-score" data-score="9.8">9.8</span></h1>
+
+                    <p>Melbourne, Australia’s second city, was voted the <a href="http://en.wikipedia.org/wiki/World%27s_Most_Livable_Cities#The_EIU.27s_Global_Liveability_Ranking">most liveable city</a> in 2014, pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+                    <h2>Familiarity on the Other Side of the Planet</h2>
+
+                    <p>Pellentesque habitant morbi tristique senectus et netus <a href="#0">et malesuada fames ac turpis egestas</a>. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+                    <ul>
+                        <li>Coffee</li>
+                        <li>Markets</li>
+                        <li>Museums</li>
+                        <li>Art Galleries</li>
+                        <li>Restaurants</li>
+                        <li>Bars</li>
+                    </ul>
+
+                    <p>Pellentesque habitant morbi tristique senectus et netus <a href="#0">et malesuada fames ac turpis egestas</a>. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+                    <h3>Aussie optimism meets international culture</h3>
+
+                    <p>Pellentesque habitant morbi tristique senectus et netus <a href="#0">et malesuada fames ac turpis egestas</a>. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+                    <h4>Heading 4</h4>
+
+                    <p>Pellentesque habitant morbi tristique senectus et netus <a href="#0">et malesuada fames ac turpis egestas</a>. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+                    <h5>Heading 5</h5>
+
+                    <p>Pellentesque habitant morbi tristique senectus et netus <a href="#0">et malesuada fames ac turpis egestas</a>. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+                    <h6>Heading 6</h6>
+
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, <a href="#0">ultricies eget, tempor sit amet, ante</a>. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+                </section>
+
+
+                <p><a href="#0" class="c-btn  c-btn--primary  c-btn--full">View hotels in Melbourne</a></p>
+
+
+            </div><!-- /.o-layout__item
+
+         --><div class="o-layout__item  u-1/4@md">
+
+
+            <div class="c-panel">
+                <div class="c-panel__masthead  c-panel__masthead--fluid">
+                    <img src="img/content/panel/ghent.jpg" alt="" class="c-panel__masthead-media" />
+                </div>
+                <div class="c-panel__content">
+                    <div class="o-headline">
+                        <h3 class="o-headline__main">Ghent <span class="c-score  c-score--inverse  c-score--small" data-score="7.4">7.4</span></h3>
+                        <h4 class="o-headline__sub">Belgium</h4>
+                    </div>
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, <a href="#0">feugiat vitae</a>, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                </div>
+                <a href="#0" class="c-panel__link">Read more…</a>
             </div>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, <a href="#0">feugiat vitae</a>, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-        </div>
-    </div>
 
-    <p>Pellentesque habitant morbi tristique senectus et netus <a href="#0">et malesuada fames ac turpis egestas</a>. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+
+        </div><!-- /.o-layout__item -->
+
+    </div><!-- /.o-layout -->
+
+
+        <ul class="o-layout">
+
+            <li class="o-layout__item  u-1/2@sm">
+
+
+                <div class="c-panel">
+                    <div class="c-panel__masthead  c-panel__masthead--fluid">
+                        <img src="img/content/panel/newcastle.jpg" alt="" class="c-panel__masthead-media" />
+                    </div>
+                    <div class="c-panel__content">
+                        <div class="o-headline">
+                            <h2 class="o-headline__main">Newcastle <span class="c-score  c-score--inverse  c-score--small" data-score="8.2">8.2</span></h2>
+                            <h3 class="o-headline__sub">United Kingdom</h3>
+                        </div>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, <a href="#0">feugiat vitae</a>, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </div>
+
+
+            <li class="o-layout__item  u-1/2@sm">
+
+
+                <div class="c-panel">
+                    <div class="c-panel__masthead  c-panel__masthead--fluid">
+                        <img src="img/content/panel/lake-district.jpg" alt="" class="c-panel__masthead-media" />
+                    </div>
+                    <div class="c-panel__content">
+                        <div class="o-headline">
+                            <h2 class="o-headline__main">Lake District <span class="c-score  c-score--inverse  c-score--small" data-score="8.6">8.6</span></h2>
+                            <h3 class="o-headline__sub">United Kingdom</h3>
+                        </div>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, <a href="#0">feugiat vitae</a>, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </div>
+
+
+            <li class="o-layout__item  u-1/3@sm">
+
+
+                <div class="c-panel">
+                    <div class="c-panel__masthead  c-panel__masthead--fluid">
+                        <img src="img/content/panel/copenhagen.jpg" alt="" class="c-panel__masthead-media" />
+                    </div>
+                    <div class="c-panel__content">
+                        <div class="o-headline">
+                            <h2 class="o-headline__main">Copenhagen <span class="c-score  c-score--inverse  c-score--small" data-score="9.1">9.1</span></h2>
+                            <h3 class="o-headline__sub">Denmark</h3>
+                        </div>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, <a href="#0">feugiat vitae</a>, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </div>
+
+
+            <li class="o-layout__item  u-1/3@sm">
+
+
+                <div class="c-panel">
+                    <div class="c-panel__masthead  c-panel__masthead--fluid">
+                        <img src="img/content/panel/los-angeles.jpg" alt="" class="c-panel__masthead-media" />
+                    </div>
+                    <div class="c-panel__content">
+                        <div class="o-headline">
+                            <h2 class="o-headline__main">Los Angeles <span class="c-score  c-score--inverse  c-score--small" data-score="4.8">4.8</span></h2>
+                            <h3 class="o-headline__sub">United States</h3>
+                        </div>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, <a href="#0">feugiat vitae</a>, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </div>
+
+
+            <li class="o-layout__item  u-1/3@sm">
+
+
+                <div class="c-panel">
+                    <div class="c-panel__masthead  c-panel__masthead--fluid">
+                        <img src="img/content/panel/helsinki.jpg" alt="" class="c-panel__masthead-media" />
+                    </div>
+                    <div class="c-panel__content">
+                        <div class="o-headline">
+                            <h2 class="o-headline__main">Helsinki <span class="c-score  c-score--inverse  c-score--small" data-score="8.8">8.8</span></h2>
+                            <h3 class="o-headline__sub">Finland</h3>
+                        </div>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, <a href="#0">feugiat vitae</a>, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                </div>
+
+
+            <li class="o-layout__item  u-1/2@sm">
+
+
+                <div class="c-panel">
+                    <div class="c-panel__masthead  c-panel__masthead--fluid">
+                        <img src="img/content/panel/scafell-pike.jpg" alt="" class="c-panel__masthead-media" />
+                    </div>
+                    <div class="c-panel__content">
+                        <div class="o-headline">
+                            <h2 class="o-headline__main">Scafell Pike <span class="c-score  c-score--inverse  c-score--small" data-score="7.8">7.8</span></h2>
+                            <h3 class="o-headline__sub">United Kingdom</h3>
+                        </div>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, <a href="#0">feugiat vitae</a>, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                    <a href="#0" class="c-panel__link">Read more…</a>
+                </div>
+
+
+            <li class="o-layout__item  u-1/2@sm">
+
+
+                <div class="c-panel">
+                    <div class="c-panel__masthead  c-panel__masthead--fluid">
+                        <img src="img/content/panel/brasov.jpg" alt="" class="c-panel__masthead-media" />
+                    </div>
+                    <div class="c-panel__content">
+                        <div class="o-headline">
+                            <h2 class="o-headline__main">Brasov <span class="c-score  c-score--inverse  c-score--small" data-score="7.9">7.9</span></h2>
+                            <h3 class="o-headline__sub">Romania</h3>
+                        </div>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, <a href="#0">feugiat vitae</a>, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    </div>
+                    <a href="#0" class="c-panel__link">Read more…</a>
+                </div>
+
+
+        </ul><!-- /.o-layout -->
+
+
+
+
+
+        <blockquote class="c-testimonial">
+            <h3 class="c-testimonial__title">An incredibly rich and cultural city</h3>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            <b class="c-testimonial__source">Harry Roberts</b>
+        </blockquote>
+
+
+        <blockquote class="o-media  o-media--middle  c-testimonial">
+            <div class="o-media__img"><img src="img/content/avatar/harry.jpg" alt="" class="c-testimonial__photo" /></div>
+            <div class="o-media__body">
+                <h3 class="c-testimonial__title">An incredibly rich and cultural city</h3>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                <b class="c-testimonial__source">Harry Roberts</b>
+            </div>
+        </blockquote>
+
+
+    </div><!-- /.o-wrapper -->
+
+
+
+
+
+    <div class="c-page-foot">
+        <ul class="o-list-inline  c-nav-secondary">
+            <li class="o-list-inline__item  c-nav-secondary__item">&copy; CSS Wizardry Ltd. 2015
+            <li class="o-list-inline__item  c-nav-secondary__item"><a href="#0" class="c-nav-secondary__link">About</a>
+            <li class="o-list-inline__item  c-nav-secondary__item"><a href="#0" class="c-nav-secondary__link">Privacy &amp; Cookies</a>
+        </ul>
+    </div>
 
 </body>
 </html>

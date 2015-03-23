@@ -1,7 +1,7 @@
 html {
     font-size: ($base-font-size / 16px) * 1em;
     line-height: $base-line-height / $base-font-size;
-    font-family: Lato, sans-serif;
-    background-color: #fff;
+    @include font-family(sans-serif);
+    background-color: #f3f3f3;
     color: #333;
 }

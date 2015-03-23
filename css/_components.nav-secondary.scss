@@ -1,0 +1,12 @@
+.c-nav-secondary {
+    text-align: center;
+}
+
+    .c-nav-secondary__item {
+        padding-right: $spacing-unit / 2;
+        padding-left:  $spacing-unit / 2;
+    }
+
+        .c-nav-secondary__link {
+            @include font-weight(normal);
+        }
