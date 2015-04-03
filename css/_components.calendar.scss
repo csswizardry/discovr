@@ -8,7 +8,7 @@
     td {
         padding: $spacing-unit / 4;
         border: 1px solid $color-ui;
-        background-color: #fff;
+        background-color: $color-calendar;
     }
 
     th {
@@ -19,18 +19,18 @@
 }
 
     .c-calendar__title {
-        color: #fff;
+        color: $color-calendar-title;
 
         &#{&} {
-            background-color: $color-primary;
-            border-color:     $color-primary;
+            background-color: $color-calendar-title-background;
+            border-color:     currentColor;
             border-bottom-width: 1px;
         }
 
     }
 
     .c-calendar__outside {
-        color: #ccc;
+        color: $color-calendar-outside;
 
         &#{&} {
             background-color: transparent;
@@ -39,10 +39,10 @@
     }
 
     .c-calendar__busy {
-        color: #fff;
+        color: $color-calendar-busy;
 
         &#{&} {
-            background-color: $color-secondary;
+            background-color: $color-calendar-busy-background;
             border-color: currentColor;
         }
 

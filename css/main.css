@@ -1033,12 +1033,12 @@ blockquote p:last-of-type:after {
 }
 .c-calendar__title.c-calendar__title {
   background-color: #378bb5;
-  border-color: #378bb5;
+  border-color: currentColor;
   border-bottom-width: 1px;
 }
 
 .c-calendar__outside {
-  color: #ccc;
+  color: #999;
 }
 .c-calendar__outside.c-calendar__outside {
   background-color: transparent;
@@ -1050,6 +1050,17 @@ blockquote p:last-of-type:after {
 .c-calendar__busy.c-calendar__busy {
   background-color: #abc123;
   border-color: currentColor;
+}
+
+.c-headline {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 1.428571429;
+  font-weight: 400;
+  border-bottom: 1px solid #cccccc;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .s-prose {
@@ -1085,7 +1096,7 @@ blockquote p:last-of-type:after {
   font-weight: 400;
 }
 .s-prose a:hover, .s-prose a:focus {
-  color: #4099c5;
+  color: #317ca1;
 }
 .s-prose ul,
 .s-prose ol {

@@ -1,5 +1,5 @@
 .c-panel {
-    background-color: #fff;
+    background-color: $color-panel-background;
     border-radius: $base-radius;
     overflow: hidden;
     margin-bottom: $spacing-unit;
@@ -50,17 +50,17 @@
         text-decoration: none;
         padding: $spacing-unit;
         border-top: 1px solid $color-ui;
-        color: #333;
+        color: $color-panel-link;
 
         @include hocus() {
             text-decoration: none;
             background-color: rgba(0, 0, 0, 0.01);
-            color: $color-brand-primary;
+            color: $color-panel-link-hover;
         }
 
     }
 
 .c-panel--inverse {
-    background-color: $color-brand-primary;
-    color: #fff;
+    background-color: $color-panel-inverse-background;
+    color: $color-panel-inverse;
 }

@@ -1,6 +1,6 @@
 .c-page-foot {
     padding: $spacing-unit;
     @include font-size(12px);
-    background-color: #333;
-    color: #fff;
+    background-color: $color-page-foot-background;
+    color: $color-page-foot;
 }

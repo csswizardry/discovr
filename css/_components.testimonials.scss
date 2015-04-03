@@ -1,8 +1,8 @@
 .c-testimonial {
     @include font-size(18px);
     padding: $base-spacing-unit;
-    border-left: 8px solid $color-brand-primary;
-    background-color: #fff;
+    border-left: 8px solid $color-testimonial-border;
+    background-color: $color-testimonial-background;
 }
 
     .c-testimonial__photo {
@@ -23,5 +23,5 @@
 
     .c-testimonial__source {
         display: block;
-        color: #666;
+        color: $color-testimonial-source;
     }

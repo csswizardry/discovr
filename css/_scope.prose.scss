@@ -20,12 +20,12 @@
      * underlined and colored in their default state.
      */
     a {
-        color: $color-primary;
+        color: $color-links-prose;
         text-decoration: underline;
         @include font-weight(normal);
 
         @include hocus() {
-            color: $color-primary-highlight;
+            color: $color-links-prose-hover;
         }
 
     }
