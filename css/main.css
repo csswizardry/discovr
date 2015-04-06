@@ -992,7 +992,7 @@ blockquote p:last-of-type:after {
  * 6. Subtract the border size from the padding value so that buttons do not
  *    grow larger as we add borders.
  */
-.c-btn {
+.c-hotels-btn {
   display: inline-block;
   /* [1] */
   vertical-align: middle;
@@ -1006,37 +1006,14 @@ blockquote p:last-of-type:after {
   cursor: pointer;
   /* [5] */
   padding: 10px 20px;
-}
-.c-btn:hover, .c-btn:focus {
-  text-decoration: none;
-}
-
-.c-btn--primary {
   background-color: #378bb5;
   color: #fff;
   border-radius: 3px;
   transition: 0.333333333s;
 }
-.c-btn--primary:hover, .c-btn--primary:focus {
+.c-hotels-btn:hover, .c-hotels-btn:focus {
+  text-decoration: none;
   background-color: #317ca1;
-}
-
-.c-btn--secondary {
-  background-color: #abc123;
-  color: #fff;
-  border-radius: 3px;
-  transition: 0.333333333s;
-}
-.c-btn--secondary:hover, .c-btn--secondary:focus {
-  background-color: #98ab1f;
-}
-
-.c-btn--small {
-  padding: 5px 10px;
-}
-
-.c-btn--large {
-  padding: 20px 40px;
 }
 
 .c-testimonial {

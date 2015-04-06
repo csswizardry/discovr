@@ -8,7 +8,7 @@
  * 6. Subtract the border size from the padding value so that buttons do not
  *    grow larger as we add borders.
  */
-.c-btn {
+.c-hotels-btn {
     display: inline-block; /* [1] */
     vertical-align: middle; /* [2] */
     font: inherit; /* [3] */
@@ -16,41 +16,14 @@
     margin: 0; /* [4] */
     cursor: pointer; /* [5] */
     padding: ($spacing-unit / 2) $spacing-unit;
-
-    @include hocus() {
-        text-decoration: none;
-    }
-
-}
-
-.c-btn--primary {
     background-color: $color-btn-background;
                color: $color-btn;
     border-radius: $base-radius;
     transition: $base-transition;
 
     @include hocus() {
+        text-decoration: none;
         background-color: $color-btn-background-hover;
     }
 
-}
-
-.c-btn--secondary {
-    background-color: $color-btn-secondary-background;
-               color: $color-btn-secondary;
-    border-radius: $base-radius;
-    transition: $base-transition;
-
-    @include hocus() {
-        background-color: $color-btn-secondary-background-hover;
-    }
-
-}
-
-.c-btn--small {
-    padding: ($spacing-unit / 4) ($spacing-unit / 2);
-}
-
-.c-btn--large {
-    padding: $spacing-unit ($spacing-unit * 2);
 }
