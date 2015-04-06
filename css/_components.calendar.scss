@@ -20,30 +20,18 @@
 
     .c-calendar__title {
         color: $color-calendar-title;
-
-        &#{&} {
-            background-color: $color-calendar-title-background;
-            border-color:     currentColor;
-            border-bottom-width: 1px;
-        }
-
+        background-color: $color-calendar-title-background !important;
+        border-color: currentColor !important;
+        border-bottom-width: 1px !important;
     }
 
     .c-calendar__outside {
         color: $color-calendar-outside;
-
-        &#{&} {
-            background-color: transparent;
-        }
-
+        background-color: transparent !important;
     }
 
     .c-calendar__busy {
         color: $color-calendar-busy;
-
-        &#{&} {
-            background-color: $color-calendar-busy-background;
-            border-color: currentColor;
-        }
-
+        background-color: $color-calendar-busy-background !important;
+        border-color: currentColor !important;
     }

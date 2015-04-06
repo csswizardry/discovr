@@ -1089,26 +1089,20 @@ blockquote p:last-of-type:after {
 
 .c-calendar__title {
   color: #fff;
-}
-.c-calendar__title.c-calendar__title {
-  background-color: #378bb5;
-  border-color: currentColor;
-  border-bottom-width: 1px;
+  background-color: #378bb5 !important;
+  border-color: currentColor !important;
+  border-bottom-width: 1px !important;
 }
 
 .c-calendar__outside {
   color: #999;
-}
-.c-calendar__outside.c-calendar__outside {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .c-calendar__busy {
   color: #fff;
-}
-.c-calendar__busy.c-calendar__busy {
-  background-color: #abc123;
-  border-color: currentColor;
+  background-color: #abc123 !important;
+  border-color: currentColor !important;
 }
 
 .c-headline {
