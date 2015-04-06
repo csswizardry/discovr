@@ -1132,7 +1132,7 @@ blockquote p:last-of-type:after {
   margin-bottom: 0;
 }
 
-.c-promo__title {
+.c-promo h3 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
