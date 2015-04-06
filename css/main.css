@@ -49,6 +49,7 @@
  * Testimonial..........Quote styles.
  * Calendar.............Simple static calendar component.
  * Headline.............Basic heading style for generic headlines.
+ * Promo................Promotional box styling.
  *
  * SCOPES
  * Prose................Set up a new styling context for long-format text.
@@ -1119,6 +1120,20 @@ blockquote p:last-of-type:after {
   color: #999;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.c-promo {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ffc;
+  border-radius: 3px;
+}
+.c-promo > :last-child {
+  margin-bottom: 0;
+}
+
+.c-promo__title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .s-prose {

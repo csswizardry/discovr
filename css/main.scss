@@ -49,6 +49,7 @@
  * Testimonial..........Quote styles.
  * Calendar.............Simple static calendar component.
  * Headline.............Basic heading style for generic headlines.
+ * Promo................Promotional box styling.
  *
  * SCOPES
  * Prose................Set up a new styling context for long-format text.
@@ -101,6 +102,7 @@
 @import "components.testimonials";
 @import "components.calendar";
 @import "components.headline";
+@import "components.promo";
 
 @import "scope.prose";
 
