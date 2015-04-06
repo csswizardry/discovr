@@ -46,6 +46,7 @@
  * Panel................Simple panelled boxout.
  * Score................Score lozenge for place ratings.
  * Buttons..............Button styles.
+ * Avatar...............General avatar styles.
  * Testimonial..........Quote styles.
  * Calendar.............Simple static calendar component.
  * Headline.............Basic heading style for generic headlines.
@@ -1039,6 +1040,23 @@ blockquote p:last-of-type:after {
   padding: 20px 40px;
 }
 
+.c-avatar {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+}
+
+.c-avatar--small {
+  width: 32px;
+  height: 32px;
+}
+
+.c-avatar--large {
+  width: 128px;
+  height: 128px;
+}
+
 .c-testimonial {
   font-size: 18px;
   font-size: 1.285714286rem;
@@ -1046,12 +1064,6 @@ blockquote p:last-of-type:after {
   padding: 20px;
   border-left: 8px solid #378bb5;
   background-color: #fff;
-}
-
-.c-testimonial__photo {
-  width: 128px;
-  height: 128px;
-  border-radius: 100%;
 }
 
 .c-testimonial__title {

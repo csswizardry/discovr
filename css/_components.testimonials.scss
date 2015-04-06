@@ -5,12 +5,6 @@
     background-color: $color-testimonial-background;
 }
 
-    .c-testimonial__photo {
-        width:  128px;
-        height: 128px;
-        border-radius: 100%;
-    }
-
     .c-testimonial__title {
         @include font-size(12px);
         text-transform: uppercase;

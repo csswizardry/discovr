@@ -46,6 +46,7 @@
  * Panel................Simple panelled boxout.
  * Score................Score lozenge for place ratings.
  * Buttons..............Button styles.
+ * Avatar...............General avatar styles.
  * Testimonial..........Quote styles.
  * Calendar.............Simple static calendar component.
  * Headline.............Basic heading style for generic headlines.
@@ -99,6 +100,7 @@
 @import "components.panel";
 @import "components.score";
 @import "components.buttons";
+@import "components.avatar";
 @import "components.testimonials";
 @import "components.calendar";
 @import "components.headline";
