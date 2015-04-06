@@ -1,3 +1,67 @@
+/*------------------------------------*\
+    #MAIN
+\*------------------------------------*/
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Config...............Configuration and environment settings.
+ * Global...............Globally-available variables and settings/config.
+ * Colors...............Manage our color palette in isolation.
+ *
+ * TOOLS
+ * Functions............Some simple helper functions.
+ * Mixins...............Globally available mixins.
+ * Aliases..............Some shorter aliases onto longer variables.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ * Reset................A pared back reset to remove margins.
+ * Shared...............Sensibly and tersely share global commonalities.
+ *
+ * ELEMENTS
+ * Page.................Page-level styles (HTML element).
+ * Headings.............Heading styles.
+ * Links................Hyperlink styles.
+ * Lists................Default list styles.
+ * Images...............Base image styles.
+ * Quotes...............Styling for blockquotes, etc.
+ *
+ * OBJECTS
+ * Wrappers.............Wrappers and page constraints.
+ * Layout...............Generic layout module.
+ * Headline.............Simple object for structuring heading pairs.
+ * Media................The media object.
+ * List-inline..........Simple abstraction for setting lists out in a line.
+ *
+ * COMPONENTS
+ * Page-head............Page header styles.
+ * Page-foot............Page footer styles.
+ * Logo.................Make our logo a reusable component.
+ * Nav primary..........The site’s main nav.
+ * Nav secondary........Secondary nav styles.
+ * Masthead.............Site’s main masthead.
+ * Panel................Simple panelled boxout.
+ * Score................Score lozenge for place ratings.
+ * Buttons..............Button styles.
+ * Testimonial..........Quote styles.
+ * Calendar.............Simple static calendar component.
+ * Headline.............Basic heading style for generic headlines.
+ *
+ * SCOPES
+ * Prose................Set up a new styling context for long-format text.
+ *
+ * TRUMPS
+ * Headings.............Assigning our heading styles to helper classes.
+ * Widths...............Simple width helper classes.
+ */
+
+
+
+
+
 @import "settings.config";
 @import "settings.global";
 @import "settings.colors";
