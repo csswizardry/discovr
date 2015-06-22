@@ -1,0 +1,21 @@
+@if (config(debug) == true) {
+
+    /**
+     * Highlight types of class to visually see the makeup of our UIs.
+     */
+    [class^="o-"],
+    [class*=" o-"] {
+        border: 5px solid orange;
+    }
+
+    [class^="c-"],
+    [class*=" c-"] {
+        border: 5px solid cyan;
+    }
+
+    [class^="_"],
+    [class*=" _"] {
+        border: 5px solid red;
+    }
+
+}

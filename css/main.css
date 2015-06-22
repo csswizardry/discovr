@@ -56,8 +56,9 @@
  * Prose................Set up a new styling context for long-format text.
  *
  * TRUMPS
- * Headings.............Assigning our heading styles to helper classes.
+ * Headings.............Reassigning our heading styles to helper classes.
  * Widths...............Simple width helper classes.
+ * Debug................Visual health-check tool.
  */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
