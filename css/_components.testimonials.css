@@ -1,0 +1,26 @@
+/*------------------------------------*\
+  #TESTIMONIAL
+\*------------------------------------*/
+
+.c-testimonial {
+  font-size: 18px;
+  font-size: 1.285714286rem;
+  line-height: 1.111111111;
+  padding: 20px;
+  border-left: 8px solid #378bb5;
+  background-color: #fff;
+}
+
+  .c-testimonial__title {
+    font-size: 12px;
+    font-size: 0.857142857rem;
+    line-height: 1.666666667;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+  }
+
+  .c-testimonial__source {
+    display: block;
+    color: #666;
+  }

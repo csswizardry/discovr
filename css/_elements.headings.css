@@ -1,0 +1,43 @@
+/*------------------------------------*\
+  #HEADINGS
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 36px;
+  font-size: 2.571428571rem;
+  line-height: 1.111111111;
+}
+
+h2 {
+  font-size: 28px;
+  font-size: 2rem;
+  line-height: 1.428571429;
+}
+
+h3 {
+  font-size: 24px;
+  font-size: 1.714285714rem;
+  line-height: 1.666666667;
+}
+
+h4 {
+  font-size: 20px;
+  font-size: 1.428571429rem;
+  line-height: 1;
+}
+
+h5 {
+  font-size: 18px;
+  font-size: 1.285714286rem;
+  line-height: 1.111111111;
+}
+
+h6 {
+  font-size: 16px;
+  font-size: 1.142857143rem;
+  line-height: 1.25;
+}

@@ -1,0 +1,11 @@
+/*------------------------------------*\
+  #PAGE
+\*------------------------------------*/
+
+html {
+  font-size: 0.875em;
+  line-height: 1.428571429;
+  font-family: Lato, sans-serif;
+  background-color: #f3f3f3;
+  color: #333;
+}

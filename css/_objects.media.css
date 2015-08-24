@@ -1,0 +1,31 @@
+/*------------------------------------*\
+  #MEDIA
+\*------------------------------------*/
+
+.o-media {
+  display: table;
+  width: 100%;
+}
+
+  .o-media__img,
+  .o-media__body {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  .o-media--middle > .o-media__img,
+  .o-media--middle > .o-media__body {
+    vertical-align: middle;
+  }
+
+  .o-media__img {
+    padding-right: 20px;
+  }
+
+    .o-media__img img {
+      max-width: none;
+    }
+
+  .o-media__body {
+    width: 100%;
+  }

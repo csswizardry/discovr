@@ -1,0 +1,16 @@
+/*------------------------------------*\
+  #NAV-SECONDARY
+\*------------------------------------*/
+
+.c-nav-secondary {
+  text-align: center;
+}
+
+  .c-nav-secondary__item {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+    .c-nav-secondary__link {
+      font-weight: 400;
+    }

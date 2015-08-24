@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+
+a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}

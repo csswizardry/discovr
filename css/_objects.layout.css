@@ -1,0 +1,23 @@
+/*------------------------------------*\
+  #LAYOUT
+\*------------------------------------*/
+
+.o-layout {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: -20px;
+}
+
+  .o-layout:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .o-layout__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding-left: 20px;
+  }

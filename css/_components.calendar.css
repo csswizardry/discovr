@@ -1,0 +1,50 @@
+/*------------------------------------*\
+  #CALENDAR
+\*------------------------------------*/
+
+.c-calendar {
+  width: 100%;
+  table-layout: fixed;
+  font-size: 12px;
+  font-size: 0.857142857rem;
+  line-height: 1.666666667;
+  text-align: center;
+}
+
+  .c-calendar th,
+  .c-calendar td {
+    padding: 5px;
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+  }
+
+  .c-calendar th {
+    font-weight: 700;
+    border-bottom-width: 2px;
+  }
+
+  .c-calendar__title {
+    color: #fff;
+  }
+  .c-calendar__title.c-calendar__title {
+    background-color: #378bb5;
+    border-color: currentColor;
+    border-bottom-width: 1px;
+  }
+
+  .c-calendar__outside {
+    color: #999;
+  }
+
+  .c-calendar__outside.c-calendar__outside {
+    background-color: transparent;
+  }
+
+  .c-calendar__busy {
+    color: #fff;
+  }
+
+  .c-calendar__busy.c-calendar__busy {
+    background-color: #abc123;
+    border-color: currentColor;
+  }

@@ -1,0 +1,60 @@
+/*------------------------------------*\
+  #PROSE
+\*------------------------------------*/
+
+/**
+ * Set continuous prose in a nice, large serif.
+ */
+
+.s-prose {
+  font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+  font-size: 18px;
+  font-size: 1.285714286rem;
+  line-height: 1.111111111;
+}
+
+
+
+
+
+  /**
+   * Make all headings in CMS-powered content the same size in order to
+   * prevent the user abusing visual vs. semantic hierarchy.
+   */
+  .s-prose h1, .s-prose h2, .s-prose h3, .s-prose h4, .s-prose h5, .s-prose h6 {
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-size: 1.285714286rem;
+    line-height: 1.111111111;
+  }
+  
+  
+  
+  
+  
+  /**
+   * Make links a lot more obvious in continuous text by having them
+   * underlined and colored in their default state.
+   */
+  .s-prose a {
+    color: #378bb5;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+  
+  .s-prose a:hover, .s-prose a:focus {
+    color: #317ca1;
+  }
+  
+  
+  
+  
+  
+  /**
+   * Indent list elements enough that their bullets are not leaking out of
+   * their container.
+   */
+  .s-prose ul,
+  .s-prose ol {
+    margin-left: 40px;
+  }

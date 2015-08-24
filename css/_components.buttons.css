@@ -1,0 +1,60 @@
+/*------------------------------------*\
+  #BTN
+\*------------------------------------*/
+
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ * 6. Subtract the border size from the padding value so that buttons do not
+ *    grow larger as we add borders.
+ */
+
+.c-btn {
+  display: inline-block; /* [1] */
+  vertical-align: middle; /* [2] */
+  font: inherit; /* [3] */
+  text-align: center; /* [4] */
+  margin: 0; /* [4] */
+  cursor: pointer; /* [5] */
+  padding: 10px 20px;
+}
+
+.c-btn:hover, .c-btn:focus {
+  text-decoration: none;
+}
+
+.c-btn--primary {
+  background-color: #378bb5;
+  color: #fff;
+  border-radius: 3px;
+  transition: 0.333333333s;
+}
+
+.c-btn--primary:hover,
+.c-btn--primary:focus {
+  background-color: #317ca1;
+}
+
+.c-btn--secondary {
+  background-color: #abc123;
+  color: #fff;
+  border-radius: 3px;
+  transition: 0.333333333s;
+}
+
+.c-btn--secondary:hover,
+.c-btn--secondary:focus {
+  background-color: #98ab1f;
+}
+
+.c-btn--small {
+  padding: 5px 10px;
+}
+
+.c-btn--large {
+  padding: 20px 40px;
+}

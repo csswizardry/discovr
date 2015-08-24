@@ -1,0 +1,20 @@
+/*------------------------------------*\
+  #PAGE-HEAD
+\*------------------------------------*/
+
+.c-page-head {
+  background-color: #378bb5;
+  color: #fff;
+  padding: 20px;
+}
+
+  .c-page-head:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .c-page-head__link-home {
+    line-height: 0;
+    float: left;
+  }

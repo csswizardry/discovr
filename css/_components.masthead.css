@@ -1,0 +1,45 @@
+/*------------------------------------*\
+  #MASTHEAD
+\*------------------------------------*/
+
+.c-masthead {
+  position: relative;
+  background-color: #378bb5;
+  color: white;
+  overflow: hidden;
+  height: 0;
+  padding-top: 56.25%;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .c-masthead {
+    padding-top: 0;
+    height: 720px;
+  }
+}
+
+  .c-masthead__media {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+    .c-masthead__text {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 20px;
+      margin-bottom: 0;
+      background-color: rgba(0, 0, 0, 0.25);
+      text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+    }
+
+      .c-masthead__title {
+        font-weight: 900;
+        font-size: 60px;
+        font-size: 4.285714286rem;
+        line-height: 1;
+      }

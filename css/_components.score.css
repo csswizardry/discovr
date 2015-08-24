@@ -1,0 +1,92 @@
+/*------------------------------------*\
+    #SCORE
+\*------------------------------------*/
+/**
+ * Each Discovry has an associated score (e.g. 7.2 out of a possible 10). The
+ * Score component simply displays that score colored appropriately.
+ *
+ * We blend between three main brackets of score (Poor, Average, and Good) by
+ * creating an array of scores and their colors, and then looping through that
+ * array in order to output selectors that bind onto a data attribute, for
+ * example:
+ *
+ * .c-score[data-score^="7."] {}
+ *
+ * This selector looks for a DOM node with a class of `.c-score`, and then
+ * sees what the first characters of its `data-score` attribute are (`^=`). If
+ * the first characters are, for example, 7., then the DOM node gets styled in
+ * the color of the 7.x rating.
+ */
+
+.c-score {
+  display: inline-block;
+}
+
+.c-score--small {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 1.428571429;
+}
+
+.c-score[data-score^="0."]  { color: red; }
+
+.c-score[data-score^="1."]  { color: #ff2000; }
+
+.c-score[data-score^="2."]  { color: #ff4200; }
+
+.c-score[data-score^="3."]  { color: #ff6300; }
+
+.c-score[data-score^="4."]  { color: #ff8400; }
+
+.c-score[data-score^="5."]  { color: orange; }
+
+.c-score[data-score^="6."]  { color: #cc9d00; }
+
+.c-score[data-score^="7."]  { color: #999600; }
+
+.c-score[data-score^="8."]  { color: #668e00; }
+
+.c-score[data-score^="9."]  { color: #338700; }
+
+.c-score[data-score^="10."] { color: green; }
+
+
+
+
+
+/**
+ * Apply the score’s color as a background by augmenting with a class of
+ * `.c-score--inverse`.
+ *
+ * 1. This magic number applies the right amount of padding to spoof a space
+ *    character either side of the text.
+ */
+.c-score--inverse {
+  vertical-align: middle;
+  padding-right: 0.28em; /* [1] */
+  padding-left:  0.28em; /* [1] */
+  font-weight: 400;
+  border-radius: 3px;
+}
+
+.c-score--inverse[data-score^="0."]   { background-color: red; color: #fff; }
+
+.c-score--inverse[data-score^="1."]   { background-color: #ff2000; color: #fff; }
+
+.c-score--inverse[data-score^="2."]   { background-color: #ff4200; color: #fff; }
+
+.c-score--inverse[data-score^="3."]   { background-color: #ff6300; color: #fff; }
+
+.c-score--inverse[data-score^="4."]   { background-color: #ff8400; color: #fff; }
+
+.c-score--inverse[data-score^="5."]   { background-color: orange; color: #fff; }
+
+.c-score--inverse[data-score^="6."]   { background-color: #cc9d00; color: #fff; }
+
+.c-score--inverse[data-score^="7."]   { background-color: #999600; color: #fff; }
+
+.c-score--inverse[data-score^="8."]   { background-color: #668e00; color: #fff; }
+
+.c-score--inverse[data-score^="9."]   { background-color: #338700; color: #fff; }
+
+.c-score--inverse[data-score^="10."]  { background-color: green; color: #fff; }

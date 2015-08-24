@@ -1,0 +1,13 @@
+/*------------------------------------*\
+  #HEADLINE
+\*------------------------------------*/
+
+.o-headline {
+  margin-bottom: 1.428571429rem;
+}
+
+  .o-headline__main,
+  .o-headline__sub {
+    margin-bottom: 0;
+    line-height: 1;
+  }

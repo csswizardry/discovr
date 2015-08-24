@@ -1,0 +1,25 @@
+/*------------------------------------*\
+  #NAV-PRIMARY
+\*------------------------------------*/
+
+.c-nav-primary {}
+
+/**
+ * 1. The height of the nav needs to marry up with the height of the logo.
+ */
+.c-page-head .c-nav-primary {
+  float: right;
+  line-height: 30px; /* [1] */
+}
+
+    .c-nav-primary__link {
+      display: inline-block;
+      padding-right: 20px;
+      padding-left: 20px;
+      font-weight: 400;
+    }
+
+    .c-nav-primary__link.is-active {
+      text-decoration: underline;
+      cursor: default;
+    }
