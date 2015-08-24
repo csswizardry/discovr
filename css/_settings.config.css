@@ -1,8 +1,0 @@
-$config: (
-    env: dev,
-    debug: false,
-);
-
-@function config($key) {
-    @return map-get($config, $key);
-}

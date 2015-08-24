@@ -5,16 +5,6 @@
 /**
  * CONTENTS
  *
- * SETTINGS
- * Config...............Configuration and environment settings.
- * Global...............Globally-available variables and settings/config.
- * Colors...............Manage our color palette in isolation.
- *
- * TOOLS
- * Functions............Some simple helper functions.
- * Mixins...............Globally available mixins.
- * Aliases..............Some shorter aliases onto longer variables.
- *
  * GENERIC
  * Normalize.css........A level playing field.
  * Box-sizing...........Better default `box-sizing`.
@@ -58,7 +48,6 @@
  * TRUMPS
  * Headings.............Reassigning our heading styles to helper classes.
  * Widths...............Simple width helper classes.
- * Debug................Visual health-check tool.
  */
 
 
