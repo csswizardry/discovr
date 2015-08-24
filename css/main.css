@@ -54,40 +54,40 @@
 
 
 
-@import "_generic.normalize.css";
-@import "_generic.box-sizing.css";
-@import "_generic.reset.css";
-@import "_generic.shared.css";
+@import "generic.normalize.css";
+@import "generic.box-sizing.css";
+@import "generic.reset.css";
+@import "generic.shared.css";
 
-@import "_elements.page.css";
-@import "_elements.headings.css";
-@import "_elements.links.css";
-@import "_elements.lists.css";
-@import "_elements.images.css";
-@import "_elements.quotes.css";
+@import "elements.page.css";
+@import "elements.headings.css";
+@import "elements.links.css";
+@import "elements.lists.css";
+@import "elements.images.css";
+@import "elements.quotes.css";
 
-@import "_objects.wrappers.css";
-@import "_objects.layout.css";
-@import "_objects.headline.css";
-@import "_objects.media.css";
-@import "_objects.list-inline.css";
+@import "objects.wrappers.css";
+@import "objects.layout.css";
+@import "objects.headline.css";
+@import "objects.media.css";
+@import "objects.list-inline.css";
 
-@import "_components.page-head.css";
-@import "_components.page-foot.css";
-@import "_components.logo.css";
-@import "_components.nav-primary.css";
-@import "_components.nav-secondary.css";
-@import "_components.masthead.css";
-@import "_components.panel.css";
-@import "_components.score.css";
-@import "_components.buttons.css";
-@import "_components.avatar.css";
-@import "_components.testimonials.css";
-@import "_components.calendar.css";
-@import "_components.headline.css";
-@import "_components.promo.css";
+@import "components.page-head.css";
+@import "components.page-foot.css";
+@import "components.logo.css";
+@import "components.nav-primary.css";
+@import "components.nav-secondary.css";
+@import "components.masthead.css";
+@import "components.panel.css";
+@import "components.score.css";
+@import "components.buttons.css";
+@import "components.avatar.css";
+@import "components.testimonials.css";
+@import "components.calendar.css";
+@import "components.headline.css";
+@import "components.promo.css";
 
-@import "_scope.prose.css";
+@import "scope.prose.css";
 
-@import "_trumps.headings.css";
-@import "_trumps.widths.css";
+@import "trumps.headings.css";
+@import "trumps.widths.css";
