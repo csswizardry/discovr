@@ -1,6 +1,7 @@
 /*------------------------------------*\
     #WIDTHS
 \*------------------------------------*/
+
 /**
  * A series of width helper classes that you can use to size things like grid
  * systems. Classes can take a fraction-like format (e.g. `.u-2/3`) or a spoken-
@@ -8,6 +9,7 @@
  *
  * <div class="u-7/12">
  */
+
 .u-1\/1 { width: 100% !important}
 
 .u-1\/2 { width: 50% !important}
