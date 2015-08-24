@@ -1,6 +1,12 @@
+/*------------------------------------*\
+  #PAGE-FOOT
+\*------------------------------------*/
+
 .c-page-foot {
-    padding: $spacing-unit;
-    @include font-size(12px);
-    background-color: $color-page-foot-background;
-    color: $color-page-foot;
+  padding: 20px;
+  font-size: 12px;
+  font-size: 0.857142857rem;
+  line-height: 1.666666667;
+  background-color: #333;
+  color: #fff;
 }
