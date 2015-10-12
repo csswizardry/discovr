@@ -1417,5 +1417,14 @@ blockquote p:last-of-type:after {
     width: 100% !important;
   }
 }
+/*------------------------------------*\
+  #DEBUG
+\*------------------------------------*/
+/*------------------------------------*\
+  #SHAME.CSS
+\*------------------------------------*/
+._c-page-foot {
+  display: block;
+}
 
 /*# sourceMappingURL=main.css.map */

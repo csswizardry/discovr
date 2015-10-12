@@ -59,6 +59,7 @@
  * Headings.............Reassigning our heading styles to helper classes.
  * Widths...............Simple width helper classes.
  * Debug................Visual health-check tool.
+ * Shame.css............Short-term hacks and quick-fixes.
  */
 
 
@@ -112,3 +113,4 @@
 @import "trumps.headings";
 @import "trumps.widths";
 @import "trumps.debug";
+@import "trumps.shame";
