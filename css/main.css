@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*------------------------------------*\
-    #MAIN
+  #MAIN
 \*------------------------------------*/
 /**
  * CONTENTS
@@ -59,6 +59,7 @@
  * Headings.............Reassigning our heading styles to helper classes.
  * Widths...............Simple width helper classes.
  * Debug................Visual health-check tool.
+ * Shame.css............Short-term hacks and quick-fixes.
  */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -458,6 +459,9 @@ th {
   padding: 0;
 }
 
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -470,6 +474,9 @@ html {
   box-sizing: inherit;
 }
 
+/*------------------------------------*\
+  #RESET
+\*------------------------------------*/
 body,
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
@@ -482,6 +489,9 @@ hr {
   padding: 0;
 }
 
+/*------------------------------------*\
+  #SHARED
+\*------------------------------------*/
 h1, h2, h3, h4, h5, h6,
 ul, ol, dl,
 blockquote, p, address,
@@ -497,6 +507,9 @@ dd {
   margin-left: 20px;
 }
 
+/*------------------------------------*\
+  #PAGE
+\*------------------------------------*/
 html {
   font-size: 0.875em;
   line-height: 1.428571429;
@@ -505,6 +518,9 @@ html {
   color: #333;
 }
 
+/*------------------------------------*\
+  #HEADINGS
+\*------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
@@ -545,6 +561,9 @@ h6 {
   line-height: 1.25;
 }
 
+/*------------------------------------*\
+  #LINKS
+\*------------------------------------*/
 a {
   color: inherit;
   font-weight: 700;
@@ -554,6 +573,9 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+/*------------------------------------*\
+  #LISTS
+\*------------------------------------*/
 /**
  * Remove trailing margins from nested lists.
  */
@@ -598,6 +620,9 @@ img[height] {
   max-width: none;
 }
 
+/*------------------------------------*\
+  #QUOTES
+\*------------------------------------*/
 blockquote {
   quotes: "“" "”";
 }
@@ -617,6 +642,9 @@ blockquote p:last-of-type:after {
   content: close-quote;
 }
 
+/*------------------------------------*\
+  #WRAPPERS
+\*------------------------------------*/
 .o-wrapper {
   max-width: 1280px;
   padding-right: 20px;
@@ -630,16 +658,14 @@ blockquote p:last-of-type:after {
   clear: both;
 }
 
+/*------------------------------------*\
+  #LAYOUT
+\*------------------------------------*/
 .o-layout {
   margin: 0;
   padding: 0;
   list-style: none;
   margin-left: -20px;
-}
-.o-layout:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .o-layout__item {
@@ -649,6 +675,9 @@ blockquote p:last-of-type:after {
   padding-left: 20px;
 }
 
+/*------------------------------------*\
+  #HEADLINE
+\*------------------------------------*/
 .o-headline {
   margin-bottom: 1.428571429rem;
 }
@@ -659,6 +688,9 @@ blockquote p:last-of-type:after {
   line-height: 1;
 }
 
+/*------------------------------------*\
+  #MEDIA
+\*------------------------------------*/
 .o-media {
   display: table;
   width: 100%;
@@ -685,6 +717,9 @@ blockquote p:last-of-type:after {
   width: 100%;
 }
 
+/*------------------------------------*\
+  #LIST-INLINE
+\*------------------------------------*/
 .o-list-inline {
   margin: 0;
   padding: 0;
@@ -695,6 +730,9 @@ blockquote p:last-of-type:after {
   display: inline-block;
 }
 
+/*------------------------------------*\
+  #PAGE-HEAD
+\*------------------------------------*/
 .c-page-head {
   background-color: #378bb5;
   color: #fff;
@@ -711,6 +749,9 @@ blockquote p:last-of-type:after {
   float: left;
 }
 
+/*------------------------------------*\
+  #PAGE-FOOT
+\*------------------------------------*/
 .c-page-foot {
   padding: 20px;
   font-size: 12px;
@@ -720,6 +761,9 @@ blockquote p:last-of-type:after {
   color: #fff;
 }
 
+/*------------------------------------*\
+  #LOGO
+\*------------------------------------*/
 .c-logo__fill {
   fill: #378bb5;
 }
@@ -727,6 +771,9 @@ blockquote p:last-of-type:after {
   fill: currentcolor;
 }
 
+/*------------------------------------*\
+  #NAV-PRIMARY
+\*------------------------------------*/
 /**
  * 1. The height of the nav needs to marry up with the height of the logo.
  */
@@ -747,6 +794,9 @@ blockquote p:last-of-type:after {
   cursor: default;
 }
 
+/*------------------------------------*\
+  #NAV-SECONDARY
+\*------------------------------------*/
 .c-nav-secondary {
   text-align: center;
 }
@@ -760,6 +810,9 @@ blockquote p:last-of-type:after {
   font-weight: 400;
 }
 
+/*------------------------------------*\
+  #MASTHEAD
+\*------------------------------------*/
 .c-masthead {
   position: relative;
   background-color: #378bb5;
@@ -801,6 +854,9 @@ blockquote p:last-of-type:after {
   line-height: 1;
 }
 
+/*------------------------------------*\
+  #PANEL
+\*------------------------------------*/
 .c-panel {
   background-color: #fff;
   border-radius: 3px;
@@ -895,7 +951,7 @@ blockquote p:last-of-type:after {
   color: red;
 }
 .c-score[data-score^="1."] {
-  color: #ff2000;
+  color: #ff2100;
 }
 .c-score[data-score^="2."] {
   color: #ff4200;
@@ -910,13 +966,13 @@ blockquote p:last-of-type:after {
   color: orange;
 }
 .c-score[data-score^="6."] {
-  color: #cc9d00;
+  color: #cc9e00;
 }
 .c-score[data-score^="7."] {
   color: #999600;
 }
 .c-score[data-score^="8."] {
-  color: #668e00;
+  color: #668f00;
 }
 .c-score[data-score^="9."] {
   color: #338700;
@@ -938,7 +994,7 @@ blockquote p:last-of-type:after {
   color: #fff;
 }
 .c-score--inverse[data-score^="1."] {
-  background-color: #ff2000;
+  background-color: #ff2100;
   color: #fff;
 }
 .c-score--inverse[data-score^="2."] {
@@ -958,7 +1014,7 @@ blockquote p:last-of-type:after {
   color: #fff;
 }
 .c-score--inverse[data-score^="6."] {
-  background-color: #cc9d00;
+  background-color: #cc9e00;
   color: #fff;
 }
 .c-score--inverse[data-score^="7."] {
@@ -966,7 +1022,7 @@ blockquote p:last-of-type:after {
   color: #fff;
 }
 .c-score--inverse[data-score^="8."] {
-  background-color: #668e00;
+  background-color: #668f00;
   color: #fff;
 }
 .c-score--inverse[data-score^="9."] {
@@ -984,6 +1040,9 @@ blockquote p:last-of-type:after {
   line-height: 1.428571429;
 }
 
+/*------------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
 /**
  * 1. Allow us to style box model properties.
  * 2. Line different sized buttons up a little nicer.
@@ -1041,6 +1100,9 @@ blockquote p:last-of-type:after {
   padding: 20px 40px;
 }
 
+/*------------------------------------*\
+  #AVATAR
+\*------------------------------------*/
 .c-avatar {
   display: block;
   width: 64px;
@@ -1081,6 +1143,9 @@ blockquote p:last-of-type:after {
   color: #666;
 }
 
+/*------------------------------------*\
+  #CALENDAR
+\*------------------------------------*/
 .c-calendar {
   width: 100%;
   table-layout: fixed;
@@ -1124,6 +1189,9 @@ blockquote p:last-of-type:after {
   border-color: currentColor;
 }
 
+/*------------------------------------*\
+  #HEADLINE
+\*------------------------------------*/
 .c-headline {
   font-size: 14px;
   font-size: 1rem;
@@ -1135,6 +1203,9 @@ blockquote p:last-of-type:after {
   letter-spacing: 0.05em;
 }
 
+/*------------------------------------*\
+  #PROMO
+\*------------------------------------*/
 .c-promo {
   padding: 20px;
   margin-bottom: 20px;
@@ -1149,6 +1220,9 @@ blockquote p:last-of-type:after {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+/*------------------------------------*\
+  #PROSE
+\*------------------------------------*/
 .s-prose {
   /**
    * Set continuous prose in a nice, large serif.
@@ -1189,6 +1263,9 @@ blockquote p:last-of-type:after {
   margin-left: 40px;
 }
 
+/*------------------------------------*\
+  #HEADINGS
+\*------------------------------------*/
 .u-h1 {
   font-size: 36px;
   font-size: 2.571428571rem;

@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  #DEBUG
+\*------------------------------------*/
+
 @if (config(debug) == true) {
 
     /**
@@ -5,17 +9,22 @@
      */
     [class^="o-"],
     [class*=" o-"] {
-        border: 5px solid orange;
+        outline: 10px solid orange;
     }
 
     [class^="c-"],
     [class*=" c-"] {
-        border: 5px solid cyan;
+        outline: 10px solid cyan;
+    }
+
+    [class^="u-"],
+    [class*=" u-"] {
+        outline: 10px solid violet;
     }
 
     [class^="_"],
     [class*=" _"] {
-        border: 5px solid red;
+        outline: 10px solid red;
     }
 
 }
