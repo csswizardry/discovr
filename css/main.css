@@ -37,9 +37,9 @@
  * List-inline..........Simple abstraction for setting lists out in a line.
  *
  * COMPONENTS
+ * Logo.................Make our logo a reusable component.
  * Page-head............Page header styles.
  * Page-foot............Page footer styles.
- * Logo.................Make our logo a reusable component.
  * Nav primary..........The site’s main nav.
  * Nav secondary........Secondary nav styles.
  * Masthead.............Site’s main masthead.
@@ -734,6 +734,16 @@ blockquote p:last-of-type:after {
 }
 
 /*------------------------------------*\
+  #LOGO
+\*------------------------------------*/
+.c-logo__fill {
+  fill: #378bb5;
+}
+.c-page-head .c-logo__fill {
+  fill: currentcolor;
+}
+
+/*------------------------------------*\
   #PAGE-HEAD
 \*------------------------------------*/
 .c-page-head {
@@ -747,9 +757,18 @@ blockquote p:last-of-type:after {
   clear: both;
 }
 
-.c-page-head__link-home {
+.c-page-head__logo {
   line-height: 0;
   float: left;
+}
+
+/**
+ * 1. The height of the nav needs to marry up with the height of the logo.
+ */
+.c-page-head__nav {
+  float: right;
+  line-height: 30px;
+  /* [1] */
 }
 
 /*------------------------------------*\
@@ -765,27 +784,8 @@ blockquote p:last-of-type:after {
 }
 
 /*------------------------------------*\
-  #LOGO
-\*------------------------------------*/
-.c-logo__fill {
-  fill: #378bb5;
-}
-.c-page-head .c-logo__fill {
-  fill: currentcolor;
-}
-
-/*------------------------------------*\
   #NAV-PRIMARY
 \*------------------------------------*/
-/**
- * 1. The height of the nav needs to marry up with the height of the logo.
- */
-.c-page-head .c-nav-primary {
-  float: right;
-  line-height: 30px;
-  /* [1] */
-}
-
 .c-nav-primary__link {
   display: inline-block;
   padding-right: 20px;

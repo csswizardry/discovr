@@ -2,16 +2,7 @@
   #NAV-PRIMARY
 \*------------------------------------*/
 
-/**
- * 1. The height of the nav needs to marry up with the height of the logo.
- */
 .c-nav-primary {
-
-    .c-page-head & {
-        float: right;
-        line-height: $logo-height; /* [1] */
-    }
-
 }
 
     .c-nav-primary__item {

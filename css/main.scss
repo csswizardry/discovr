@@ -37,9 +37,9 @@
  * List-inline..........Simple abstraction for setting lists out in a line.
  *
  * COMPONENTS
+ * Logo.................Make our logo a reusable component.
  * Page-head............Page header styles.
  * Page-foot............Page footer styles.
- * Logo.................Make our logo a reusable component.
  * Nav primary..........The site’s main nav.
  * Nav secondary........Secondary nav styles.
  * Masthead.............Site’s main masthead.
@@ -96,9 +96,9 @@
 @import "objects.media";
 @import "objects.list-inline";
 
+@import "components.logo";
 @import "components.page-head";
 @import "components.page-foot";
-@import "components.logo";
 @import "components.nav-primary";
 @import "components.nav-secondary";
 @import "components.masthead";

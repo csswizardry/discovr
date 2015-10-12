@@ -9,7 +9,15 @@
     padding: $spacing-unit;
 }
 
-    .c-page-head__link-home {
+    .c-page-head__logo {
         line-height: 0;
         float: left;
+    }
+
+    /**
+     * 1. The height of the nav needs to marry up with the height of the logo.
+     */
+    .c-page-head__nav {
+        float: right;
+        line-height: $logo-height; /* [1] */
     }
