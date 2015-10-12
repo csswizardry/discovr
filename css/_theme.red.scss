@@ -1,0 +1,16 @@
+/*------------------------------------*\
+  #RED
+\*------------------------------------*/
+
+/**
+ * Apply a theme to the entire view. Add `class="t-red"` to the HTML or BODY
+ * element of the page.
+ */
+
+.t-red {
+
+  .c-btn--primary {
+    background-color: $color-theme-red;
+  }
+
+}

@@ -37,6 +37,10 @@
         background-color: $color-btn-background-hover;
     }
 
+    .t-red & {
+      background-color: $color-theme-red;
+    }
+
 }
 
 .c-btn--secondary {

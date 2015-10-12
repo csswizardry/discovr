@@ -2,10 +2,12 @@
   #PROMO
 \*------------------------------------*/
 
+$promo-color-background:  #ffc !default;
+
 .c-promo {
     padding: $spacing-unit;
     margin-bottom: $spacing-unit;
-    background-color: $color-promo-background;
+    background-color: $promo-color-background;
     border-radius: $base-radius;
 
     > :last-child {

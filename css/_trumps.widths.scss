@@ -49,3 +49,9 @@
     @include widths(1 2 3 4 5, \@md);
 
 }
+
+@media screen and (min-width: 1200px) {
+
+    @include widths(1 2 3 4 5, \@lg);
+
+}

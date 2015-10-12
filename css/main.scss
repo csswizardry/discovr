@@ -55,6 +55,9 @@
  * SCOPES
  * Prose................Set up a new styling context for long-format text.
  *
+ * THEMES
+ * Red..................Simple red theme for the site.
+ *
  * TRUMPS
  * Headings.............Reassigning our heading styles to helper classes.
  * Widths...............Simple width helper classes.
@@ -106,9 +109,13 @@
 @import "components.testimonials";
 @import "components.calendar";
 @import "components.headline";
+
+$promo-color-background:  #ff8;
 @import "components.promo";
 
 @import "scope.prose";
+
+@import "theme.red";
 
 @import "trumps.headings";
 @import "trumps.widths";
