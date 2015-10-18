@@ -2,6 +2,10 @@
   #LINKS
 \*------------------------------------*/
 
+/**
+ * Default styles for simple hyperlinks.
+ */
+
 a {
     color: $color-links;
     @include font-weight(bold);

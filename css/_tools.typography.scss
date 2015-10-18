@@ -2,6 +2,13 @@
 //  #TYPOGRAPHY
 //\*----------------------------------*/
 
+// Mixins to help generating typographical rules.
+
+
+
+
+
+// Shorthand onto specific font-stacks.
 @mixin font-family($family) {
 
     @if ($family == "sans-serif") {

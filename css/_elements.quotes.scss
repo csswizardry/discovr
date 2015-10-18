@@ -2,6 +2,24 @@
   #QUOTES
 \*------------------------------------*/
 
+/**
+ * Basic styling for quoted text.
+ */
+
+q {
+    font-style: italic;
+    quotes: "‘" "’";
+
+    &:before {
+        content: open-quote;
+    }
+
+    &:after {
+        content: close-quote;
+    }
+
+}
+
 blockquote {
     quotes: "“" "”";
 

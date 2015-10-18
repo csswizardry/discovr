@@ -2,6 +2,9 @@
 //  #COLORS
 //\*----------------------------------*/
 
+// Set up a colour palette which allows us to theme the entire project from one
+// location.
+
 // Colour palette.
 $color-brand-primary:               #378bb5;
 $color-brand-primary-highlight:     lighten($color-brand-primary, 5%);

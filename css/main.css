@@ -465,6 +465,10 @@ th {
 /*------------------------------------*\
   #BOX-SIZING
 \*------------------------------------*/
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -480,6 +484,9 @@ html {
 /*------------------------------------*\
   #RESET
 \*------------------------------------*/
+/**
+ * A very simple reset that sits on top of Normalize.css.
+ */
 body,
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
@@ -495,6 +502,13 @@ hr {
 /*------------------------------------*\
   #SHARED
 \*------------------------------------*/
+/**
+ * Shared declarations for certain elements.
+ */
+/**
+ * Always declare margins in the same direction:
+ * csswizardry.com/2012/06/single-direction-margin-declarations
+ */
 h1, h2, h3, h4, h5, h6,
 ul, ol, dl,
 blockquote, p, address,
@@ -513,6 +527,9 @@ dd {
 /*------------------------------------*\
   #PAGE
 \*------------------------------------*/
+/**
+ * Page-level styling (e.g. HTML and BODY elements).
+ */
 html {
   font-size: 0.875em;
   line-height: 1.428571429;
@@ -524,6 +541,9 @@ html {
 /*------------------------------------*\
   #HEADINGS
 \*------------------------------------*/
+/**
+ * Simple default styles for headings 1 through 6.
+ */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
@@ -567,6 +587,9 @@ h6 {
 /*------------------------------------*\
   #LINKS
 \*------------------------------------*/
+/**
+ * Default styles for simple hyperlinks.
+ */
 a {
   color: inherit;
   font-weight: 700;
@@ -626,6 +649,20 @@ img[height] {
 /*------------------------------------*\
   #QUOTES
 \*------------------------------------*/
+/**
+ * Basic styling for quoted text.
+ */
+q {
+  font-style: italic;
+  quotes: "‘" "’";
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}
+
 blockquote {
   quotes: "“" "”";
 }
