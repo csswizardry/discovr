@@ -34,7 +34,9 @@
  * Layout...............Generic layout module.
  * Headline.............Simple object for structuring heading pairs.
  * Media................The media object.
+ * List-bare............Lists with no bullets or indents.
  * List-inline..........Simple abstraction for setting lists out in a line.
+ * Crop.................A container for cropping image and media content.
  *
  * COMPONENTS
  * Logo.................Make our logo a reusable component.
@@ -43,6 +45,7 @@
  * Nav primary..........The site’s main nav.
  * Nav secondary........Secondary nav styles.
  * Masthead.............Site’s main masthead.
+ * Sub-content..........Secondary/supporting content.
  * Panel................Simple panelled boxout.
  * Score................Score lozenge for place ratings.
  * Buttons..............Button styles.
@@ -94,7 +97,9 @@
 @import "objects.layout";
 @import "objects.headline";
 @import "objects.media";
+@import "objects.list-bare";
 @import "objects.list-inline";
+@import "objects.crop";
 
 @import "components.logo";
 @import "components.page-head";
@@ -102,6 +107,7 @@
 @import "components.nav-primary";
 @import "components.nav-secondary";
 @import "components.masthead";
+@import "components.sub-content";
 @import "components.panel";
 @import "components.score";
 @import "components.buttons";

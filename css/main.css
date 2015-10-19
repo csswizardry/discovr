@@ -34,7 +34,9 @@
  * Layout...............Generic layout module.
  * Headline.............Simple object for structuring heading pairs.
  * Media................The media object.
+ * List-bare............Lists with no bullets or indents.
  * List-inline..........Simple abstraction for setting lists out in a line.
+ * Crop.................A container for cropping image and media content.
  *
  * COMPONENTS
  * Logo.................Make our logo a reusable component.
@@ -43,6 +45,7 @@
  * Nav primary..........The site’s main nav.
  * Nav secondary........Secondary nav styles.
  * Masthead.............Site’s main masthead.
+ * Sub-content..........Secondary/supporting content.
  * Panel................Simple panelled boxout.
  * Score................Score lozenge for place ratings.
  * Buttons..............Button styles.
@@ -758,6 +761,14 @@ blockquote p:last-of-type:after {
 }
 
 /*------------------------------------*\
+  #LIST-BARE
+\*------------------------------------*/
+.o-list-bare {
+  list-style: none;
+  margin-left: 0;
+}
+
+/*------------------------------------*\
   #LIST-INLINE
 \*------------------------------------*/
 .o-list-inline {
@@ -768,6 +779,52 @@ blockquote p:last-of-type:after {
 
 .o-list-inline__item {
   display: inline-block;
+}
+
+/*------------------------------------*\
+    #CROP
+\*------------------------------------*/
+/**
+ * Provide a cropping container in order to display media (usually images)
+ * cropped to certain ratios.
+ *
+ * 1. Set up a positioning context in which the image can sit.
+ * 2. This is the crucial part: where the cropping happens.
+ */
+.o-crop {
+  position: relative;
+  /* [1] */
+  display: block;
+  overflow: hidden;
+  /* [2] */
+}
+
+/**
+ * A variety of different standard ratios to crop to.
+ *
+ * We use the `padding` trick to create a fluid-height container (`padding`s set
+ * in percentages will track the current width of the element).
+ */
+.o-crop--4\:3 {
+  padding-top: 75%;
+}
+
+.o-crop--16\:9 {
+  padding-top: 56.25%;
+}
+
+/**
+ * Apply this class to the content (usually `img`) that needs cropping.
+ *
+ * 1. Positioning to the bottom usually gives consistently better results as
+ *    most images’ subjects are toward the bottom of the frame. Of course,
+ *    your mileage may vary.
+ */
+.o-crop__content {
+  position: absolute;
+  bottom: 0;
+  /* [1] */
+  left: 0;
 }
 
 /*------------------------------------*\
@@ -892,6 +949,79 @@ blockquote p:last-of-type:after {
   font-size: 60px;
   font-size: 4.285714286rem;
   line-height: 1;
+}
+
+/*------------------------------------*\
+    #SUB-CONTENT
+\*------------------------------------*/
+/**
+ * Housing for any secondary content.
+ */
+.c-sub-content {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #666;
+  /**
+   * 1. Outdent the heading to touch the edges of the sub-content area.
+   * 2. Re-indent the heading’s actual text to line back up with the rest of
+   *    the sub-content’s content.
+   * 3. Adjust the bottom margin to account for the added border bottom (puts
+   *    text back on the baseline grid).
+   */
+  /**
+   * Remove the margin from the last element in the sub-content area so as to
+   * avoid doubled spacings (compounded paddings and margins).
+   */
+}
+.c-sub-content h3 {
+  font-size: 12px;
+  font-size: 0.857142857rem;
+  line-height: 1.666666667;
+  color: #378bb5;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  margin-right: -20px;
+  /* [1] */
+  margin-left: -20px;
+  /* [1] */
+  padding-right: 20px;
+  /* [2] */
+  padding-left: 20px;
+  /* [2] */
+  border-bottom: 1px solid;
+  margin-bottom: 19px;
+  /* [3] */
+}
+.c-sub-content h3.featured {
+  font-weight: 700;
+  border-bottom-width: 2px;
+  margin-bottom: 18px;
+  /* [3] */
+}
+.c-sub-content > :last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * Image-like content should be full-bleed in the sub-content area.
+ *
+ * 1. Pull element back out to the very left of the sub-content (including
+ *    padding).
+ * 2. Needs disabling so that we can manipulate widths.
+ * 3. Fallback width for browsers that don’t support `calc()`.
+ * 4. Force image to be full width *plus* the area taken up by the
+ *    sub-content’s padding.
+ */
+.c-sub-content__img {
+  margin-left: -20px;
+  /* [1] */
+  max-width: none;
+  /* [2] */
+  width: 100%;
+  /* [3] */
+  width: calc(100% + 40px);
+  /* [4] */
 }
 
 /*------------------------------------*\

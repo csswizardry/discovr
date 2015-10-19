@@ -1,0 +1,70 @@
+/*------------------------------------*\
+    #SUB-CONTENT
+\*------------------------------------*/
+
+/**
+ * Housing for any secondary content.
+ */
+
+// Reassign our spacing unit to a sub-content specific variable.
+$sub-content-padding: $spacing-unit;
+
+.c-sub-content {
+    padding: $sub-content-padding;
+    background-color: $color-sub-content-bg;
+    color: $color-sub-content;
+
+    /**
+     * 1. Outdent the heading to touch the edges of the sub-content area.
+     * 2. Re-indent the heading’s actual text to line back up with the rest of
+     *    the sub-content’s content.
+     * 3. Adjust the bottom margin to account for the added border bottom (puts
+     *    text back on the baseline grid).
+     */
+    h3 {
+        @include font-size(12px);
+        color: $color-brand-primary;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        @include font-weight(normal);
+        margin-right: -$sub-content-padding; /* [1] */
+        margin-left:  -$sub-content-padding; /* [1] */
+        padding-right: $sub-content-padding; /* [2] */
+        padding-left:  $sub-content-padding; /* [2] */
+        border-bottom: 1px solid;
+        margin-bottom: $spacing-unit - 1px; /* [3] */
+
+        &.featured {
+            @include font-weight(bold);
+            border-bottom-width: 2px;
+            margin-bottom: $spacing-unit - 2px; /* [3] */
+        }
+
+    }
+
+    /**
+     * Remove the margin from the last element in the sub-content area so as to
+     * avoid doubled spacings (compounded paddings and margins).
+     */
+    > :last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+    /**
+     * Image-like content should be full-bleed in the sub-content area.
+     *
+     * 1. Pull element back out to the very left of the sub-content (including
+     *    padding).
+     * 2. Needs disabling so that we can manipulate widths.
+     * 3. Fallback width for browsers that don’t support `calc()`.
+     * 4. Force image to be full width *plus* the area taken up by the
+     *    sub-content’s padding.
+     */
+    .c-sub-content__img {
+        margin-left:  -$sub-content-padding; /* [1] */
+        max-width: none; /* [2] */
+        width: 100%; /* [3] */
+        width: calc(100% + #{2 * $sub-content-padding}); /* [4] */
+    }

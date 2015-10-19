@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    #CROP
+\*------------------------------------*/
+
+/**
+ * Provide a cropping container in order to display media (usually images)
+ * cropped to certain ratios.
+ *
+ * 1. Set up a positioning context in which the image can sit.
+ * 2. This is the crucial part: where the cropping happens.
+ */
+.o-crop {
+    position: relative; /* [1] */
+    display: block;
+    overflow: hidden; /* [2] */
+}
+
+/**
+ * A variety of different standard ratios to crop to.
+ *
+ * We use the `padding` trick to create a fluid-height container (`padding`s set
+ * in percentages will track the current width of the element).
+ */
+.o-crop--4\:3 {
+    padding-top: (3/4) * 100%;
+}
+
+.o-crop--16\:9 {
+    padding-top: (9/16) * 100%;
+}
+
+    /**
+     * Apply this class to the content (usually `img`) that needs cropping.
+     *
+     * 1. Positioning to the bottom usually gives consistently better results as
+     *    most images’ subjects are toward the bottom of the frame. Of course,
+     *    your mileage may vary.
+     */
+    .o-crop__content {
+        position: absolute;
+        bottom: 0; /* [1] */
+        left:   0;
+    }
