@@ -962,18 +962,22 @@ blockquote p:last-of-type:after {
   background-color: rgba(0, 0, 0, 0.05);
   color: #666;
   /**
-   * 1. Outdent the heading to touch the edges of the sub-content area.
-   * 2. Re-indent the heading’s actual text to line back up with the rest of
-   *    the sub-content’s content.
-   * 3. Adjust the bottom margin to account for the added border bottom (puts
-   *    text back on the baseline grid).
-   */
-  /**
    * Remove the margin from the last element in the sub-content area so as to
    * avoid doubled spacings (compounded paddings and margins).
    */
 }
-.c-sub-content h3 {
+.c-sub-content > :last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * 1. Outdent the heading to touch the edges of the sub-content area.
+ * 2. Re-indent the heading’s actual text to line back up with the rest of
+ *    the sub-content’s content.
+ * 3. Adjust the bottom margin to account for the added border bottom (puts
+ *    text back on the baseline grid).
+ */
+.c-sub-content__title {
   font-size: 12px;
   font-size: 0.857142857rem;
   line-height: 1.666666667;
@@ -993,14 +997,12 @@ blockquote p:last-of-type:after {
   margin-bottom: 19px;
   /* [3] */
 }
-.c-sub-content h3.featured {
+
+.c-sub-content__title--featured {
   font-weight: 700;
   border-bottom-width: 2px;
   margin-bottom: 18px;
   /* [3] */
-}
-.c-sub-content > :last-child {
-  margin-bottom: 0;
 }
 
 /**
