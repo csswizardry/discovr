@@ -40,6 +40,7 @@
  *
  * COMPONENTS
  * Logo.................Make our logo a reusable component.
+ * Page.................Full page wrapper.
  * Page-head............Page header styles.
  * Page-foot............Page footer styles.
  * Nav primary..........The site’s main nav.
@@ -838,6 +839,15 @@ blockquote p:last-of-type:after {
 }
 
 /*------------------------------------*\
+  #PAGE
+\*------------------------------------*/
+@media screen and (min-width: 1024px) {
+  .c-page.has-fixed-page-head {
+    padding-top: 70px;
+  }
+}
+
+/*------------------------------------*\
   #PAGE-HEAD
 \*------------------------------------*/
 .c-page-head {
@@ -849,6 +859,19 @@ blockquote p:last-of-type:after {
   content: "";
   display: table;
   clear: both;
+}
+@media screen and (min-width: 1024px) {
+  .c-page-head.is-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
 }
 
 .c-page-head__logo {

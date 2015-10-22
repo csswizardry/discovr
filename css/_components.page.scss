@@ -1,0 +1,15 @@
+/*------------------------------------*\
+  #PAGE
+\*------------------------------------*/
+
+.c-page {
+
+  &.has-fixed-page-head {
+
+    @media screen and (min-width: 1024px) {
+      padding-top: $logo-height + (2 * $spacing-unit);
+    }
+
+  }
+
+}

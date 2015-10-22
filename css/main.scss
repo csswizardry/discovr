@@ -40,6 +40,7 @@
  *
  * COMPONENTS
  * Logo.................Make our logo a reusable component.
+ * Page.................Full page wrapper.
  * Page-head............Page header styles.
  * Page-foot............Page footer styles.
  * Nav primary..........The site’s main nav.
@@ -102,6 +103,7 @@
 @import "objects.crop";
 
 @import "components.logo";
+@import "components.page";
 @import "components.page-head";
 @import "components.page-foot";
 @import "components.nav-primary";

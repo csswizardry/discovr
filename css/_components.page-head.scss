@@ -7,6 +7,23 @@
     background-color: $color-page-head-background;
     color: $color-page-head;
     padding: $spacing-unit;
+
+    &.is-fixed {
+
+      @media screen and (min-width: 1024px) {
+        position: fixed;
+        top:   0;
+        right: 0;
+        left:  0;
+        z-index: 1;
+        -webkit-backface-visibility: hidden;
+           -moz-backface-visibility: hidden;
+             -o-backface-visibility: hidden;
+                backface-visibility: hidden;
+      }
+
+    }
+
 }
 
     .c-page-head__logo {
