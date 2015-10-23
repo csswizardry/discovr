@@ -21,6 +21,10 @@
  * We use the `padding` trick to create a fluid-height container (`padding`s set
  * in percentages will track the current width of the element).
  */
+.o-crop--1\:1 {
+    padding-top: (1/1) * 100%;
+}
+
 .o-crop--4\:3 {
     padding-top: (3/4) * 100%;
 }
