@@ -1445,6 +1445,12 @@ blockquote p:last-of-type:after {
    * Indent list elements enough that their bullets are not leaking out of
    * their container.
    */
+  /**
+   * Prevent CMS users from abusing line breaks.
+   */
+  /**
+   * Discourage WYSIWYG users from applying their own styles.
+   */
 }
 .s-prose h1, .s-prose h2, .s-prose h3, .s-prose h4, .s-prose h5, .s-prose h6 {
   font-family: Lato, sans-serif;
@@ -1463,6 +1469,13 @@ blockquote p:last-of-type:after {
 .s-prose ul,
 .s-prose ol {
   margin-left: 40px;
+}
+.s-prose br + br {
+  display: none;
+}
+.s-prose [style]:after {
+  content: " Please refrain from adding your own styling.";
+  color: red;
 }
 
 /*------------------------------------*\

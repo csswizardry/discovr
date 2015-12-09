@@ -43,4 +43,19 @@
         margin-left: $spacing-unit * 2;
     }
 
+    /**
+     * Prevent CMS users from abusing line breaks.
+     */
+    br + br {
+      display: none;
+    }
+
+    /**
+     * Discourage WYSIWYG users from applying their own styles.
+     */
+    [style]:after {
+      content: " Please refrain from adding your own styling.";
+      color: red;
+    }
+
 }
