@@ -16,8 +16,8 @@
  * Aliases..............Some shorter aliases onto longer variables.
  *
  * GENERIC
- * Normalize.css........A level playing field.
  * Box-sizing...........Better default `box-sizing`.
+ * Normalize.css........A level playing field.
  * Reset................A pared back reset to remove margins.
  * Shared...............Sensibly and tersely share global commonalities.
  *
@@ -68,6 +68,25 @@
  * Debug................Visual health-check tool.
  * Shame.css............Short-term hacks and quick-fixes.
  */
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -464,25 +483,6 @@ table {
 td,
 th {
   padding: 0;
-}
-
-/*------------------------------------*\
-  #BOX-SIZING
-\*------------------------------------*/
-/**
- * More sensible default box-sizing:
- * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
- */
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
 }
 
 /*------------------------------------*\

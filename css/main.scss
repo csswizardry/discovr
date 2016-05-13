@@ -16,8 +16,8 @@
  * Aliases..............Some shorter aliases onto longer variables.
  *
  * GENERIC
- * Normalize.css........A level playing field.
  * Box-sizing...........Better default `box-sizing`.
+ * Normalize.css........A level playing field.
  * Reset................A pared back reset to remove margins.
  * Shared...............Sensibly and tersely share global commonalities.
  *
@@ -82,8 +82,8 @@
 @import "tools.typography";
 @import "tools.aliases";
 
-@import "generic.normalize";
 @import "generic.box-sizing";
+@import "generic.normalize";
 @import "generic.reset";
 @import "generic.shared";
 
