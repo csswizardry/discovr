@@ -73,59 +73,59 @@
 
 
 
-@import "settings.config";
-@import "settings.global";
-@import "settings.colors";
+@import "settings/settings.config";
+@import "settings/settings.global";
+@import "settings/settings.colors";
 
-@import "tools.functions";
-@import "tools.mixins";
-@import "tools.typography";
-@import "tools.aliases";
+@import "tools/tools.functions";
+@import "tools/tools.mixins";
+@import "tools/tools.typography";
+@import "tools/tools.aliases";
 
-@import "generic.box-sizing";
-@import "generic.normalize";
-@import "generic.reset";
-@import "generic.shared";
+@import "generic/generic.box-sizing";
+@import "generic/generic.normalize";
+@import "generic/generic.reset";
+@import "generic/generic.shared";
 
-@import "elements.page";
-@import "elements.headings";
-@import "elements.links";
-@import "elements.lists";
-@import "elements.images";
-@import "elements.quotes";
+@import "elements/elements.page";
+@import "elements/elements.headings";
+@import "elements/elements.links";
+@import "elements/elements.lists";
+@import "elements/elements.images";
+@import "elements/elements.quotes";
 
-@import "objects.wrappers";
-@import "objects.layout";
-@import "objects.headline";
-@import "objects.media";
-@import "objects.list-bare";
-@import "objects.list-inline";
-@import "objects.crop";
+@import "objects/objects.wrappers";
+@import "objects/objects.layout";
+@import "objects/objects.headline";
+@import "objects/objects.media";
+@import "objects/objects.list-bare";
+@import "objects/objects.list-inline";
+@import "objects/objects.crop";
 
-@import "components.logo";
-@import "components.page";
-@import "components.page-head";
-@import "components.page-foot";
-@import "components.nav-primary";
-@import "components.nav-secondary";
-@import "components.masthead";
-@import "components.sub-content";
-@import "components.panel";
-@import "components.score";
-@import "components.buttons";
-@import "components.avatar";
-@import "components.testimonials";
-@import "components.calendar";
-@import "components.headline";
+@import "components/components.logo";
+@import "components/components.page";
+@import "components/components.page-head";
+@import "components/components.page-foot";
+@import "components/components.nav-primary";
+@import "components/components.nav-secondary";
+@import "components/components.masthead";
+@import "components/components.sub-content";
+@import "components/components.panel";
+@import "components/components.score";
+@import "components/components.buttons";
+@import "components/components.avatar";
+@import "components/components.testimonials";
+@import "components/components.calendar";
+@import "components/components.headline";
 
 $promo-color-background:  #ff8;
-@import "components.promo";
+@import "components/components.promo";
 
-@import "scope.prose";
+@import "scopes/scopes.prose";
 
-@import "theme.red";
+@import "themes/themes.red";
 
-@import "trumps.headings";
-@import "trumps.widths";
-@import "trumps.debug";
-@import "trumps.shame";
+@import "trumps/trumps.headings";
+@import "trumps/trumps.widths";
+@import "trumps/trumps.debug";
+@import "trumps/trumps.shame";
