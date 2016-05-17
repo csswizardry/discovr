@@ -6,11 +6,12 @@
 @import "tools.all";
 
 .c-pagination {
-  @include font-size(12px);
   @include font-family(sans-serif);
+  @include font-size(12px);
   margin:  0;
   padding: 0;
   list-style: none;
+  margin-bottom: $base-spacing-unit;
   display: table;
   table-layout: fixed;
   width: 100%;

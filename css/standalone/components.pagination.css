@@ -2,13 +2,14 @@
   #PAGINATION
 \*------------------------------------*/
 .c-pagination {
+  font-family: Lato, sans-serif;
   font-size: 12px;
   font-size: 0.857142857rem;
   line-height: 1.666666667;
-  font-family: Lato, sans-serif;
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 20px;
   display: table;
   table-layout: fixed;
   width: 100%;
