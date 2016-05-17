@@ -1,0 +1,64 @@
+/*------------------------------------*\
+  #PAGINATION
+\*------------------------------------*/
+
+@import "settings.all";
+@import "tools.all";
+
+.c-pagination {
+  @include font-size(12px);
+  @include font-family(sans-serif);
+  margin:  0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  border: 1px solid $color-pagination-border;
+  border-radius: $base-radius;
+  overflow: hidden;
+}
+
+  .c-pagination__item {
+    display: none;
+
+    @media screen and (min-width: 720px) {
+      display: table-cell;
+    }
+
+    & + & {
+      border-left: 1px solid $color-pagination-border;
+    }
+
+  }
+
+  .c-pagination__item--first,
+  .c-pagination__item--prev,
+  .c-pagination__item--next,
+  .c-pagination__item--last {
+    display: table-cell;
+  }
+
+    .c-pagination__link {
+      text-decoration: none;
+      display: block;
+      padding: $base-spacing-unit / 4;
+      color: $color-pagination;
+      background-color: $color-pagination-bg;
+
+      @media screen and (min-width: 480px) {
+        padding: $base-spacing-unit / 2;
+      }
+
+      @include hocus() {
+        background-color: $color-pagination-bg-hover;
+      }
+
+      &.is-current {
+        background-color: $color-pagination-bg-current;
+        text-decoration: underline;
+        cursor: default;
+      }
+
+    }
