@@ -2,8 +2,21 @@
   #PAGINATION
 \*------------------------------------*/
 
+// The pagination component needs to be usable outside of the larger ITCSS
+// project. As such, we import all of our Sass settings and tools (note, we are
+// not allowed to import any CSS here, only Sass) so that we have useful config
+// available to us before building out the pagination.
+//
+// This means that we end up with a compiled `components.pagination.css` file
+// that can be included into a project without the need for any further
+// dependencies or extraneous CSS.
+
 @import "settings.all";
 @import "tools.all";
+
+
+
+
 
 .c-pagination {
   @include font-family(sans-serif);
@@ -21,6 +34,10 @@
   overflow: hidden;
 }
 
+  /**
+   * 1. Hide all of the pagination items to start off with…
+   * 2. …but show them all on big enough screens.
+   */
   .c-pagination__item {
     display: none;
 
@@ -34,6 +51,13 @@
 
   }
 
+  /**
+   * Despite the show/hide stuff above, let’s explicitly force all relative
+   * pagination controls to be always visible.
+   *
+   * This means that on small screens, we only get First, Previous, Next, Last
+   * links, but on larger screens we get all of the numbers as well.
+   */
   .c-pagination__item--first,
   .c-pagination__item--prev,
   .c-pagination__item--next,

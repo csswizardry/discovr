@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------*\
   #PAGINATION
 \*------------------------------------*/
@@ -19,6 +20,10 @@
   overflow: hidden;
 }
 
+/**
+ * 1. Hide all of the pagination items to start off with…
+ * 2. …but show them all on big enough screens.
+ */
 .c-pagination__item {
   display: none;
 }
@@ -31,6 +36,13 @@
   border-left: 1px solid #fff;
 }
 
+/**
+ * Despite the show/hide stuff above, let’s explicitly force all relative
+ * pagination controls to be always visible.
+ *
+ * This means that on small screens, we only get First, Previous, Next, Last
+ * links, but on larger screens we get all of the numbers as well.
+ */
 .c-pagination__item--first,
 .c-pagination__item--prev,
 .c-pagination__item--next,
