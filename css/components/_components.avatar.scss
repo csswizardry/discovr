@@ -2,19 +2,23 @@
   #AVATAR
 \*------------------------------------*/
 
+$avatar-size:       $base-spacing-unit * 3;
+$avatar-size-large: $avatar-size * 2;
+$avatar-size-small: $avatar-size / 2;
+
 .c-avatar {
     display: block;
-    width:  64px;
-    height: 64px;
+    width:  $avatar-size;
+    height: $avatar-size;
     border-radius: 100%;
 }
 
 .c-avatar--small {
-    width:  32px;
-    height: 32px;
+    width:  $avatar-size-small;
+    height: $avatar-size-small;
 }
 
 .c-avatar--large {
-    width:  128px;
-    height: 128px;
+    width:  $avatar-size-large;
+    height: $avatar-size-large;
 }
