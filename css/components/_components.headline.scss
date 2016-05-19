@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .c-headline {
-    @include font-size($base-font-size);
+    @include font-size($global-font-size);
     @include font-weight(normal);
     border-bottom: 1px solid lighten($color-headline, 20%);
     color: $color-headline;

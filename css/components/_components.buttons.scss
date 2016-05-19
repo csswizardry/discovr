@@ -19,7 +19,7 @@
     text-align: center; /* [4] */
     margin: 0; /* [4] */
     cursor: pointer; /* [5] */
-    padding: ($spacing-unit / 2) $spacing-unit;
+    padding: $global-spacing-unit-small $global-spacing-unit;
 
     @include hocus() {
         text-decoration: none;
@@ -30,8 +30,8 @@
 .c-btn--primary {
     background-color: $color-btn-background;
                color: $color-btn;
-    border-radius: $base-radius;
-    transition: $base-transition;
+    border-radius: $global-radius;
+    transition: $global-transition;
 
     @include hocus() {
         background-color: $color-btn-background-hover;
@@ -46,8 +46,8 @@
 .c-btn--secondary {
     background-color: $color-btn-secondary-background;
                color: $color-btn-secondary;
-    border-radius: $base-radius;
-    transition: $base-transition;
+    border-radius: $global-radius;
+    transition: $global-transition;
 
     @include hocus() {
         background-color: $color-btn-secondary-background-hover;
@@ -56,9 +56,9 @@
 }
 
 .c-btn--small {
-    padding: ($spacing-unit / 4) ($spacing-unit / 2);
+    padding: $global-spacing-unit-tiny $global-spacing-unit-small;
 }
 
 .c-btn--large {
-    padding: $spacing-unit ($spacing-unit * 2);
+    padding: $global-spacing-unit $global-spacing-unit-large;
 }

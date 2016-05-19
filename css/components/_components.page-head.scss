@@ -6,7 +6,7 @@
     @include clearfix();
     background-color: $color-page-head-background;
     color: $color-page-head;
-    padding: $spacing-unit;
+    padding: $global-spacing-unit;
 
     &.is-fixed {
 

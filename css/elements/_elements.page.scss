@@ -7,8 +7,8 @@
  */
 
 html {
-    font-size: ($base-font-size / 16px) * 1em;
-    line-height: $base-line-height / $base-font-size;
+    font-size: ($global-font-size / 16px) * 1em;
+    line-height: $global-line-height / $global-font-size;
     @include font-family(sans-serif);
     background-color: $color-page-background;
     color: $color-page-text;

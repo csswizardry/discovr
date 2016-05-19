@@ -23,13 +23,13 @@
   margin:  0;
   padding: 0;
   list-style: none;
-  margin-bottom: $base-spacing-unit;
+  margin-bottom: $global-spacing-unit;
   display: table;
   table-layout: fixed;
   width: 100%;
   text-align: center;
   border: 1px solid $color-pagination-border;
-  border-radius: $base-radius;
+  border-radius: $global-radius;
   overflow: hidden;
 }
 
@@ -67,12 +67,12 @@
     .c-pagination__link {
       text-decoration: none;
       display: block;
-      padding: $base-spacing-unit / 4;
+      padding: $global-spacing-unit-tiny;
       color: $color-pagination;
       background-color: $color-pagination-bg;
 
       @media screen and (min-width: 480px) {
-        padding: $base-spacing-unit / 2;
+        padding: $global-spacing-unit-small;
       }
 
       @include hocus() {

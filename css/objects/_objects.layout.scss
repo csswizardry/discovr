@@ -6,12 +6,12 @@
     margin:  0;
     padding: 0;
     list-style: none;
-    margin-left: -$spacing-unit;
+    margin-left: -$global-spacing-unit;
 }
 
     .o-layout__item {
         display: inline-block;
         vertical-align: top;
         width: 100%;
-        padding-left: $spacing-unit;
+        padding-left: $global-spacing-unit;
     }

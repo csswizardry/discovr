@@ -69,7 +69,7 @@
         padding-right: 0.28em; /* [1] */
         padding-left:  0.28em; /* [1] */
         @include font-weight(normal);
-        border-radius: $base-radius;
+        border-radius: $global-radius;
 
         // Loop through our array again, only this time applying colours as
         // backgrounds.
@@ -90,5 +90,5 @@
 }
 
 .c-score--small {
-    @include font-size($base-font-size);
+    @include font-size($global-font-size);
 }

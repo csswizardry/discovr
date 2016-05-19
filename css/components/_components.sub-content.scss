@@ -7,7 +7,7 @@
  */
 
 // Reassign our spacing unit to a sub-content specific variable.
-$sub-content-padding: $spacing-unit;
+$sub-content-padding: $global-spacing-unit;
 
 .c-sub-content {
     padding: $sub-content-padding;
@@ -42,13 +42,13 @@ $sub-content-padding: $spacing-unit;
         padding-right: $sub-content-padding; /* [2] */
         padding-left:  $sub-content-padding; /* [2] */
         border-bottom: 1px solid;
-        margin-bottom: $spacing-unit - 1px; /* [3] */
+        margin-bottom: $global-spacing-unit - 1px; /* [3] */
     }
 
     .c-sub-content__title--featured {
         @include font-weight(bold);
         border-bottom-width: 2px;
-        margin-bottom: $spacing-unit - 2px; /* [3] */
+        margin-bottom: $global-spacing-unit - 2px; /* [3] */
     }
 
     /**

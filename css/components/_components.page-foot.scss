@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .c-page-foot {
-    padding: $spacing-unit;
+    padding: $global-spacing-unit;
     @include font-size(12px);
     background-color: $color-page-foot-background;
     color: $color-page-foot;

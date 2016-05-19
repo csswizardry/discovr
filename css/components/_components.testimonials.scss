@@ -1,6 +1,6 @@
 .c-testimonial {
     @include font-size(18px);
-    padding: $base-spacing-unit;
+    padding: $global-spacing-unit;
     border-left: 8px solid $color-testimonial-border;
     background-color: $color-testimonial-background;
 }

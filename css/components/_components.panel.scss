@@ -4,21 +4,21 @@
 
 .c-panel {
     background-color: $color-panel-background;
-    border-radius: $base-radius;
+    border-radius: $global-radius;
     overflow: hidden;
-    margin-bottom: $spacing-unit;
+    margin-bottom: $global-spacing-unit;
     border: 1px solid $color-ui;
     box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.025);
 }
 
     .c-panel__masthead {
-        height: 10 * $spacing-unit;
+        height: 10 * $global-spacing-unit;
         overflow: hidden;
         background-color: $color-ui;
     }
 
     .c-panel__masthead--small {
-        height: 5 * $spacing-unit;
+        height: 5 * $global-spacing-unit;
     }
 
     .c-panel__masthead--fluid {
@@ -40,7 +40,7 @@
     }
 
     .c-panel__content {
-        padding: $spacing-unit;
+        padding: $global-spacing-unit;
 
         > :last-child {
             margin-bottom: 0;
@@ -52,7 +52,7 @@
         display: block;
         text-align: center;
         text-decoration: none;
-        padding: $spacing-unit;
+        padding: $global-spacing-unit;
         border-top: 1px solid $color-ui;
         color: $color-panel-link;
 

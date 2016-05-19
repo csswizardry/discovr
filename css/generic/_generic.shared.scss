@@ -17,10 +17,10 @@ hr,
 table,
 fieldset, figure,
 pre {
-    margin-bottom: $base-spacing-unit;
+    margin-bottom: $global-spacing-unit;
 }
 
 ul, ol,
 dd {
-    margin-left: $base-spacing-unit;
+    margin-left: $global-spacing-unit;
 }

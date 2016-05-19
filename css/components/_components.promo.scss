@@ -5,10 +5,10 @@
 $promo-color-background:  #ffc !default;
 
 .c-promo {
-    padding: $spacing-unit;
-    margin-bottom: $spacing-unit;
+    padding: $global-spacing-unit;
+    margin-bottom: $global-spacing-unit;
     background-color: $promo-color-background;
-    border-radius: $base-radius;
+    border-radius: $global-radius;
 
     > :last-child {
         margin-bottom: 0;
