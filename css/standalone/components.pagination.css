@@ -63,10 +63,10 @@
   }
 }
 .c-pagination__link:hover, .c-pagination__link:focus {
-  background-color: #4099c5;
+  background-color: #317ca1;
 }
 .c-pagination__link.is-current {
-  background-color: #317ca1;
+  background-color: #4099c5;
   text-decoration: underline;
   cursor: default;
 }
