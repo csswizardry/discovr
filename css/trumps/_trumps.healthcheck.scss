@@ -1,8 +1,8 @@
 /*------------------------------------*\
-  #DEBUG
+  #HEALTHCHECK
 \*------------------------------------*/
 
-@if (config(debug) == true) {
+@if (config(healthcheck) == true) {
 
     /**
      * Highlight types of class to visually see the makeup of our UIs.
