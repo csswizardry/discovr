@@ -55,6 +55,7 @@
  * Calendar.............Simple static calendar component.
  * Headline.............Basic heading style for generic headlines.
  * Promo................Promotional box styling.
+ * Pagination...........Responsive pagination component.
  *
  * SCOPES
  * Prose................Set up a new styling context for long-format text.
@@ -1420,6 +1421,78 @@ blockquote p:last-of-type:after {
 
 .c-promo__title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*------------------------------------*\
+  #PAGINATION
+\*------------------------------------*/
+.c-pagination {
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-size: 0.857142857rem;
+  line-height: 1.666666667;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+/**
+ * 1. Hide all of the pagination items to start off with…
+ * 2. …but show them all on big enough screens.
+ */
+.c-pagination__item {
+  display: none;
+}
+@media screen and (min-width: 720px) {
+  .c-pagination__item {
+    display: table-cell;
+  }
+}
+.c-pagination__item + .c-pagination__item {
+  border-left: 1px solid #fff;
+}
+
+/**
+ * Despite the show/hide stuff above, let’s explicitly force all relative
+ * pagination controls to be always visible.
+ *
+ * This means that on small screens, we only get First, Previous, Next, Last
+ * links, but on larger screens we get all of the numbers as well.
+ */
+.c-pagination__item--first,
+.c-pagination__item--prev,
+.c-pagination__item--next,
+.c-pagination__item--last {
+  display: table-cell;
+}
+
+.c-pagination__link {
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+  color: #fff;
+  background-color: #378bb5;
+}
+@media screen and (min-width: 480px) {
+  .c-pagination__link {
+    padding: 10px;
+  }
+}
+.c-pagination__link:hover, .c-pagination__link:focus {
+  background-color: #317ca1;
+}
+.c-pagination__link.is-current {
+  background-color: #4099c5;
+  text-decoration: underline;
+  cursor: default;
 }
 
 /*------------------------------------*\

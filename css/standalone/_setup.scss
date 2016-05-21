@@ -9,11 +9,11 @@
 //
 // `_components.pagination.scss` is a good example of this.
 
-@import "settings/settings.config";
-@import "settings/settings.global";
-@import "settings/settings.colors";
+@import "../settings/settings.config";
+@import "../settings/settings.global";
+@import "../settings/settings.colors";
 
-@import "tools/tools.functions";
-@import "tools/tools.mixins";
-@import "tools/tools.typography";
-@import "tools/tools.aliases";
+@import "../tools/tools.functions";
+@import "../tools/tools.mixins";
+@import "../tools/tools.typography";
+@import "../tools/tools.aliases";

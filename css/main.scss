@@ -55,6 +55,7 @@
  * Calendar.............Simple static calendar component.
  * Headline.............Basic heading style for generic headlines.
  * Promo................Promotional box styling.
+ * Pagination...........Responsive pagination component.
  *
  * SCOPES
  * Prose................Set up a new styling context for long-format text.
@@ -140,6 +141,8 @@
 
 $promo-color-background:  #ff8;
 @import "components/components.promo";
+
+@import "standalone/components.pagination";
 
 
 
