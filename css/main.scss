@@ -67,6 +67,7 @@
  * Headings.............Reassigning our heading styles to helper classes.
  * Widths...............Simple width helper classes.
  * Healthcheck..........Visual health-check tool.
+ * Debug................Highlight potentially troublesome code.
  * Shame.css............Short-term hacks and quick-fixes.
  */
 
@@ -163,4 +164,5 @@ $promo-color-background:  #ff8;
 @import "trumps/trumps.headings";
 @import "trumps/trumps.widths";
 @import "trumps/trumps.healthcheck";
+@import "trumps/trumps.debug";
 @import "trumps/trumps.shame";

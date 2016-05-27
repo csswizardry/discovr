@@ -67,6 +67,7 @@
  * Headings.............Reassigning our heading styles to helper classes.
  * Widths...............Simple width helper classes.
  * Healthcheck..........Visual health-check tool.
+ * Debug................Highlight potentially troublesome code.
  * Shame.css............Short-term hacks and quick-fixes.
  */
 /*------------------------------------*\
@@ -1856,6 +1857,9 @@ blockquote p:last-of-type:after {
 }
 /*------------------------------------*\
   #HEALTHCHECK
+\*------------------------------------*/
+/*------------------------------------*\
+  #DEBUG
 \*------------------------------------*/
 /*------------------------------------*\
   #SHAME.CSS

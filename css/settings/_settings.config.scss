@@ -6,8 +6,8 @@
 
 $config: (
     env: dev,
-    debug: false,
     healthcheck: false,
+    debug: false,
 );
 
 @function config($key) {
