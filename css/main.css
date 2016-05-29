@@ -6,14 +6,22 @@
  * CONTENTS
  *
  * SETTINGS
- * Config...............Configuration and environment settings.
- * Global...............Globally-available variables and settings/config.
- * Colors...............Manage our color palette in isolation.
+ * All..................Because our Settings layer doesn’t actually produce any
+ *                      CSS, we can safely glob all of the files into one import
+ *                      without risk of bloating our compiled stylesheet. This
+ *                      also allows us to easily recycle all of our
+ *                      project-level settings into other Sass file/projects.
+ *                      Please see `settings/_all.scss` for a full table of
+ *                      contents.
  *
  * TOOLS
- * Functions............Some simple helper functions.
- * Mixins...............Globally available mixins.
- * Aliases..............Some shorter aliases onto longer variables.
+ * All..................Because our Tools layer doesn’t actually produce any
+ *                      CSS, we can safely glob all of the files into one import
+ *                      without risk of bloating our compiled stylesheet. This
+ *                      also allows us to easily recycle all of our
+ *                      project-level tooling into other Sass file/projects.
+ *                      Please see `tools/_all.scss` for a full table of
+ *                      contents.
  *
  * GENERIC
  * Box-sizing...........Better default `box-sizing`.
