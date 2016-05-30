@@ -8,30 +8,38 @@
 
   <style>
 
-      iframe {
-        border: 1px solid #ccc;
-        resize: both;
+    iframe {
+      border: 1px solid #ccc;
+      resize: both;
+    }
+
+  </style>
+
+  <script>
+
+    /**
+     * Grab all the `iframe`s in the page and increase or decrease their
+     * dimensions by up to 10%. This means that we always see an obscurely sized
+     * viewport, rather than a conveniently perfect 480×720px one.
+     */
+
+    function randomiseFrame(frame){
+      var randFactor = Math.round(((Math.floor(Math.random() * 10) + 1)/100) * frame.width);
+      frame.width = Math.random() < 0.5 ? parseInt(frame.width,10)-randFactor : parseInt(frame.width,10) + randFactor;
+
+      randFactor = Math.round(((Math.floor(Math.random() * 10) + 1)/100) * frame.height);
+      frame.height = Math.random() < 0.5 ? parseInt(frame.height,10)-randFactor : parseInt(frame.height,10) + randFactor;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var frames = document.querySelectorAll('iframe');
+      for (var i=0; i < frames.length; i++){
+        randomiseFrame(frames[i]);
       }
+    });
 
-    </style>
+  </script>
 
-	<script>
-	function randomiseFrame(frame){
-	  var randFactor = Math.round(((Math.floor(Math.random() * 10) + 1)/100) * frame.width); 
-	  frame.width = Math.random() < 0.5 ? parseInt(frame.width,10)-randFactor : parseInt(frame.width,10) + randFactor;
-	  
-	  randFactor = Math.round(((Math.floor(Math.random() * 10) + 1)/100) * frame.height); 
-	  frame.height = Math.random() < 0.5 ? parseInt(frame.height,10)-randFactor : parseInt(frame.height,10) + randFactor; 
-	}
-	
-	document.addEventListener('DOMContentLoaded', function() {
-	  var frames = document.querySelectorAll('iframe');
-	  for (var i=0; i < frames.length; i++){
-	    randomiseFrame(frames[i]);
-	  }
-	});
-	
-	</script>
 </head>
 <body>
 
