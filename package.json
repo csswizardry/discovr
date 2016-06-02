@@ -1,0 +1,22 @@
+{
+  "name": "discovr",
+  "version": "1.0.0",
+  "description": "Demo CSS Architecture workshop files",
+  "main": "css/main.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csswizardry/discovr.git"
+  },
+  "author": "Harry Roberts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csswizardry/discovr/issues"
+  },
+  "homepage": "https://github.com/csswizardry/discovr#readme",
+  "dependencies": {
+    "sass-mq": "^3.2.9"
+  }
+}

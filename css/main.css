@@ -1680,7 +1680,7 @@ blockquote p:last-of-type:after {
   width: 100% !important;
 }
 
-@media screen and (min-width: 720px) {
+@media (min-width: 45em) {
   .u-1\/1\@sm {
     width: 100% !important;
   }
@@ -1741,7 +1741,7 @@ blockquote p:last-of-type:after {
     width: 100% !important;
   }
 }
-@media screen and (min-width: 1024px) {
+@media (min-width: 64em) {
   .u-1\/1\@md {
     width: 100% !important;
   }
@@ -1802,7 +1802,7 @@ blockquote p:last-of-type:after {
     width: 100% !important;
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 75em) {
   .u-1\/1\@lg {
     width: 100% !important;
   }

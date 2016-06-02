@@ -38,19 +38,19 @@
 
 @include widths(1 2 3 4 5);
 
-@media screen and (min-width: 720px) {
+@include mq($from: small) {
 
   @include widths(1 2 3 4 5, \@sm);
 
 }
 
-@media screen and (min-width: 1024px) {
+@include mq($from: medium) {
 
   @include widths(1 2 3 4 5, \@md);
 
 }
 
-@media screen and (min-width: 1200px) {
+@include mq($from: large) {
 
   @include widths(1 2 3 4 5, \@lg);
 
