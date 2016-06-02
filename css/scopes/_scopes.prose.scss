@@ -4,58 +4,58 @@
 
 .s-prose {
 
-    /**
-     * Set continuous prose in a nice, large serif.
-     */
-    @include font-family(serif);
+  /**
+   * Set continuous prose in a nice, large serif.
+   */
+  @include font-family(serif);
+  @include font-size(18px);
+
+  /**
+   * Make all headings in CMS-powered content the same size in order to
+   * prevent the user abusing visual vs. semantic hierarchy.
+   */
+  h1, h2, h3, h4, h5, h6 {
+    @include font-family(sans-serif);
     @include font-size(18px);
+  }
 
-    /**
-     * Make all headings in CMS-powered content the same size in order to
-     * prevent the user abusing visual vs. semantic hierarchy.
-     */
-    h1, h2, h3, h4, h5, h6 {
-        @include font-family(sans-serif);
-        @include font-size(18px);
+  /**
+   * Make links a lot more obvious in continuous text by having them
+   * underlined and colored in their default state.
+   */
+  a {
+    color: $color-links-prose;
+    text-decoration: underline;
+    @include font-weight(normal);
+
+    @include hocus() {
+      color: $color-links-prose-hover;
     }
 
-    /**
-     * Make links a lot more obvious in continuous text by having them
-     * underlined and colored in their default state.
-     */
-    a {
-        color: $color-links-prose;
-        text-decoration: underline;
-        @include font-weight(normal);
+  }
 
-        @include hocus() {
-            color: $color-links-prose-hover;
-        }
+  /**
+   * Indent list elements enough that their bullets are not leaking out of
+   * their container.
+   */
+  ul,
+  ol {
+    margin-left: $global-spacing-unit-large;
+  }
 
-    }
+  /**
+   * Prevent CMS users from abusing line breaks.
+   */
+  br + br {
+    display: none;
+  }
 
-    /**
-     * Indent list elements enough that their bullets are not leaking out of
-     * their container.
-     */
-    ul,
-    ol {
-        margin-left: $global-spacing-unit-large;
-    }
-
-    /**
-     * Prevent CMS users from abusing line breaks.
-     */
-    br + br {
-      display: none;
-    }
-
-    /**
-     * Discourage WYSIWYG users from applying their own styles.
-     */
-    [style]:after {
-      content: " Please refrain from adding your own styling.";
-      color: red;
-    }
+  /**
+   * Discourage WYSIWYG users from applying their own styles.
+   */
+  [style]:after {
+    content: " Please refrain from adding your own styling.";
+    color: red;
+  }
 
 }

@@ -3,31 +3,31 @@
 \*------------------------------------*/
 
 .o-media {
-    display: table;
-    width: 100%;
+  display: table;
+  width: 100%;
 }
 
-    .o-media__img,
-    .o-media__body {
-        display: table-cell;
-        vertical-align: top;
+  .o-media__img,
+  .o-media__body {
+    display: table-cell;
+    vertical-align: top;
 
-        .o-media--middle > & {
-            vertical-align: middle;
-        }
-
+    .o-media--middle > & {
+      vertical-align: middle;
     }
 
-    .o-media__img {
-        padding-right: $global-spacing-unit;
+  }
 
-        img {
-            max-width: none;
-        }
+  .o-media__img {
+    padding-right: $global-spacing-unit;
 
+    img {
+      max-width: none;
     }
 
-    .o-media__body {
-        width: 100%;
-    }
+  }
+
+  .o-media__body {
+    width: 100%;
+  }
 

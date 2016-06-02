@@ -4,27 +4,27 @@
 
 @if (config(healthcheck) == true) {
 
-    /**
-     * Highlight types of class to visually see the makeup of our UIs.
-     */
-    [class^="o-"],
-    [class*=" o-"] {
-        outline: 10px solid orange;
-    }
+  /**
+   * Highlight types of class to visually see the makeup of our UIs.
+   */
+  [class^="o-"],
+  [class*=" o-"] {
+    outline: 10px solid orange;
+  }
 
-    [class^="c-"],
-    [class*=" c-"] {
-        outline: 10px solid cyan;
-    }
+  [class^="c-"],
+  [class*=" c-"] {
+    outline: 10px solid cyan;
+  }
 
-    [class^="u-"],
-    [class*=" u-"] {
-        outline: 10px solid violet;
-    }
+  [class^="u-"],
+  [class*=" u-"] {
+    outline: 10px solid violet;
+  }
 
-    [class^="_"],
-    [class*=" _"] {
-        outline: 10px solid red;
-    }
+  [class^="_"],
+  [class*=" _"] {
+    outline: 10px solid red;
+  }
 
 }

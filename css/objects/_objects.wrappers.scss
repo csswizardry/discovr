@@ -3,10 +3,10 @@
 \*------------------------------------*/
 
 .o-wrapper {
-    @include clearfix();
-    max-width: 1280px;
-    padding-right: $global-spacing-unit;
-    padding-left:  $global-spacing-unit;
-    margin-right: auto;
-    margin-left:  auto;
+  @include clearfix();
+  max-width: 1280px;
+  padding-right: $global-spacing-unit;
+  padding-left:  $global-spacing-unit;
+  margin-right: auto;
+  margin-left:  auto;
 }

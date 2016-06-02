@@ -5,17 +5,17 @@
 $promo-color-background:  #ffc !default;
 
 .c-promo {
-    padding: $global-spacing-unit;
-    margin-bottom: $global-spacing-unit;
-    background-color: $promo-color-background;
-    border-radius: $global-radius;
+  padding: $global-spacing-unit;
+  margin-bottom: $global-spacing-unit;
+  background-color: $promo-color-background;
+  border-radius: $global-radius;
 
-    > :last-child {
-        margin-bottom: 0;
-    }
+  > :last-child {
+    margin-bottom: 0;
+  }
 
 }
 
-    .c-promo__title {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
+  .c-promo__title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }

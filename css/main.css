@@ -632,7 +632,7 @@ dt {
 }
 
 /*------------------------------------*\
-    #IMAGES
+  #IMAGES
 \*------------------------------------*/
 /**
  * 1. Fluid images for responsive purposes.
@@ -793,7 +793,7 @@ blockquote p:last-of-type:after {
 }
 
 /*------------------------------------*\
-    #CROP
+  #CROP
 \*------------------------------------*/
 /**
  * Provide a cropping container in order to display media (usually images)
@@ -989,7 +989,7 @@ blockquote p:last-of-type:after {
 }
 
 /*------------------------------------*\
-    #SUB-CONTENT
+  #SUB-CONTENT
 \*------------------------------------*/
 /**
  * Housing for any secondary content.
@@ -1128,7 +1128,7 @@ blockquote p:last-of-type:after {
 }
 
 /*------------------------------------*\
-    #SCORE
+  #SCORE
 \*------------------------------------*/
 /**
  * Each Discovry has an associated score (e.g. 7.2 out of a possible 10). The
@@ -1611,7 +1611,7 @@ blockquote p:last-of-type:after {
 }
 
 /*------------------------------------*\
-    #WIDTHS
+  #WIDTHS
 \*------------------------------------*/
 /**
  * A series of width helper classes that you can use to size things like grid

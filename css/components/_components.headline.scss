@@ -3,10 +3,10 @@
 \*------------------------------------*/
 
 .c-headline {
-    @include font-size($global-font-size);
-    @include font-weight(normal);
-    border-bottom: 1px solid lighten($color-headline, 20%);
-    color: $color-headline;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+  @include font-size($global-font-size);
+  @include font-weight(normal);
+  border-bottom: 1px solid lighten($color-headline, 20%);
+  color: $color-headline;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }

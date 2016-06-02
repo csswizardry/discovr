@@ -13,52 +13,52 @@
  *    grow larger as we add borders.
  */
 .c-btn {
-    display: inline-block; /* [1] */
-    vertical-align: middle; /* [2] */
-    font: inherit; /* [3] */
-    text-align: center; /* [4] */
-    margin: 0; /* [4] */
-    cursor: pointer; /* [5] */
-    padding: $global-spacing-unit-small $global-spacing-unit;
+  display: inline-block; /* [1] */
+  vertical-align: middle; /* [2] */
+  font: inherit; /* [3] */
+  text-align: center; /* [4] */
+  margin: 0; /* [4] */
+  cursor: pointer; /* [5] */
+  padding: $global-spacing-unit-small $global-spacing-unit;
 
-    @include hocus() {
-        text-decoration: none;
-    }
+  @include hocus() {
+    text-decoration: none;
+  }
 
 }
 
 .c-btn--primary {
-    background-color: $color-btn-background;
-               color: $color-btn;
-    border-radius: $global-radius;
-    transition: $global-transition;
+  background-color: $color-btn-background;
+             color: $color-btn;
+  border-radius: $global-radius;
+  transition: $global-transition;
 
-    @include hocus() {
-        background-color: $color-btn-background-hover;
-    }
+  @include hocus() {
+    background-color: $color-btn-background-hover;
+  }
 
-    .t-red & {
-      background-color: $color-theme-red;
-    }
+  .t-red & {
+    background-color: $color-theme-red;
+  }
 
 }
 
 .c-btn--secondary {
-    background-color: $color-btn-secondary-background;
-               color: $color-btn-secondary;
-    border-radius: $global-radius;
-    transition: $global-transition;
+  background-color: $color-btn-secondary-background;
+             color: $color-btn-secondary;
+  border-radius: $global-radius;
+  transition: $global-transition;
 
-    @include hocus() {
-        background-color: $color-btn-secondary-background-hover;
-    }
+  @include hocus() {
+    background-color: $color-btn-secondary-background-hover;
+  }
 
 }
 
 .c-btn--small {
-    padding: $global-spacing-unit-tiny $global-spacing-unit-small;
+  padding: $global-spacing-unit-tiny $global-spacing-unit-small;
 }
 
 .c-btn--large {
-    padding: $global-spacing-unit $global-spacing-unit-large;
+  padding: $global-spacing-unit $global-spacing-unit-large;
 }

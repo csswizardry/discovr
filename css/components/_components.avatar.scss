@@ -7,18 +7,18 @@ $avatar-size-large: $avatar-size * 2;
 $avatar-size-small: $avatar-size / 2;
 
 .c-avatar {
-    display: block;
-    width:  $avatar-size;
-    height: $avatar-size;
-    border-radius: 100%;
+  display: block;
+  width:  $avatar-size;
+  height: $avatar-size;
+  border-radius: 100%;
 }
 
 .c-avatar--small {
-    width:  $avatar-size-small;
-    height: $avatar-size-small;
+  width:  $avatar-size-small;
+  height: $avatar-size-small;
 }
 
 .c-avatar--large {
-    width:  $avatar-size-large;
-    height: $avatar-size-large;
+  width:  $avatar-size-large;
+  height: $avatar-size-large;
 }

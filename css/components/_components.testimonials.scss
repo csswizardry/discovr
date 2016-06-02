@@ -1,21 +1,21 @@
 .c-testimonial {
-    @include font-size(18px);
-    padding: $global-spacing-unit;
-    border-left: 8px solid $color-testimonial-border;
-    background-color: $color-testimonial-background;
+  @include font-size(18px);
+  padding: $global-spacing-unit;
+  border-left: 8px solid $color-testimonial-border;
+  background-color: $color-testimonial-background;
 }
 
-    .c-testimonial__title {
-        @include font-size(12px);
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        margin-bottom: 0;
-    }
+  .c-testimonial__title {
+    @include font-size(12px);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+  }
 
-    .c-testimonial__text {
-    }
+  .c-testimonial__text {
+  }
 
-    .c-testimonial__source {
-        display: block;
-        color: $color-testimonial-source;
-    }
+  .c-testimonial__source {
+    display: block;
+    color: $color-testimonial-source;
+  }

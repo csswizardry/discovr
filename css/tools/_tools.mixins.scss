@@ -16,8 +16,8 @@
 // }
 
 @mixin rem($property, $value) {
-    #{$property}: $value;
-    #{$property}: rem($value);
+  #{$property}: $value;
+  #{$property}: rem($value);
 }
 
 
@@ -36,18 +36,18 @@
 
 @mixin clearfix($important: false) {
 
-    // Determine whether or not to make declarations important.
-    @if ($important == false) {
-        $important: null;
-    } @else {
-        $important: !important;
-    }
+  // Determine whether or not to make declarations important.
+  @if ($important == false) {
+    $important: null;
+  } @else {
+    $important: !important;
+  }
 
-    &:after {
-        content: "" $important;
-        display: table $important;
-        clear: both $important;
-    }
+  &:after {
+    content: "" $important;
+    display: table $important;
+    clear: both $important;
+  }
 
 }
 
@@ -57,8 +57,8 @@
 
 // Generate `:hover` and `:focus` styles in one go.
 @mixin hocus() {
-    &:hover,
-    &:focus {
-        @content;
-    }
+  &:hover,
+  &:focus {
+    @content;
+  }
 }

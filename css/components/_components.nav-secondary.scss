@@ -3,14 +3,14 @@
 \*------------------------------------*/
 
 .c-nav-secondary {
-    text-align: center;
+  text-align: center;
 }
 
-    .c-nav-secondary__item {
-        padding-right: $global-spacing-unit-small;
-        padding-left:  $global-spacing-unit-small;
-    }
+  .c-nav-secondary__item {
+    padding-right: $global-spacing-unit-small;
+    padding-left:  $global-spacing-unit-small;
+  }
 
-        .c-nav-secondary__link {
-            @include font-weight(normal);
-        }
+    .c-nav-secondary__link {
+      @include font-weight(normal);
+    }

@@ -5,18 +5,18 @@
 .c-nav-primary {
 }
 
-    .c-nav-primary__item {
+  .c-nav-primary__item {
+  }
+
+    .c-nav-primary__link {
+      display: inline-block;
+      padding-right: $global-spacing-unit;
+      padding-left:  $global-spacing-unit;
+      @include font-weight(normal);
+
+      &.is-active {
+        text-decoration: underline;
+        cursor: default;
+      }
+
     }
-
-        .c-nav-primary__link {
-            display: inline-block;
-            padding-right: $global-spacing-unit;
-            padding-left:  $global-spacing-unit;
-            @include font-weight(normal);
-
-            &.is-active {
-                text-decoration: underline;
-                cursor: default;
-            }
-
-        }

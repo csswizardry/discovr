@@ -7,42 +7,42 @@
  */
 
 q {
-    font-style: italic;
-    quotes: "‘" "’";
+  font-style: italic;
+  quotes: "‘" "’";
 
-    &:before {
-        content: open-quote;
-    }
+  &:before {
+    content: open-quote;
+  }
 
-    &:after {
-        content: close-quote;
-    }
+  &:after {
+    content: close-quote;
+  }
 
 }
 
 blockquote {
-    quotes: "“" "”";
+  quotes: "“" "”";
 
-    p {
-        text-indent: -0.42em;
+  p {
+    text-indent: -0.42em;
 
-        &:before {
-            content: open-quote;
-        }
+    &:before {
+      content: open-quote;
+    }
 
-        &:after {
-            content: no-close-quote;
-        }
+    &:after {
+      content: no-close-quote;
+    }
 
-        &:last-of-type {
-            margin-bottom: 0;
+    &:last-of-type {
+      margin-bottom: 0;
 
-            &:after {
-                content: close-quote;
-            }
-
-        }
+      &:after {
+          content: close-quote;
+      }
 
     }
+
+  }
 
 }

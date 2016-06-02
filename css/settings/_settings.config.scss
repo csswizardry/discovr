@@ -5,11 +5,11 @@
 // Config-level settings (environment switches, debugging modes, etc.).
 
 $config: (
-    env: dev,
-    healthcheck: false,
-    debug: false,
+  env: dev,
+  healthcheck: false,
+  debug: false,
 );
 
 @function config($key) {
-    @return map-get($config, $key);
+  @return map-get($config, $key);
 }

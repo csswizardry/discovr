@@ -3,38 +3,38 @@
 \*------------------------------------*/
 
 .c-page-head {
-    @include clearfix();
-    background-color: $color-page-head-background;
-    color: $color-page-head;
-    padding: $global-spacing-unit;
+  @include clearfix();
+  background-color: $color-page-head-background;
+  color: $color-page-head;
+  padding: $global-spacing-unit;
 
-    &.is-fixed {
+  &.is-fixed {
 
-      @media screen and (min-width: 1024px) {
-        position: fixed;
-        top:   0;
-        right: 0;
-        left:  0;
-        z-index: 1;
-        -webkit-backface-visibility: hidden;
-           -moz-backface-visibility: hidden;
-             -o-backface-visibility: hidden;
-                backface-visibility: hidden;
-      }
-
+    @media screen and (min-width: 1024px) {
+      position: fixed;
+      top:   0;
+      right: 0;
+      left:  0;
+      z-index: 1;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
     }
+
+  }
 
 }
 
-    .c-page-head__logo {
-        line-height: 0;
-        float: left;
-    }
+  .c-page-head__logo {
+    line-height: 0;
+    float: left;
+  }
 
-    /**
-     * 1. The height of the nav needs to marry up with the height of the logo.
-     */
-    .c-page-head__nav {
-        float: right;
-        line-height: $logo-height; /* [1] */
-    }
+  /**
+   * 1. The height of the nav needs to marry up with the height of the logo.
+   */
+  .c-page-head__nav {
+    float: right;
+    line-height: $logo-height; /* [1] */
+  }

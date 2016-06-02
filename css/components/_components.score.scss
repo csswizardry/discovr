@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    #SCORE
+  #SCORE
 \*------------------------------------*/
 
 /**
@@ -20,75 +20,76 @@
  */
 
 .c-score {
-    display: inline-block;
+  display: inline-block;
 
-    // Pick colors for our Poor, Average, and Good ratings...
-    $color-poor:    red;
-    $color-average: orange;
-    $color-good:    green;
+  // Pick colors for our Poor, Average, and Good ratings...
+  $color-poor:    red;
+  $color-average: orange;
+  $color-good:    green;
 
-    // ...and populate the list of scores (e.g. 7.2) with their associated
-    // color by mixing between them.
-    $scores: (
-        0:  $color-poor,
-        1:  mix($color-poor, $color-average, 80%),
-        2:  mix($color-poor, $color-average, 60%),
-        3:  mix($color-poor, $color-average, 40%),
-        4:  mix($color-poor, $color-average, 20%),
-        5:  $color-average,
-        6:  mix($color-average, $color-good, 80%),
-        7:  mix($color-average, $color-good, 60%),
-        8:  mix($color-average, $color-good, 40%),
-        9:  mix($color-average, $color-good, 20%),
-        10: $color-good,
-    );
+  // ...and populate the list of scores (e.g. 7.2) with their associated
+  // color by mixing between them.
+  $scores: (
+    0:  $color-poor,
+    1:  mix($color-poor, $color-average, 80%),
+    2:  mix($color-poor, $color-average, 60%),
+    3:  mix($color-poor, $color-average, 40%),
+    4:  mix($color-poor, $color-average, 20%),
+    5:  $color-average,
+    6:  mix($color-average, $color-good, 80%),
+    7:  mix($color-average, $color-good, 60%),
+    8:  mix($color-average, $color-good, 40%),
+    9:  mix($color-average, $color-good, 20%),
+    10: $color-good,
+  );
 
-    // Loop through the scores list and output a data attribute substring
-    // selector for each, e.g.:
+  // Loop through the scores list and output a data attribute substring
+  // selector for each, e.g.:
+  //
+  // .c-score[data-score^="7."] {}
+  //
+  // This will style any score in the 7.x category accordingly.
+  @each $score, $color in $scores {
+
+    &[data-score^="#{$score}."] {
+        color: $color;
+    }
+
+  }
+
+  /**
+   * Apply the score’s color as a background by augmenting with a class of
+   * `.c-score--inverse`.
+   *
+   * 1. This magic number applies the right amount of padding to spoof a space
+   *    character either side of the text.
+   */
+  &--inverse {
+    vertical-align: middle;
+    padding-right: 0.28em; /* [1] */
+    padding-left:  0.28em; /* [1] */
+    @include font-weight(normal);
+    border-radius: $global-radius;
+
+    // Loop through our array again, only this time applying colours as
+    // backgrounds.
     //
-    // .c-score[data-score^="7."] {}
-    //
-    // This will style any score in the 7.x category accordingly.
+    // 1. The fact that `#fff` works here is, unfortunately, entirely
+    //    circumstantial. We will need to rethink this if we have a
+    //    background whose foreground cannot be white.
     @each $score, $color in $scores {
 
-        &[data-score^="#{$score}."] {
-            color: $color;
-        }
+      &[data-score^="#{$score}."] {
+        background-color: $color;
+        color: #fff;
+      }
 
     }
 
-    /**
-     * Apply the score’s color as a background by augmenting with a class of
-     * `.c-score--inverse`.
-     *
-     * 1. This magic number applies the right amount of padding to spoof a space
-     *    character either side of the text.
-     */
-    &--inverse {
-        vertical-align: middle;
-        padding-right: 0.28em; /* [1] */
-        padding-left:  0.28em; /* [1] */
-        @include font-weight(normal);
-        border-radius: $global-radius;
-
-        // Loop through our array again, only this time applying colours as
-        // backgrounds.
-        //
-        // 1. The fact that `#fff` works here is, unfortunately, entirely
-        //    circumstantial. We will need to rethink this if we have a
-        //    background whose foreground cannot be white.
-        @each $score, $color in $scores {
-
-            &[data-score^="#{$score}."] {
-                background-color: $color;
-                color: #fff;
-            }
-
-        }
-    }
+  }
 
 }
 
 .c-score--small {
-    @include font-size($global-font-size);
+  @include font-size($global-font-size);
 }

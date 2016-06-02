@@ -3,68 +3,68 @@
 \*------------------------------------*/
 
 .c-panel {
-    background-color: $color-panel-background;
-    border-radius: $global-radius;
-    overflow: hidden;
-    margin-bottom: $global-spacing-unit;
-    border: 1px solid $color-ui;
-    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.025);
+  background-color: $color-panel-background;
+  border-radius: $global-radius;
+  overflow: hidden;
+  margin-bottom: $global-spacing-unit;
+  border: 1px solid $color-ui;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.025);
 }
 
-    .c-panel__masthead {
-        height: 10 * $global-spacing-unit;
-        overflow: hidden;
-        background-color: $color-ui;
+  .c-panel__masthead {
+    height: 10 * $global-spacing-unit;
+    overflow: hidden;
+    background-color: $color-ui;
+  }
+
+  .c-panel__masthead--small {
+    height: 5 * $global-spacing-unit;
+  }
+
+  .c-panel__masthead--fluid {
+    position: relative;
+    height: auto;
+    padding-top: 56.25%;
+  }
+
+  .c-panel__masthead-media {
+    width: 100%;
+    object-fit: cover;
+
+    .c-panel__masthead--fluid & {
+      position: absolute;
+      top: -25%;
+      left: 0;
     }
 
-    .c-panel__masthead--small {
-        height: 5 * $global-spacing-unit;
+  }
+
+  .c-panel__content {
+    padding: $global-spacing-unit;
+
+    > :last-child {
+      margin-bottom: 0;
     }
 
-    .c-panel__masthead--fluid {
-        position: relative;
-        height: auto;
-        padding-top: 56.25%;
+  }
+
+  .c-panel__link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: $global-spacing-unit;
+    border-top: 1px solid $color-ui;
+    color: $color-panel-link;
+
+    @include hocus() {
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.01);
+      color: $color-panel-link-hover;
     }
 
-    .c-panel__masthead-media {
-        width: 100%;
-        object-fit: cover;
-
-        .c-panel__masthead--fluid & {
-            position: absolute;
-            top: -25%;
-            left: 0;
-        }
-
-    }
-
-    .c-panel__content {
-        padding: $global-spacing-unit;
-
-        > :last-child {
-            margin-bottom: 0;
-        }
-
-    }
-
-    .c-panel__link {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        padding: $global-spacing-unit;
-        border-top: 1px solid $color-ui;
-        color: $color-panel-link;
-
-        @include hocus() {
-            text-decoration: none;
-            background-color: rgba(0, 0, 0, 0.01);
-            color: $color-panel-link-hover;
-        }
-
-    }
+  }
 
 .c-panel--inverse {
-    background-color: $color-panel-inverse-background;
-    color: $color-panel-inverse;
+  background-color: $color-panel-inverse-background;
+  color: $color-panel-inverse;
 }
