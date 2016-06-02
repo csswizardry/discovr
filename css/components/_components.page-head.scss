@@ -10,7 +10,7 @@
 
   &.is-fixed {
 
-    @media screen and (min-width: 1024px) {
+    @include mq($from: medium) {
       position: fixed;
       top:   0;
       right: 0;

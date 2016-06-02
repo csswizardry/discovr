@@ -11,7 +11,7 @@
   padding-top: percentage(9/16);
   margin-bottom: $global-spacing-unit;
 
-  @media screen and (min-width: 1280px) {
+  @include mq($from: large) {
     padding-top: 0;
     height: 720px;
   }

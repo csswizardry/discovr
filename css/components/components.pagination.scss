@@ -41,7 +41,7 @@
   .c-pagination__item {
     display: none;
 
-    @media screen and (min-width: 720px) {
+    @include mq($from: small) {
       display: table-cell;
     }
 
@@ -72,7 +72,7 @@
       color: $color-pagination;
       background-color: $color-pagination-bg;
 
-      @media screen and (min-width: 480px) {
+      @include mq($from: tiny) {
         padding: $global-spacing-unit-small;
       }
 

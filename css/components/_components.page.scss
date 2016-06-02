@@ -6,7 +6,7 @@
 
   &.has-fixed-page-head {
 
-    @media screen and (min-width: 1024px) {
+    @include mq($from: medium) {
       padding-top: $logo-height + $global-spacing-unit-large;
     }
 

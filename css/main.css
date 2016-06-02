@@ -855,7 +855,7 @@ blockquote p:last-of-type:after {
 /*------------------------------------*\
   #PAGE
 \*------------------------------------*/
-@media screen and (min-width: 1024px) {
+@media (min-width: 64em) {
   .c-page.has-fixed-page-head {
     padding-top: 70px;
   }
@@ -874,7 +874,7 @@ blockquote p:last-of-type:after {
   display: table;
   clear: both;
 }
-@media screen and (min-width: 1024px) {
+@media (min-width: 64em) {
   .c-page-head.is-fixed {
     position: fixed;
     top: 0;
@@ -956,7 +956,7 @@ blockquote p:last-of-type:after {
   padding-top: 56.25%;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 75em) {
   .c-masthead {
     padding-top: 0;
     height: 720px;
@@ -1460,7 +1460,7 @@ blockquote p:last-of-type:after {
 .c-pagination__item {
   display: none;
 }
-@media screen and (min-width: 720px) {
+@media (min-width: 45em) {
   .c-pagination__item {
     display: table-cell;
   }
@@ -1490,7 +1490,7 @@ blockquote p:last-of-type:after {
   color: #fff;
   background-color: #378bb5;
 }
-@media screen and (min-width: 480px) {
+@media (min-width: 30em) {
   .c-pagination__link {
     padding: 10px;
   }
