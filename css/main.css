@@ -513,6 +513,14 @@ hr {
   padding: 0;
 }
 
+/**
+ * Remove trailing margins from nested lists.
+ */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
 /*------------------------------------*\
   #SHARED
 \*------------------------------------*/
@@ -616,14 +624,6 @@ a:hover, a:focus {
 /*------------------------------------*\
   #LISTS
 \*------------------------------------*/
-/**
- * Remove trailing margins from nested lists.
- */
-li > ul,
-li > ol {
-  margin-bottom: 0;
-}
-
 /**
  * Visually offset definition titles from their definitions.
  */
