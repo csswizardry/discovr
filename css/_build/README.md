@@ -21,9 +21,11 @@ There are two classes of component:
 
 ## `view.html`
 
-The `view.html` file contains several randomly sized `iframe`s through which we
-view our components as we’re building them. This gives us a simultaneous view of
-several different responsive variations of our components in one page, meaning
-we can develop and compare components without having to constantly resize our
-browser window. Simply point your `iframe`s at the HTML file for the component
-you’re currently building.
+The
+[`view.html`](https://github.com/csswizardry/discovr/blob/master/css/_build/view.html)
+file contains several randomly sized `iframe`s through which we view our
+components as we’re building them. This gives us a simultaneous view of several
+different responsive variations of our components in one page, meaning we can
+develop and compare components without having to constantly resize our browser
+window. Simply point your `iframe`s at the HTML file for the component you’re
+currently building.
