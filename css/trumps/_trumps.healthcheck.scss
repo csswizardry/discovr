@@ -1,8 +1,7 @@
+@if (config(healthcheck) == true) {
 /*------------------------------------*\
   #HEALTHCHECK
 \*------------------------------------*/
-
-@if (config(healthcheck) == true) {
 
   /**
    * Highlight types of class to visually see the makeup of our UIs.
@@ -27,4 +26,4 @@
     outline: 10px solid red;
   }
 
-}
+} // endif
