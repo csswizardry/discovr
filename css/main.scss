@@ -71,7 +71,7 @@
  * THEMES
  * Red..................Simple red theme for the site.
  *
- * TRUMPS
+ * UTILITIES
  * Headings.............Reassigning our heading styles to helper classes.
  * Widths...............Simple width helper classes.
  * Healthcheck..........Visual health-check tool.
@@ -162,8 +162,8 @@
 
 
 
-@import "trumps/trumps.headings";
-@import "trumps/trumps.widths";
-@import "trumps/trumps.healthcheck";
-@import "trumps/trumps.debug";
-@import "trumps/trumps.shame";
+@import "utilities/utilities.headings";
+@import "utilities/utilities.widths";
+@import "utilities/utilities.healthcheck";
+@import "utilities/utilities.debug";
+@import "utilities/utilities.shame";
