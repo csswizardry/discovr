@@ -571,6 +571,19 @@ li > ol {
   margin-bottom: 0;
 }
 
+/**
+ * Remove spaces between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
 /*------------------------------------*\
   #SHARED
 \*------------------------------------*/
