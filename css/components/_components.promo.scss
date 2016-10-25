@@ -5,6 +5,8 @@
 $promo-color:             inherit !default;
 $promo-color-background:  #ffc !default;
 
+$promo-custom: () !default;
+
 .c-promo {
   padding: $global-spacing-unit;
   margin-bottom: $global-spacing-unit;
@@ -14,6 +16,10 @@ $promo-color-background:  #ffc !default;
 
   > :last-child {
     margin-bottom: 0;
+  }
+
+  @each $prop, $val in $promo-custom {
+    #{$prop}: $val;
   }
 
 }
