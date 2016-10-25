@@ -603,12 +603,12 @@ hr,
 table,
 fieldset, figure,
 pre {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 ul, ol,
 dd {
-  margin-left: 24px;
+  margin-left: 20px;
 }
 
 /*------------------------------------*\
@@ -618,8 +618,8 @@ dd {
  * Page-level styling (e.g. HTML and BODY elements).
  */
 html {
-  font-size: 1em;
-  line-height: 1.5;
+  font-size: 0.875em;
+  line-height: 1.428571429;
   font-family: Lato, sans-serif;
   background-color: #f3f3f3;
   color: #333;
@@ -637,38 +637,38 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 1.333333333;
+  font-size: 2.571428571rem;
+  line-height: 1.111111111;
 }
 
 h2 {
   font-size: 28px;
-  font-size: 1.75rem;
-  line-height: 1.714285714;
+  font-size: 2rem;
+  line-height: 1.428571429;
 }
 
 h3 {
   font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1;
+  font-size: 1.714285714rem;
+  line-height: 1.666666667;
 }
 
 h4 {
   font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.2;
+  font-size: 1.428571429rem;
+  line-height: 1;
 }
 
 h5 {
   font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.333333333;
+  font-size: 1.285714286rem;
+  line-height: 1.111111111;
 }
 
 h6 {
   font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.142857143rem;
+  line-height: 1.25;
 }
 
 /*------------------------------------*\
@@ -766,8 +766,8 @@ blockquote p:last-of-type:after {
 \*------------------------------------*/
 .o-wrapper {
   max-width: 1280px;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -784,21 +784,21 @@ blockquote p:last-of-type:after {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: -24px;
+  margin-left: -20px;
 }
 
 .o-layout__item {
   display: inline-block;
   vertical-align: top;
   width: 100%;
-  padding-left: 24px;
+  padding-left: 20px;
 }
 
 /*------------------------------------*\
   #HEADLINE
 \*------------------------------------*/
 .o-headline {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.428571429rem;
 }
 
 .o-headline__main,
@@ -826,7 +826,7 @@ blockquote p:last-of-type:after {
 }
 
 .o-media__img {
-  padding-right: 24px;
+  padding-right: 20px;
 }
 .o-media__img img {
   max-width: none;
@@ -911,7 +911,7 @@ blockquote p:last-of-type:after {
   #LOGO
 \*------------------------------------*/
 .c-logo__fill {
-  fill: #a9ae00;
+  fill: #378bb5;
 }
 .c-page-head .c-logo__fill {
   fill: currentcolor;
@@ -922,7 +922,7 @@ blockquote p:last-of-type:after {
 \*------------------------------------*/
 @media (min-width: 64em) {
   .c-page.has-fixed-page-head {
-    padding-top: 78px;
+    padding-top: 70px;
   }
 }
 
@@ -930,9 +930,9 @@ blockquote p:last-of-type:after {
   #PAGE-HEAD
 \*------------------------------------*/
 .c-page-head {
-  background-color: #a9ae00;
+  background-color: #378bb5;
   color: #fff;
-  padding: 24px;
+  padding: 20px;
 }
 .c-page-head:after {
   content: "";
@@ -971,10 +971,10 @@ blockquote p:last-of-type:after {
   #PAGE-FOOT
 \*------------------------------------*/
 .c-page-foot {
-  padding: 24px;
+  padding: 20px;
   font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 2;
+  font-size: 0.857142857rem;
+  line-height: 1.666666667;
   background-color: #333;
   color: #fff;
 }
@@ -984,8 +984,8 @@ blockquote p:last-of-type:after {
 \*------------------------------------*/
 .c-nav-primary__link {
   display: inline-block;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
   font-weight: 400;
 }
 .c-nav-primary__link.is-active {
@@ -1001,8 +1001,8 @@ blockquote p:last-of-type:after {
 }
 
 .c-nav-secondary__item {
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .c-nav-secondary__link {
@@ -1014,12 +1014,12 @@ blockquote p:last-of-type:after {
 \*------------------------------------*/
 .c-masthead {
   position: relative;
-  background-color: #a9ae00;
+  background-color: #378bb5;
   color: white;
   overflow: hidden;
   height: 0;
   padding-top: 56.25%;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 @media (min-width: 75em) {
   .c-masthead {
@@ -1040,7 +1040,7 @@ blockquote p:last-of-type:after {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 24px;
+  padding: 20px;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.25);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
@@ -1049,8 +1049,8 @@ blockquote p:last-of-type:after {
 .c-masthead__title {
   font-weight: 900;
   font-size: 60px;
-  font-size: 3.75rem;
-  line-height: 1.2;
+  font-size: 4.285714286rem;
+  line-height: 1;
 }
 
 /*------------------------------------*\
@@ -1060,7 +1060,7 @@ blockquote p:last-of-type:after {
  * Housing for any secondary content.
  */
 .c-sub-content {
-  padding: 24px;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.05);
   color: #666;
   /**
@@ -1081,29 +1081,29 @@ blockquote p:last-of-type:after {
  */
 .c-sub-content__title {
   font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 2;
-  color: #a9ae00;
+  font-size: 0.857142857rem;
+  line-height: 1.666666667;
+  color: #378bb5;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 400;
-  margin-right: -24px;
+  margin-right: -20px;
   /* [1] */
-  margin-left: -24px;
+  margin-left: -20px;
   /* [1] */
-  padding-right: 24px;
+  padding-right: 20px;
   /* [2] */
-  padding-left: 24px;
+  padding-left: 20px;
   /* [2] */
   border-bottom: 1px solid;
-  margin-bottom: 23px;
+  margin-bottom: 19px;
   /* [3] */
 }
 
 .c-sub-content__title--featured {
   font-weight: 700;
   border-bottom-width: 2px;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   /* [3] */
 }
 
@@ -1118,13 +1118,13 @@ blockquote p:last-of-type:after {
  *    sub-content’s padding.
  */
 .c-sub-content__img {
-  margin-left: -24px;
+  margin-left: -20px;
   /* [1] */
   max-width: none;
   /* [2] */
   width: 100%;
   /* [3] */
-  width: calc(100% + 48px);
+  width: calc(100% + 40px);
   /* [4] */
 }
 
@@ -1135,19 +1135,19 @@ blockquote p:last-of-type:after {
   background-color: #fff;
   border-radius: 3px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   border: 1px solid #e4e4e4;
   box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.025);
 }
 
 .c-panel__masthead {
-  height: 240px;
+  height: 200px;
   overflow: hidden;
   background-color: #e4e4e4;
 }
 
 .c-panel__masthead--small {
-  height: 120px;
+  height: 100px;
 }
 
 .c-panel__masthead--fluid {
@@ -1167,7 +1167,7 @@ blockquote p:last-of-type:after {
 }
 
 .c-panel__content {
-  padding: 24px;
+  padding: 20px;
 }
 .c-panel__content > :last-child {
   margin-bottom: 0;
@@ -1177,18 +1177,18 @@ blockquote p:last-of-type:after {
   display: block;
   text-align: center;
   text-decoration: none;
-  padding: 24px;
+  padding: 20px;
   border-top: 1px solid #e4e4e4;
   color: #333;
 }
 .c-panel__link:hover, .c-panel__link:focus {
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.01);
-  color: #a9ae00;
+  color: #378bb5;
 }
 
 .c-panel--inverse {
-  background-color: #a9ae00;
+  background-color: #378bb5;
   color: #fff;
 }
 
@@ -1309,9 +1309,9 @@ blockquote p:last-of-type:after {
 }
 
 .c-score--small {
-  font-size: 16px;
+  font-size: 14px;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.428571429;
 }
 
 /*------------------------------------*\
@@ -1340,41 +1340,41 @@ blockquote p:last-of-type:after {
   /* [4] */
   cursor: pointer;
   /* [5] */
-  padding: 12px 24px;
+  padding: 10px 20px;
 }
 .c-btn:hover, .c-btn:focus {
   text-decoration: none;
 }
 
 .c-btn--primary {
-  background-color: #a9ae00;
+  background-color: #378bb5;
   color: #fff;
   border-radius: 3px;
   transition: 0.333333333s;
 }
 .c-btn--primary:hover, .c-btn--primary:focus {
-  background-color: #909500;
+  background-color: #317ca1;
 }
 .t-red .c-btn--primary {
   background-color: #c00;
 }
 
 .c-btn--secondary {
-  background-color: #2f2f2f;
+  background-color: #abc123;
   color: #fff;
   border-radius: 3px;
   transition: 0.333333333s;
 }
 .c-btn--secondary:hover, .c-btn--secondary:focus {
-  background-color: #222222;
+  background-color: #98ab1f;
 }
 
 .c-btn--small {
-  padding: 6px 12px;
+  padding: 5px 10px;
 }
 
 .c-btn--large {
-  padding: 24px 48px;
+  padding: 20px 40px;
 }
 
 /*------------------------------------*\
@@ -1382,34 +1382,34 @@ blockquote p:last-of-type:after {
 \*------------------------------------*/
 .c-avatar {
   display: block;
-  width: 72px;
-  height: 72px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
 }
 
 .c-avatar--small {
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
 }
 
 .c-avatar--large {
-  width: 144px;
-  height: 144px;
+  width: 120px;
+  height: 120px;
 }
 
 .c-testimonial {
   font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.333333333;
-  padding: 24px;
-  border-left: 8px solid #a9ae00;
+  font-size: 1.285714286rem;
+  line-height: 1.111111111;
+  padding: 20px;
+  border-left: 8px solid #378bb5;
   background-color: #fff;
 }
 
 .c-testimonial__title {
   font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 2;
+  font-size: 0.857142857rem;
+  line-height: 1.666666667;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 0;
@@ -1427,13 +1427,13 @@ blockquote p:last-of-type:after {
   width: 100%;
   table-layout: fixed;
   font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 2;
+  font-size: 0.857142857rem;
+  line-height: 1.666666667;
   text-align: center;
 }
 .c-calendar th,
 .c-calendar td {
-  padding: 6px;
+  padding: 5px;
   border: 1px solid #e4e4e4;
   background-color: #fff;
 }
@@ -1446,7 +1446,7 @@ blockquote p:last-of-type:after {
   color: #fff;
 }
 .c-calendar__title.c-calendar__title {
-  background-color: #a9ae00;
+  background-color: #378bb5;
   border-color: currentColor;
   border-bottom-width: 1px;
 }
@@ -1462,7 +1462,7 @@ blockquote p:last-of-type:after {
   color: #fff;
 }
 .c-calendar__busy.c-calendar__busy {
-  background-color: #2f2f2f;
+  background-color: #abc123;
   border-color: currentColor;
 }
 
@@ -1470,9 +1470,9 @@ blockquote p:last-of-type:after {
   #HEADLINE
 \*------------------------------------*/
 .c-headline {
-  font-size: 16px;
+  font-size: 14px;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.428571429;
   font-weight: 400;
   border-bottom: 1px solid #cccccc;
   color: #999;
@@ -1484,8 +1484,8 @@ blockquote p:last-of-type:after {
   #PROMO
 \*------------------------------------*/
 .c-promo {
-  padding: 24px;
-  margin-bottom: 24px;
+  padding: 20px;
+  margin-bottom: 20px;
   background-color: #507028;
   color: #fff;
   border-radius: 3px;
@@ -1505,12 +1505,12 @@ blockquote p:last-of-type:after {
 .c-pagination {
   font-family: Lato, sans-serif;
   font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 2;
+  font-size: 0.857142857rem;
+  line-height: 1.666666667;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   display: table;
   table-layout: fixed;
   width: 100%;
@@ -1553,20 +1553,20 @@ blockquote p:last-of-type:after {
 .c-pagination__link {
   text-decoration: none;
   display: block;
-  padding: 6px;
+  padding: 5px;
   color: #fff;
-  background-color: #a9ae00;
+  background-color: #378bb5;
 }
 @media (min-width: 30em) {
   .c-pagination__link {
-    padding: 12px;
+    padding: 10px;
   }
 }
 .c-pagination__link:hover, .c-pagination__link:focus {
-  background-color: #909500;
+  background-color: #317ca1;
 }
 .c-pagination__link.is-current {
-  background-color: #c2c800;
+  background-color: #4099c5;
   text-decoration: underline;
   cursor: default;
 }
@@ -1580,8 +1580,8 @@ blockquote p:last-of-type:after {
    */
   font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
   font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.333333333;
+  font-size: 1.285714286rem;
+  line-height: 1.111111111;
   /**
    * Make all headings in CMS-powered content the same size in order to
    * prevent the user abusing visual vs. semantic hierarchy.
@@ -1604,20 +1604,20 @@ blockquote p:last-of-type:after {
 .s-prose h1, .s-prose h2, .s-prose h3, .s-prose h4, .s-prose h5, .s-prose h6 {
   font-family: Lato, sans-serif;
   font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.333333333;
+  font-size: 1.285714286rem;
+  line-height: 1.111111111;
 }
 .s-prose a {
-  color: #a9ae00;
+  color: #378bb5;
   text-decoration: underline;
   font-weight: 400;
 }
 .s-prose a:hover, .s-prose a:focus {
-  color: #909500;
+  color: #317ca1;
 }
 .s-prose ul,
 .s-prose ol {
-  margin-left: 48px;
+  margin-left: 40px;
 }
 .s-prose br + br {
   display: none;
@@ -1639,49 +1639,42 @@ blockquote p:last-of-type:after {
 }
 
 /*------------------------------------*\
-  #CUSTOM
-\*------------------------------------*/
-/**
- * This file contains any additional or override CSS for the Custom theme: any
- * customisations that can’t be handled by `_settings.custom.scss`.
- */
-/*------------------------------------*\
   #HEADINGS
 \*------------------------------------*/
 .u-h1 {
   font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 1.333333333;
+  font-size: 2.571428571rem;
+  line-height: 1.111111111;
 }
 
 .u-h2 {
   font-size: 28px;
-  font-size: 1.75rem;
-  line-height: 1.714285714;
+  font-size: 2rem;
+  line-height: 1.428571429;
 }
 
 .u-h3 {
   font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1;
+  font-size: 1.714285714rem;
+  line-height: 1.666666667;
 }
 
 .u-h4 {
   font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.2;
+  font-size: 1.428571429rem;
+  line-height: 1;
 }
 
 .u-h5 {
   font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.333333333;
+  font-size: 1.285714286rem;
+  line-height: 1.111111111;
 }
 
 .u-h6 {
   font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.142857143rem;
+  line-height: 1.25;
 }
 
 /*------------------------------------*\
