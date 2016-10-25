@@ -5,12 +5,12 @@
 // Project-level settings and setup.
 
 // Base typographical styles and baseline grid.
-$global-font-size:    14px;
-$global-line-height:  20px;
+$global-font-size:    14px !default;
+$global-line-height:  20px !default;
 
 // Standardise some UI treatments.
-$global-radius:       3px;
-$global-transition:   0.333333333s;
+$global-radius:       3px !default;
+$global-transition:   0.333333333s !default;
 
 
 

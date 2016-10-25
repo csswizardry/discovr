@@ -6,6 +6,7 @@
  * CONTENTS
  *
  * SETTINGS
+ * Ocado................Ocado-specific theming and config.
  * All..................Because our Settings layer doesn’t actually produce any
  *                      CSS, we can safely glob all of the files into one import
  *                      without risk of bloating our compiled stylesheet. This
@@ -70,6 +71,7 @@
  *
  * THEMES
  * Red..................Simple red theme for the site.
+ * Ocado................Ocado-specific overrides.
  *
  * UTILITIES
  * Headings.............Reassigning our heading styles to helper classes.
@@ -601,12 +603,12 @@ hr,
 table,
 fieldset, figure,
 pre {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 ul, ol,
 dd {
-  margin-left: 20px;
+  margin-left: 24px;
 }
 
 /*------------------------------------*\
@@ -616,8 +618,8 @@ dd {
  * Page-level styling (e.g. HTML and BODY elements).
  */
 html {
-  font-size: 0.875em;
-  line-height: 1.428571429;
+  font-size: 1em;
+  line-height: 1.5;
   font-family: Lato, sans-serif;
   background-color: #f3f3f3;
   color: #333;
@@ -635,38 +637,38 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 36px;
-  font-size: 2.571428571rem;
-  line-height: 1.111111111;
+  font-size: 2.25rem;
+  line-height: 1.33333;
 }
 
 h2 {
   font-size: 28px;
-  font-size: 2rem;
-  line-height: 1.428571429;
+  font-size: 1.75rem;
+  line-height: 1.71429;
 }
 
 h3 {
   font-size: 24px;
-  font-size: 1.714285714rem;
-  line-height: 1.666666667;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 h4 {
   font-size: 20px;
-  font-size: 1.428571429rem;
-  line-height: 1;
+  font-size: 1.25rem;
+  line-height: 1.2;
 }
 
 h5 {
   font-size: 18px;
-  font-size: 1.285714286rem;
-  line-height: 1.111111111;
+  font-size: 1.125rem;
+  line-height: 1.33333;
 }
 
 h6 {
   font-size: 16px;
-  font-size: 1.142857143rem;
-  line-height: 1.25;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /*------------------------------------*\
@@ -764,8 +766,8 @@ blockquote p:last-of-type:after {
 \*------------------------------------*/
 .o-wrapper {
   max-width: 1280px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -782,21 +784,21 @@ blockquote p:last-of-type:after {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: -20px;
+  margin-left: -24px;
 }
 
 .o-layout__item {
   display: inline-block;
   vertical-align: top;
   width: 100%;
-  padding-left: 20px;
+  padding-left: 24px;
 }
 
 /*------------------------------------*\
   #HEADLINE
 \*------------------------------------*/
 .o-headline {
-  margin-bottom: 1.428571429rem;
+  margin-bottom: 1.5rem;
 }
 
 .o-headline__main,
@@ -824,7 +826,7 @@ blockquote p:last-of-type:after {
 }
 
 .o-media__img {
-  padding-right: 20px;
+  padding-right: 24px;
 }
 .o-media__img img {
   max-width: none;
@@ -909,7 +911,7 @@ blockquote p:last-of-type:after {
   #LOGO
 \*------------------------------------*/
 .c-logo__fill {
-  fill: #378bb5;
+  fill: #a9ae00;
 }
 .c-page-head .c-logo__fill {
   fill: currentcolor;
@@ -920,7 +922,7 @@ blockquote p:last-of-type:after {
 \*------------------------------------*/
 @media (min-width: 64em) {
   .c-page.has-fixed-page-head {
-    padding-top: 70px;
+    padding-top: 78px;
   }
 }
 
@@ -928,9 +930,9 @@ blockquote p:last-of-type:after {
   #PAGE-HEAD
 \*------------------------------------*/
 .c-page-head {
-  background-color: #378bb5;
+  background-color: #a9ae00;
   color: #fff;
-  padding: 20px;
+  padding: 24px;
 }
 .c-page-head:after {
   content: "";
@@ -969,10 +971,10 @@ blockquote p:last-of-type:after {
   #PAGE-FOOT
 \*------------------------------------*/
 .c-page-foot {
-  padding: 20px;
+  padding: 24px;
   font-size: 12px;
-  font-size: 0.857142857rem;
-  line-height: 1.666666667;
+  font-size: 0.75rem;
+  line-height: 2;
   background-color: #333;
   color: #fff;
 }
@@ -982,8 +984,8 @@ blockquote p:last-of-type:after {
 \*------------------------------------*/
 .c-nav-primary__link {
   display: inline-block;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
   font-weight: 400;
 }
 .c-nav-primary__link.is-active {
@@ -999,8 +1001,8 @@ blockquote p:last-of-type:after {
 }
 
 .c-nav-secondary__item {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 .c-nav-secondary__link {
@@ -1012,12 +1014,12 @@ blockquote p:last-of-type:after {
 \*------------------------------------*/
 .c-masthead {
   position: relative;
-  background-color: #378bb5;
+  background-color: #a9ae00;
   color: white;
   overflow: hidden;
   height: 0;
   padding-top: 56.25%;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 @media (min-width: 75em) {
   .c-masthead {
@@ -1038,7 +1040,7 @@ blockquote p:last-of-type:after {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 20px;
+  padding: 24px;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.25);
   text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
@@ -1047,8 +1049,8 @@ blockquote p:last-of-type:after {
 .c-masthead__title {
   font-weight: 900;
   font-size: 60px;
-  font-size: 4.285714286rem;
-  line-height: 1;
+  font-size: 3.75rem;
+  line-height: 1.2;
 }
 
 /*------------------------------------*\
@@ -1058,7 +1060,7 @@ blockquote p:last-of-type:after {
  * Housing for any secondary content.
  */
 .c-sub-content {
-  padding: 20px;
+  padding: 24px;
   background-color: rgba(0, 0, 0, 0.05);
   color: #666;
   /**
@@ -1079,29 +1081,29 @@ blockquote p:last-of-type:after {
  */
 .c-sub-content__title {
   font-size: 12px;
-  font-size: 0.857142857rem;
-  line-height: 1.666666667;
-  color: #378bb5;
+  font-size: 0.75rem;
+  line-height: 2;
+  color: #a9ae00;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 400;
-  margin-right: -20px;
+  margin-right: -24px;
   /* [1] */
-  margin-left: -20px;
+  margin-left: -24px;
   /* [1] */
-  padding-right: 20px;
+  padding-right: 24px;
   /* [2] */
-  padding-left: 20px;
+  padding-left: 24px;
   /* [2] */
   border-bottom: 1px solid;
-  margin-bottom: 19px;
+  margin-bottom: 23px;
   /* [3] */
 }
 
 .c-sub-content__title--featured {
   font-weight: 700;
   border-bottom-width: 2px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   /* [3] */
 }
 
@@ -1116,13 +1118,13 @@ blockquote p:last-of-type:after {
  *    sub-content’s padding.
  */
 .c-sub-content__img {
-  margin-left: -20px;
+  margin-left: -24px;
   /* [1] */
   max-width: none;
   /* [2] */
   width: 100%;
   /* [3] */
-  width: calc(100% + 40px);
+  width: calc(100% + 48px);
   /* [4] */
 }
 
@@ -1133,19 +1135,19 @@ blockquote p:last-of-type:after {
   background-color: #fff;
   border-radius: 3px;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   border: 1px solid #e4e4e4;
   box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.025);
 }
 
 .c-panel__masthead {
-  height: 200px;
+  height: 240px;
   overflow: hidden;
   background-color: #e4e4e4;
 }
 
 .c-panel__masthead--small {
-  height: 100px;
+  height: 120px;
 }
 
 .c-panel__masthead--fluid {
@@ -1165,7 +1167,7 @@ blockquote p:last-of-type:after {
 }
 
 .c-panel__content {
-  padding: 20px;
+  padding: 24px;
 }
 .c-panel__content > :last-child {
   margin-bottom: 0;
@@ -1175,18 +1177,18 @@ blockquote p:last-of-type:after {
   display: block;
   text-align: center;
   text-decoration: none;
-  padding: 20px;
+  padding: 24px;
   border-top: 1px solid #e4e4e4;
   color: #333;
 }
 .c-panel__link:hover, .c-panel__link:focus {
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.01);
-  color: #378bb5;
+  color: #a9ae00;
 }
 
 .c-panel--inverse {
-  background-color: #378bb5;
+  background-color: #a9ae00;
   color: #fff;
 }
 
@@ -1307,9 +1309,9 @@ blockquote p:last-of-type:after {
 }
 
 .c-score--small {
-  font-size: 14px;
+  font-size: 16px;
   font-size: 1rem;
-  line-height: 1.428571429;
+  line-height: 1.5;
 }
 
 /*------------------------------------*\
@@ -1338,41 +1340,41 @@ blockquote p:last-of-type:after {
   /* [4] */
   cursor: pointer;
   /* [5] */
-  padding: 10px 20px;
+  padding: 12px 24px;
 }
 .c-btn:hover, .c-btn:focus {
   text-decoration: none;
 }
 
 .c-btn--primary {
-  background-color: #378bb5;
+  background-color: #a9ae00;
   color: #fff;
   border-radius: 3px;
-  transition: 0.333333333s;
+  transition: 0.33333s;
 }
 .c-btn--primary:hover, .c-btn--primary:focus {
-  background-color: #317ca1;
+  background-color: #909500;
 }
 .t-red .c-btn--primary {
   background-color: #c00;
 }
 
 .c-btn--secondary {
-  background-color: #abc123;
+  background-color: #2f2f2f;
   color: #fff;
   border-radius: 3px;
-  transition: 0.333333333s;
+  transition: 0.33333s;
 }
 .c-btn--secondary:hover, .c-btn--secondary:focus {
-  background-color: #98ab1f;
+  background-color: #222222;
 }
 
 .c-btn--small {
-  padding: 5px 10px;
+  padding: 6px 12px;
 }
 
 .c-btn--large {
-  padding: 20px 40px;
+  padding: 24px 48px;
 }
 
 /*------------------------------------*\
@@ -1380,34 +1382,34 @@ blockquote p:last-of-type:after {
 \*------------------------------------*/
 .c-avatar {
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 72px;
+  height: 72px;
   border-radius: 100%;
 }
 
 .c-avatar--small {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
 }
 
 .c-avatar--large {
-  width: 120px;
-  height: 120px;
+  width: 144px;
+  height: 144px;
 }
 
 .c-testimonial {
   font-size: 18px;
-  font-size: 1.285714286rem;
-  line-height: 1.111111111;
-  padding: 20px;
-  border-left: 8px solid #378bb5;
+  font-size: 1.125rem;
+  line-height: 1.33333;
+  padding: 24px;
+  border-left: 8px solid #a9ae00;
   background-color: #fff;
 }
 
 .c-testimonial__title {
   font-size: 12px;
-  font-size: 0.857142857rem;
-  line-height: 1.666666667;
+  font-size: 0.75rem;
+  line-height: 2;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 0;
@@ -1425,13 +1427,13 @@ blockquote p:last-of-type:after {
   width: 100%;
   table-layout: fixed;
   font-size: 12px;
-  font-size: 0.857142857rem;
-  line-height: 1.666666667;
+  font-size: 0.75rem;
+  line-height: 2;
   text-align: center;
 }
 .c-calendar th,
 .c-calendar td {
-  padding: 5px;
+  padding: 6px;
   border: 1px solid #e4e4e4;
   background-color: #fff;
 }
@@ -1444,7 +1446,7 @@ blockquote p:last-of-type:after {
   color: #fff;
 }
 .c-calendar__title.c-calendar__title {
-  background-color: #378bb5;
+  background-color: #a9ae00;
   border-color: currentColor;
   border-bottom-width: 1px;
 }
@@ -1460,7 +1462,7 @@ blockquote p:last-of-type:after {
   color: #fff;
 }
 .c-calendar__busy.c-calendar__busy {
-  background-color: #abc123;
+  background-color: #2f2f2f;
   border-color: currentColor;
 }
 
@@ -1468,9 +1470,9 @@ blockquote p:last-of-type:after {
   #HEADLINE
 \*------------------------------------*/
 .c-headline {
-  font-size: 14px;
+  font-size: 16px;
   font-size: 1rem;
-  line-height: 1.428571429;
+  line-height: 1.5;
   font-weight: 400;
   border-bottom: 1px solid #cccccc;
   color: #999;
@@ -1482,9 +1484,10 @@ blockquote p:last-of-type:after {
   #PROMO
 \*------------------------------------*/
 .c-promo {
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: #ff8;
+  padding: 24px;
+  margin-bottom: 24px;
+  background-color: #507028;
+  color: #fff;
   border-radius: 3px;
 }
 .c-promo > :last-child {
@@ -1501,12 +1504,12 @@ blockquote p:last-of-type:after {
 .c-pagination {
   font-family: Lato, sans-serif;
   font-size: 12px;
-  font-size: 0.857142857rem;
-  line-height: 1.666666667;
+  font-size: 0.75rem;
+  line-height: 2;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   display: table;
   table-layout: fixed;
   width: 100%;
@@ -1549,20 +1552,20 @@ blockquote p:last-of-type:after {
 .c-pagination__link {
   text-decoration: none;
   display: block;
-  padding: 5px;
+  padding: 6px;
   color: #fff;
-  background-color: #378bb5;
+  background-color: #a9ae00;
 }
 @media (min-width: 30em) {
   .c-pagination__link {
-    padding: 10px;
+    padding: 12px;
   }
 }
 .c-pagination__link:hover, .c-pagination__link:focus {
-  background-color: #317ca1;
+  background-color: #909500;
 }
 .c-pagination__link.is-current {
-  background-color: #4099c5;
+  background-color: #c2c800;
   text-decoration: underline;
   cursor: default;
 }
@@ -1576,8 +1579,8 @@ blockquote p:last-of-type:after {
    */
   font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
   font-size: 18px;
-  font-size: 1.285714286rem;
-  line-height: 1.111111111;
+  font-size: 1.125rem;
+  line-height: 1.33333;
   /**
    * Make all headings in CMS-powered content the same size in order to
    * prevent the user abusing visual vs. semantic hierarchy.
@@ -1600,20 +1603,20 @@ blockquote p:last-of-type:after {
 .s-prose h1, .s-prose h2, .s-prose h3, .s-prose h4, .s-prose h5, .s-prose h6 {
   font-family: Lato, sans-serif;
   font-size: 18px;
-  font-size: 1.285714286rem;
-  line-height: 1.111111111;
+  font-size: 1.125rem;
+  line-height: 1.33333;
 }
 .s-prose a {
-  color: #378bb5;
+  color: #a9ae00;
   text-decoration: underline;
   font-weight: 400;
 }
 .s-prose a:hover, .s-prose a:focus {
-  color: #317ca1;
+  color: #909500;
 }
 .s-prose ul,
 .s-prose ol {
-  margin-left: 40px;
+  margin-left: 48px;
 }
 .s-prose br + br {
   display: none;
@@ -1635,42 +1638,49 @@ blockquote p:last-of-type:after {
 }
 
 /*------------------------------------*\
+  #OCADO
+\*------------------------------------*/
+/**
+ * This file contains any additional or override CSS for the Ocado theme: any
+ * customisations that can’t be handled by `_settings.ocado.scss`.
+ */
+/*------------------------------------*\
   #HEADINGS
 \*------------------------------------*/
 .u-h1 {
   font-size: 36px;
-  font-size: 2.571428571rem;
-  line-height: 1.111111111;
+  font-size: 2.25rem;
+  line-height: 1.33333;
 }
 
 .u-h2 {
   font-size: 28px;
-  font-size: 2rem;
-  line-height: 1.428571429;
+  font-size: 1.75rem;
+  line-height: 1.71429;
 }
 
 .u-h3 {
   font-size: 24px;
-  font-size: 1.714285714rem;
-  line-height: 1.666666667;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 .u-h4 {
   font-size: 20px;
-  font-size: 1.428571429rem;
-  line-height: 1;
+  font-size: 1.25rem;
+  line-height: 1.2;
 }
 
 .u-h5 {
   font-size: 18px;
-  font-size: 1.285714286rem;
-  line-height: 1.111111111;
+  font-size: 1.125rem;
+  line-height: 1.33333;
 }
 
 .u-h6 {
   font-size: 16px;
-  font-size: 1.142857143rem;
-  line-height: 1.25;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /*------------------------------------*\
@@ -1696,11 +1706,11 @@ blockquote p:last-of-type:after {
 }
 
 .u-1\/3 {
-  width: 33.333333333% !important;
+  width: 33.33333% !important;
 }
 
 .u-2\/3 {
-  width: 66.666666667% !important;
+  width: 66.66667% !important;
 }
 
 .u-3\/3 {
@@ -1757,11 +1767,11 @@ blockquote p:last-of-type:after {
   }
 
   .u-1\/3\@sm {
-    width: 33.333333333% !important;
+    width: 33.33333% !important;
   }
 
   .u-2\/3\@sm {
-    width: 66.666666667% !important;
+    width: 66.66667% !important;
   }
 
   .u-3\/3\@sm {
@@ -1818,11 +1828,11 @@ blockquote p:last-of-type:after {
   }
 
   .u-1\/3\@md {
-    width: 33.333333333% !important;
+    width: 33.33333% !important;
   }
 
   .u-2\/3\@md {
-    width: 66.666666667% !important;
+    width: 66.66667% !important;
   }
 
   .u-3\/3\@md {
@@ -1879,11 +1889,11 @@ blockquote p:last-of-type:after {
   }
 
   .u-1\/3\@lg {
-    width: 33.333333333% !important;
+    width: 33.33333% !important;
   }
 
   .u-2\/3\@lg {
-    width: 66.666666667% !important;
+    width: 66.66667% !important;
   }
 
   .u-3\/3\@lg {
