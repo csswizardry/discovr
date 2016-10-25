@@ -6,7 +6,7 @@
  * CONTENTS
  *
  * SETTINGS
- * Ocado................Ocado-specific theming and config.
+ * Custom...............Custom-specific theming and config.
  * All..................Because our Settings layer doesn’t actually produce any
  *                      CSS, we can safely glob all of the files into one import
  *                      without risk of bloating our compiled stylesheet. This
@@ -71,7 +71,7 @@
  *
  * THEMES
  * Red..................Simple red theme for the site.
- * Ocado................Ocado-specific overrides.
+ * Custom...............Custom-specific overrides.
  *
  * UTILITIES
  * Headings.............Reassigning our heading styles to helper classes.
@@ -85,7 +85,7 @@
 
 
 
-@import "settings/settings.ocado";
+@import "settings/settings.custom";
 @import "settings/all";
 
 
@@ -161,7 +161,7 @@
 
 
 @import "themes/themes.red";
-@import "themes/themes.ocado";
+@import "themes/themes.custom";
 
 
 
