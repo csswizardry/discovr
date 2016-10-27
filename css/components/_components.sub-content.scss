@@ -13,6 +13,7 @@ $sub-content-padding: $global-spacing-unit;
   padding: $sub-content-padding;
   background-color: $color-sub-content-bg;
   color: $color-sub-content;
+  margin-bottom: $global-spacing-unit;
 
   /**
    * Remove the margin from the last element in the sub-content area so as to
