@@ -1,0 +1,58 @@
+/*------------------------------------*\
+  #NAV-TERTIARY
+\*------------------------------------*/
+
+.c-nav-tertiary {
+  background-color: $color-grey-dark;
+  color: $color-white;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: $global-spacing-unit;
+  }
+
+  &::before {
+    left: 0;
+    background-image: -webkit-linear-gradient(right, rgba(0,0,0,0) 0%, $color-grey-dark 100%);
+  }
+
+  &::after {
+    right: 0;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, $color-grey-dark 100%);
+  }
+
+}
+
+  .c-nav-tertiary__list {
+    @include clearfix();
+    white-space: nowrap;
+    overflow-x: scroll;
+    margin: 0;
+    list-style: none;
+    font-size: 0;
+    padding-right: $global-spacing-unit-small;
+    padding-left:  $global-spacing-unit-small;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+  }
+
+    .c-nav-tertiary__item {
+      @include font-size($global-font-size);
+      display: inline-block;
+    }
+
+      .c-nav-tertiary__link {
+        @include font-weight('normal');
+        display: block;
+        padding: $global-spacing-unit-small;
+        color: $color-white;
+      }

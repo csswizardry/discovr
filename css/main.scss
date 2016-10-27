@@ -54,6 +54,7 @@
  * Page-foot............Page footer styles.
  * Nav primary..........The site’s main nav.
  * Nav secondary........Secondary nav styles.
+ * Nav tertiary.........Horizontally scrolling nav.
  * Masthead.............Site’s main masthead.
  * Sub-content..........Secondary/supporting content.
  * Panel................Simple panelled boxout.
@@ -136,6 +137,7 @@
 @import "components/components.page-foot";
 @import "components/components.nav-primary";
 @import "components/components.nav-secondary";
+@import "components/components.nav-tertiary";
 @import "components/components.masthead";
 @import "components/components.sub-content";
 @import "components/components.panel";

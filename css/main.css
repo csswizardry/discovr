@@ -54,6 +54,7 @@
  * Page-foot............Page footer styles.
  * Nav primary..........The site’s main nav.
  * Nav secondary........Secondary nav styles.
+ * Nav tertiary.........Horizontally scrolling nav.
  * Masthead.............Site’s main masthead.
  * Sub-content..........Secondary/supporting content.
  * Panel................Simple panelled boxout.
@@ -1007,6 +1008,63 @@ blockquote p:last-of-type:after {
 
 .c-nav-secondary__link {
   font-weight: 400;
+}
+
+/*------------------------------------*\
+  #NAV-TERTIARY
+\*------------------------------------*/
+.c-nav-tertiary {
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}
+.c-nav-tertiary::before, .c-nav-tertiary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+}
+.c-nav-tertiary::before {
+  left: 0;
+  background-image: -webkit-linear-gradient(right, transparent 0%, #333 100%);
+}
+.c-nav-tertiary::after {
+  right: 0;
+  background-image: -webkit-linear-gradient(left, transparent 0%, #333 100%);
+}
+
+.c-nav-tertiary__list {
+  white-space: nowrap;
+  overflow-x: scroll;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+  -webkit-overflow-scrolling: touch;
+}
+.c-nav-tertiary__list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.c-nav-tertiary__list::-webkit-scrollbar {
+  display: none;
+}
+
+.c-nav-tertiary__item {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 1.428571429;
+  display: inline-block;
+}
+
+.c-nav-tertiary__link {
+  font-weight: 400;
+  display: block;
+  padding: 10px;
+  color: #fff;
 }
 
 /*------------------------------------*\
