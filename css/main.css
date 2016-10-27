@@ -1465,6 +1465,13 @@ blockquote p:last-of-type:after {
   height: 120px;
 }
 
+/*------------------------------------*\
+  #TESTIMONIAL
+\*------------------------------------*/
+/**
+ * Testimonials feature a quote from a person and their photograph. The
+ * Testimonial component extends the Media Object.
+ */
 .c-testimonial {
   font-size: 18px;
   font-size: 1.285714286rem;
@@ -1481,6 +1488,21 @@ blockquote p:last-of-type:after {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 0;
+}
+
+/**
+ * On smaller screens, hide the photo completely…
+ */
+.c-testimonial__photo {
+  display: none;
+  /**
+   * …but pop it back in as soon as we get room.
+   */
+}
+@media (min-width: 45em) {
+  .c-testimonial__photo {
+    display: block;
+  }
 }
 
 .c-testimonial__source {
