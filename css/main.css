@@ -786,6 +786,7 @@ blockquote p:last-of-type:after {
   padding: 0;
   list-style: none;
   margin-left: -20px;
+  font-size: 0;
 }
 
 .o-layout__item {
@@ -793,6 +794,9 @@ blockquote p:last-of-type:after {
   vertical-align: top;
   width: 100%;
   padding-left: 20px;
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 1.428571429;
 }
 
 /*------------------------------------*\
