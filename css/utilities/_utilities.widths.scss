@@ -22,6 +22,16 @@
         width: ($widths-numerator / $widths-denominator) * 100% !important;
       }
 
+      .u-push-#{$widths-numerator}\/#{$widths-denominator}#{$widths-breakpoint} {
+        position: relative;
+        left: ($widths-numerator / $widths-denominator) * 100% !important;
+      }
+
+      .u-pull-#{$widths-numerator}\/#{$widths-denominator}#{$widths-breakpoint} {
+        position: relative;
+        right: ($widths-numerator / $widths-denominator) * 100% !important;
+      }
+
     }
 
   }
