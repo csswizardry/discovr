@@ -1031,6 +1031,7 @@ blockquote p:last-of-type:after {
   background-color: #333;
   color: #fff;
   position: relative;
+  text-align: right;
 }
 .c-nav-tertiary::before, .c-nav-tertiary::after {
   content: "";
@@ -1041,11 +1042,11 @@ blockquote p:last-of-type:after {
 }
 .c-nav-tertiary::before {
   left: 0;
-  background-image: -webkit-linear-gradient(right, transparent 0%, #333 100%);
+  background-image: linear-gradient(to right, #333 0, transparent 100%);
 }
 .c-nav-tertiary::after {
   right: 0;
-  background-image: -webkit-linear-gradient(left, transparent 0%, #333 100%);
+  background-image: linear-gradient(to left, #333 0, transparent 100%);
 }
 
 .c-nav-tertiary__list {
@@ -1068,10 +1069,13 @@ blockquote p:last-of-type:after {
 }
 
 .c-nav-tertiary__item {
-  font-size: 14px;
-  font-size: 1rem;
-  line-height: 1.428571429;
+  font-size: 12px;
+  font-size: 0.857142857rem;
+  line-height: 1.666666667;
   display: inline-block;
+}
+.c-nav-tertiary__item + .c-nav-tertiary__item {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .c-nav-tertiary__link {
@@ -1079,6 +1083,7 @@ blockquote p:last-of-type:after {
   display: block;
   padding: 10px;
   color: #fff;
+  letter-spacing: 0.025em;
 }
 
 /*------------------------------------*\
