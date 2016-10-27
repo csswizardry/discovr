@@ -7,10 +7,13 @@
   background-color: $color-page-head-background;
   color: $color-page-head;
   padding: $global-spacing-unit;
+  text-align: center;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
 
   &.is-fixed {
 
     @include mq($from: medium) {
+      text-align: left;
       position: fixed;
       top:   0;
       right: 0;
@@ -27,8 +30,15 @@
 }
 
   .c-page-head__logo {
+    display: block;
     line-height: 0;
-    float: left;
+    margin-bottom: $global-spacing-unit;
+
+    @include mq($from: medium) {
+      float: left;
+      margin-bottom: 0;
+    }
+
   }
 
   /**
