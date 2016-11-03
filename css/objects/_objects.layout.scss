@@ -17,3 +17,24 @@
     padding-left: $global-spacing-unit;
     @include font-size($global-font-size)
   }
+
+.o-layout--rev {
+  direction: rtl;
+
+  > .o-layout__item {
+    direction: ltr;
+  }
+
+}
+
+.o-layout--middle {
+  > .o-layout__item {
+    vertical-align: middle;
+  }
+}
+
+.o-layout--bottom {
+  > .o-layout__item {
+    vertical-align: bottom;
+  }
+}

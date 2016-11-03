@@ -799,6 +799,21 @@ blockquote p:last-of-type:after {
   line-height: 1.428571429;
 }
 
+.o-layout--rev {
+  direction: rtl;
+}
+.o-layout--rev > .o-layout__item {
+  direction: ltr;
+}
+
+.o-layout--middle > .o-layout__item {
+  vertical-align: middle;
+}
+
+.o-layout--bottom > .o-layout__item {
+  vertical-align: bottom;
+}
+
 /*------------------------------------*\
   #HEADLINE
 \*------------------------------------*/
