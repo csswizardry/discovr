@@ -81,7 +81,7 @@
 
       &[data-score^="#{$score}."] {
         background-color: $color;
-        color: #fff;
+        color: #fff; // [1]
       }
 
     }
